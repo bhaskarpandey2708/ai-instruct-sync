@@ -1,0 +1,52 @@
+{
+  "name": "instruct-sync",
+  "version": "0.1.0",
+  "description": "Keep your AI coding rules and instructions in sync across Cursor, Windsurf, GitHub Copilot, Aider, Gemini CLI and more. Zero dependencies.",
+  "type": "module",
+  "bin": {
+    "instruct-sync": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "ai",
+    "ai-agents",
+    "ai-coding",
+    "cursor-rules",
+    "windsurf",
+    "copilot",
+    "rules",
+    "instructions",
+    "sync",
+    "cli"
+  ],
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskarpandey2708/ai-agent-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhaskarpandey2708/ai-agent-tools/issues"
+  },
+  "homepage": "https://github.com/bhaskarpandey2708/ai-agent-tools#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.10"
+  }
+}
