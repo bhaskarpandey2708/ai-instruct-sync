@@ -1,9 +1,8 @@
-import { homedir } from "node:os";
 import { join } from "node:path";
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import type { AgentDef, AgentState, Rule, RuleMap } from "./types.js";
 
-function parseFrontmatter(content: string): { frontmatter: Record<string, any>; body: string } {
+export function parseFrontmatter(content: string): { frontmatter: Record<string, any>; body: string } {
   const match = content.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
   if (!match) {
     return { frontmatter: {}, body: content.trim() };
@@ -17,7 +16,7 @@ function parseFrontmatter(content: string): { frontmatter: Record<string, any>; 
       if (val === 'true') val = true;
       else if (val === 'false') val = false;
       else if (val.startsWith('[') && val.endsWith(']')) {
-        val = val.slice(1, -1).split(',').map(s => s.trim().replace(/"/g, ''));
+        val = val.slice(1, -1).split(',').map((s: string) => s.trim().replace(/"/g, ''));
       }
       front[kv[1]] = val;
     }
@@ -25,9 +24,9 @@ function parseFrontmatter(content: string): { frontmatter: Record<string, any>; 
   return { frontmatter: front, body: match[2].trim() };
 }
 
-function makeFrontmatter(front: Record<string, any>): string {
-  const lines = Object.entries(front).map(([k, v]) => {
-    if (Array.isArray(v)) return `${k}: [${v.map(x => `"${x}"`).join(', ')}]`;
+export function makeFrontmatter(front: Record<string, any>): string {
+  const lines = Object.entries(front).map(([k, v]: [string, any]) => {
+    if (Array.isArray(v)) return `${k}: [${v.map((x: string) => `"${x}"`).join(', ')}]`;
     return `${k}: ${v}`;
   });
   return lines.length ? `---\n${lines.join('\n')}\n---\n` : '';
@@ -40,7 +39,8 @@ export function getAgents(cwd: string = process.cwd()): AgentDef[] {
     { id: "copilot", name: "GitHub Copilot", rulePath: join(cwd, ".github", "copilot-instructions.md"), style: "flat", docsUrl: "" },
     { id: "claude-code", name: "Claude Code", rulePath: join(cwd, "CLAUDE.md"), style: "flat", docsUrl: "" },
     { id: "gemini", name: "Gemini CLI", rulePath: join(cwd, "GEMINI.md"), style: "flat", docsUrl: "" },
-    { id: "aider", name: "Aider", rulePath: join(cwd, ".aider.conf.yml"), style: "mixed", docsUrl: "" }
+    { id: "aider", name: "Aider", rulePath: join(cwd, ".aider", "instructions.md"), style: "flat", docsUrl: "" },
+    { id: "continue", name: "Continue.dev", rulePath: join(cwd, ".continue", "rules"), style: "dir", docsUrl: "" }
   ];
 }
 
@@ -58,17 +58,34 @@ function parseRules(def: AgentDef): RuleMap {
   const rules: RuleMap = {};
   if (def.style === "flat" || def.style === "mixed") {
     if (existsSync(def.rulePath)) {
-      const content = readFileSync(def.rulePath, "utf8").trim();
-      // For flat files, split by '---' or major headings to support multiple rules
-      const sections = content.split(/\n---\n|\n## /).filter(s => s.trim());
+      let content = readFileSync(def.rulePath, "utf8").trim();
+      // Remove leading/trailing frontmatter block if present (common in Copilot style)
+      content = content.replace(/^\s*---\s*[\s\S]*?---\s*\n?/, '').trim();
+      // Split flat files on --- or ## headings to support multi-rule docs
+      const sections = content.split(/\n---\s*\n|\n##\s+/).filter((s: string) => s.trim());
       if (sections.length > 1) {
-        sections.forEach((section, idx) => {
-          const id = `rule-${idx + 1}`;
-          const { frontmatter, body } = parseFrontmatter(section);
+        sections.forEach((section: string, idx: number) => {
+          const { frontmatter, body } = parseFrontmatter(section.trim());
+          // Try to derive a nice ID from frontmatter, first heading, or description
+          let id = frontmatter.name || frontmatter.id || '';
+          let firstLine = '';
+          if (!id) {
+            // Look for a heading-like first line
+            firstLine = (body || section).split('\n')[0].trim().replace(/^#+\s*/, '').replace(/[^a-zA-Z0-9- ]/g, '').trim();
+            id = firstLine || `rule-${idx + 1}`;
+          }
+          id = id.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') || `rule-${idx + 1}`;
+          let content = body || section;
+          // Clean content: strip leading markdown heading (with or without #) if present
+          content = content.replace(/^\s*#+\s*[^\n]*\n?/, '').trim();
+          const titleForStrip = firstLine || (frontmatter.description || '');
+          if (titleForStrip && content.toLowerCase().startsWith(titleForStrip.toLowerCase())) {
+            content = content.substring(titleForStrip.length).trim();
+          }
           rules[id] = {
             id,
-            content: body || section,
-            description: frontmatter.description || `Rule ${idx + 1}`,
+            content: content,
+            description: frontmatter.description || firstLine || `Rule ${idx + 1}`,
             globs: frontmatter.globs,
             alwaysApply: !!frontmatter.alwaysApply,
             metadata: frontmatter

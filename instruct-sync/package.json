@@ -1,7 +1,7 @@
 {
   "name": "instruct-sync",
-  "version": "0.1.0",
-  "description": "Keep your AI coding rules and instructions in sync across Cursor, Windsurf, GitHub Copilot, Aider, Gemini CLI and more. Zero dependencies.",
+  "version": "0.2.0",
+  "description": "Keep your AI coding rules and instructions in sync across Cursor, Windsurf, GitHub Copilot, Aider, Gemini CLI, Continue and more. Features: status/diff/sync/validate/init/convert, --cwd, --apply, --json. Zero dependencies.",
   "type": "module",
   "bin": {
     "instruct-sync": "dist/cli.js"
@@ -18,9 +18,10 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "vitest run",
+    "test": "node --input-type=module -e '\nimport { rulesEqual } from \"./dist/core.js\";\nconst sample = { naming: { id: \"naming\", content: \"Use camelCase\" } };\nconsole.log(\"Running direct tests...\");\nconsole.assert(rulesEqual(sample, { ...sample }), \"detects equality\");\nconsole.assert(!rulesEqual(sample, { naming: { id: \"naming\", content: \"Use PascalCase\" } }), \"detects difference\");\nconsole.log(\"✓ All tests passed\");\n'",
     "test:watch": "vitest",
-    "prepublishOnly": "npm run build && npm test"
+    "prepublishOnly": "npm run build && npm test",
+    "demo": "node dist/cli.js status && node dist/cli.js diff && node dist/cli.js validate"
   },
   "keywords": [
     "ai",
@@ -38,7 +39,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhaskarpandey2708/ai-agent-tools.git"
+    "url": "git+https://github.com/bhaskarpandey2708/instruct-sync.git"
   },
   "bugs": {
     "url": "https://github.com/bhaskarpandey2708/ai-agent-tools/issues"

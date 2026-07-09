@@ -47,11 +47,18 @@ export function applyPlan(plan: SyncPlan, home = homedir()) {
 export function validateRules(rules: RuleMap): string[] {
   const issues: string[] = [];
   Object.entries(rules).forEach(([id, rule]) => {
-    if (!rule.content || rule.content.trim().length < 10) {
+    const content = (rule.content || "").trim();
+    if (!content || content.length < 10) {
       issues.push(`${id}: rule content is too short`);
     }
-    if (rule.content && rule.content.length > 5000) {
+    if (content.length > 5000) {
       issues.push(`${id}: rule content may be too long (token bloat risk)`);
+    }
+    if (content.includes("TODO") || content.includes("FIXME")) {
+      issues.push(`${id}: contains TODO/FIXME — consider making guidelines more specific`);
+    }
+    if (rule.description && rule.description.length > 120) {
+      issues.push(`${id}: description is very long (keep under ~120 chars for best results)`);
     }
   });
   return issues;

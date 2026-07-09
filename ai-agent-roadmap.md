@@ -19,10 +19,14 @@ This folder is based on research into general AI pains (MCP config drift, rules/
 
 ### Weeks 1-3: Ship instruct-sync v0.1
 - Core: detect, normalize, sync rules across major agents (Cursor, Windsurf, Copilot, Aider, Gemini, etc.).
-- Safety features (backups to ~/.instruct-sync/backups/, dry-run, merge by default).
+- Safety features (backups to ~/.instruct-sync/backups/, dry-run by default, --apply to write, merge by default).
 - High-level design mirroring proven patterns: canonical Rule model, agent adapters, planSync/diffAll/apply.
-- npm publish.
-- Demo GIF.
+- Commands: status, diff, list, clients, convert, sync, validate, init.
+- --json output for scripting.
+- convert with --to style adaptation.
+- --cwd support for any project.
+- npm publish ready.
+- Demo working (see your run log).
 
 Commands (modeled on successful patterns):
 - instruct-sync status
