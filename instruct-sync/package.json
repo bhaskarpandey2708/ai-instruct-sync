@@ -40,12 +40,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhaskarpandey2708/ai-agent-tools.git"
+    "url": "git+https://github.com/bhaskarpandey2708/ai-instruct-sync.git",
+    "directory": "instruct-sync"
   },
   "bugs": {
-    "url": "https://github.com/bhaskarpandey2708/ai-agent-tools/issues"
+    "url": "https://github.com/bhaskarpandey2708/ai-instruct-sync/issues"
   },
-  "homepage": "https://github.com/bhaskarpandey2708/ai-agent-tools#readme",
+  "homepage": "https://github.com/bhaskarpandey2708/ai-instruct-sync#readme",
   "devDependencies": {
     "@types/node": "^20.14.0",
     "typescript": "^5.5.0",

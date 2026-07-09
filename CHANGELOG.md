@@ -1,5 +1,15 @@
 # Changelog
 
+## Workspace — 2026-07-09
+
+### Changed
+- Local monorepo path is now **`~/Documents/development`** (was `~/Documents/ai-agent-tools`)
+- Projects live as sibling folders: `instruct-sync/`, `ai-setup-doctor/`, …
+- Root CI (`.github/workflows/ci.yml`) builds **both** `instruct-sync` and `ai-setup-doctor` (Node 20 + 22 matrix)
+
+### Added
+- **ai-setup-doctor** (project 2) — scaffolded CLI for read-only AI coding setup diagnostics (agents, MCP configs, secrets risk, Node/hygiene). Zero runtime deps. Build/test green; not published to npm yet.
+
 ## [0.2.0-beta.0] - 2026-07-09
 
 ### Publish note

@@ -6,8 +6,11 @@ This folder is based on research into general AI pains (MCP config drift, rules/
 
 **Primary Project here:** instruct-sync — the AI-broad rules and instructions sync tool.
 
-**Status (2026-07-09):** Public beta ready. Published as **`ai-instruct-sync@0.2.0-beta.0`** (npm name `instruct-sync` was already taken by an unrelated package).
-Install: `npx ai-instruct-sync@beta status`
+**Local workspace:** `~/Documents/development` (one folder for all projects)
+
+**Status (2026-07-09):**
+- **Project 1 — instruct-sync:** Public beta. npm **`ai-instruct-sync@0.2.0-beta.0`**. Install: `npx ai-instruct-sync@beta status`
+- **Project 2 — ai-setup-doctor:** Scaffolded & build-green (`0.1.0-beta.0`). Read-only diagnostics for agents, MCP, secrets, Node/project hygiene. CLI: `check` (default), `--json`, `--strict`, `--cwd`. Folder: `ai-setup-doctor/`. Not published to npm yet.
 
 **Why this wins:** Extremely high signal. Every AI coding user (regardless of model) feels the pain of maintaining separate rule files. Low risk (small CLI). Strong flywheel via npx.
 

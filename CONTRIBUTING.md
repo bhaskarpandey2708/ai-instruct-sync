@@ -1,31 +1,43 @@
-# Contributing to ai-agent-tools
+# Contributing to instruct-sync
 
-Thanks for helping build practical AI agent tooling!
+Thanks for helping improve **instruct-sync** — the CLI that keeps AI coding rules in sync across agents.
 
 ## Development
 
-1. Clone the repo
-2. cd instruct-sync
-3. npm install
-4. npm run build
-5. npm test
+```bash
+git clone https://github.com/bhaskarpandey2708/ai-instruct-sync.git
+cd ai-instruct-sync/instruct-sync
+npm install
+npm run build
+npm test
+```
 
 ## Adding a new agent
 
-Edit `src/clients.ts`:
-- Add to getAgents()
-- Update parseRules and render if needed for the format
-- Add test case
+Edit `instruct-sync/src/clients.ts`:
 
-Keep zero runtime dependencies.
+1. Add an entry in `getAgents()`
+2. Ensure parse/render works for that format (dir vs flat)
+3. Add a test if you can
+
+Keep **zero runtime dependencies**.
 
 ## Code style
 
-- Strict TS
-- Clear, testable functions
-- Safety first (backups for writes)
+- Strict TypeScript  
+- Small, testable functions  
+- Safety first (dry-run default, backups on write)
 
 ## Releasing
 
-- Bump version
-- npm publish from instruct-sync
+From `instruct-sync/`:
+
+```bash
+npm run build && npm test
+npm version prerelease --preid beta   # or patch/minor
+npm publish --access public --tag beta
+```
+
+## Other packages in this repo
+
+Secondary tools (e.g. `ai-setup-doctor/`) follow the same contribute-via-PR flow. The flagship product is **instruct-sync**.

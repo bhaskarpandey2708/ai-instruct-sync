@@ -1,0 +1,53 @@
+{
+  "name": "ai-setup-doctor",
+  "version": "0.1.0-beta.0",
+  "description": "Diagnose your AI coding setup in one command — agents, rules, MCP configs, secrets risk, and common misconfigurations. Zero dependencies.",
+  "type": "module",
+  "bin": {
+    "ai-setup-doctor": "dist/cli.js",
+    "setup-doctor": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --input-type=module -e '\nimport { severityScore, runChecks } from \"./dist/core.js\";\nconst r = runChecks(process.cwd());\nconsole.assert(Array.isArray(r.checks) && r.checks.length > 0, \"has checks\");\nconsole.assert(typeof severityScore(r) === \"number\", \"score is number\");\nconsole.log(\"✓ All tests passed\");\n'",
+    "prepublishOnly": "npm run build && npm test",
+    "demo": "node dist/cli.js check"
+  },
+  "keywords": [
+    "ai",
+    "ai-agents",
+    "cursor",
+    "copilot",
+    "claude",
+    "mcp",
+    "diagnostics",
+    "doctor",
+    "setup",
+    "cli"
+  ],
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskarpandey2708/ai-instruct-sync.git",
+    "directory": "ai-setup-doctor"
+  },
+  "bugs": {
+    "url": "https://github.com/bhaskarpandey2708/ai-instruct-sync/issues"
+  },
+  "homepage": "https://github.com/bhaskarpandey2708/ai-instruct-sync/tree/main/ai-setup-doctor#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

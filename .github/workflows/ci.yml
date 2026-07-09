@@ -6,22 +6,44 @@ on:
   pull_request:
 
 jobs:
-  build:
+  instruct-sync:
+    name: instruct-sync
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [20, 22]
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        cache-dependency-path: instruct-sync/package-lock.json
-    - name: Install and build
-      working-directory: instruct-sync
-      run: |
-        npm ci
-        npm run build
-        npm test
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+          cache-dependency-path: instruct-sync/package-lock.json
+      - name: Install, build, test
+        working-directory: instruct-sync
+        run: |
+          npm ci
+          npm run build
+          npm test
+
+  ai-setup-doctor:
+    name: ai-setup-doctor
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+          cache-dependency-path: ai-setup-doctor/package-lock.json
+      - name: Install, build, test
+        working-directory: ai-setup-doctor
+        run: |
+          npm ci
+          npm run build
+          npm test
