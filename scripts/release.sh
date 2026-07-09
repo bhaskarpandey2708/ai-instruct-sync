@@ -11,7 +11,7 @@ echo "=== Bumping version (patch) ==="
 npm version patch
 
 echo "=== Publishing to npm (beta tag) ==="
-npm publish --tag beta
+npm publish --access public --tag beta
 
 echo "=== Tagging and pushing (you may need to push manually) ==="
 cd ..

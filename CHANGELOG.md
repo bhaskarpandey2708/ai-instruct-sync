@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.0-beta.0] - 2026-07-09
+
+### Publish note
+- npm package published as **`ai-instruct-sync`** (the name `instruct-sync` is taken on npm by an unrelated project).
+- CLI binaries: `ai-instruct-sync` and `instruct-sync`.
+
 ## [0.2.0] - 2026-07-09
 
 ### Added

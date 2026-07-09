@@ -6,6 +6,9 @@ This folder is based on research into general AI pains (MCP config drift, rules/
 
 **Primary Project here:** instruct-sync — the AI-broad rules and instructions sync tool.
 
+**Status (2026-07-09):** Public beta ready. Published as **`ai-instruct-sync@0.2.0-beta.0`** (npm name `instruct-sync` was already taken by an unrelated package).
+Install: `npx ai-instruct-sync@beta status`
+
 **Why this wins:** Extremely high signal. Every AI coding user (regardless of model) feels the pain of maintaining separate rule files. Low risk (small CLI). Strong flywheel via npx.
 
 ## Key Research Insights (non-Claude)
@@ -17,7 +20,7 @@ This folder is based on research into general AI pains (MCP config drift, rules/
 
 ## 90-Day Plan (Broad AI track)
 
-### Weeks 1-3: Ship instruct-sync v0.1
+### Weeks 1-3: Ship instruct-sync v0.1 → **v0.2.0-beta shipped** (npm: `ai-instruct-sync`)
 - Core: detect, normalize, sync rules across major agents (Cursor, Windsurf, Copilot, Aider, Gemini, etc.).
 - Safety features (backups to ~/.instruct-sync/backups/, dry-run by default, --apply to write, merge by default).
 - High-level design mirroring proven patterns: canonical Rule model, agent adapters, planSync/diffAll/apply.

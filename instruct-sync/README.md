@@ -1,12 +1,14 @@
-# instruct-sync
+# ai-instruct-sync
+
+> CLI brand: **instruct-sync** · npm package: **`ai-instruct-sync`** (`instruct-sync` was already taken on npm)
 
 **One command to keep your AI coding rules and instructions in sync across every AI agent you use.**
 
 Rules drift between Cursor, Windsurf, GitHub Copilot, Aider, Gemini CLI, Continue, and others. This tool detects, diffs, syncs, converts, and helps initialize them safely.
 
 ```bash
-npx instruct-sync status
-npx instruct-sync sync --from cursor --dry-run
+npx ai-instruct-sync status
+npx ai-instruct-sync sync --from cursor --dry-run
 ```
 
 ## Features
@@ -26,26 +28,26 @@ npx instruct-sync sync --from cursor --dry-run
 ## Installation
 
 ```bash
-npm install -g instruct-sync
+npm install -g ai-instruct-sync
 # or
-npx instruct-sync
+npx ai-instruct-sync
 ```
 
 ## Quick Start
 
 ```bash
 # Scaffold samples in current directory
-npx instruct-sync init .
+npx ai-instruct-sync init .
 
 # Inspect
-npx instruct-sync status
-npx instruct-sync diff
+npx ai-instruct-sync status
+npx ai-instruct-sync diff
 
 # Preview merge
-npx instruct-sync sync --from cursor --dry-run
+npx ai-instruct-sync sync --from cursor --dry-run
 
 # Apply changes (add --yes to skip prompt)
-npx instruct-sync sync --from cursor --apply
+npx ai-instruct-sync sync --from cursor --apply
 ```
 
 ## Commands
@@ -61,7 +63,7 @@ npx instruct-sync sync --from cursor --apply
 | `validate`               | Lint rules for common issues                     |
 | `init [dir]`             | Scaffold sample rules                            |
 
-Run `instruct-sync --help` for all options.
+Run `ai-instruct-sync --help` for all options.
 
 ## Local Development
 

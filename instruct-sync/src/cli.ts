@@ -58,7 +58,7 @@ function cmdStatus(cwd?: string) {
     } else if (!drifted) {
       console.log(green("  ✓ Rules look consistent across detected agents."));
     } else {
-      console.log(yellow("  ⚠ Some drift detected. Run 'instruct-sync diff' for details."));
+      console.log(yellow("  ⚠ Some drift detected. Run 'ai-instruct-sync diff' for details."));
     }
   }
 }
@@ -275,10 +275,10 @@ function cmdSync(flags: CLIFlags) {
   return 0;
 }
 
-const HELP = `${bold("instruct-sync")} — keep AI coding rules in sync across agents
+const HELP = `${bold("ai-instruct-sync")} — keep AI coding rules in sync across agents
 
 ${bold("Usage")}
-  instruct-sync <command> [options]
+  ai-instruct-sync <command> [options]
 
 ${bold("Commands")}
   status
@@ -301,23 +301,23 @@ ${bold("Options")}
   --json           Output as JSON (for status, diff, etc.)
 
 Examples
-  npx instruct-sync status
-  npx instruct-sync diff
-  npx instruct-sync list
-  npx instruct-sync clients
-  npx instruct-sync convert --from cursor
-  npx instruct-sync convert --from cursor --to copilot
-  npx instruct-sync convert --from cursor --json
-  npx instruct-sync convert --from cursor --to copilot --json
-  npx instruct-sync sync --from cursor --dry-run
-  npx instruct-sync sync --from cursor --apply
-  npx instruct-sync init ./my-project
-  npx instruct-sync --cwd ./my-project validate
-  npx instruct-sync status --json
-  npx instruct-sync diff --json
-  npx instruct-sync list --json
-  npx instruct-sync clients --json
-  npx instruct-sync validate --json
+  npx ai-instruct-sync status
+  npx ai-instruct-sync diff
+  npx ai-instruct-sync list
+  npx ai-instruct-sync clients
+  npx ai-instruct-sync convert --from cursor
+  npx ai-instruct-sync convert --from cursor --to copilot
+  npx ai-instruct-sync convert --from cursor --json
+  npx ai-instruct-sync convert --from cursor --to copilot --json
+  npx ai-instruct-sync sync --from cursor --dry-run
+  npx ai-instruct-sync sync --from cursor --apply
+  npx ai-instruct-sync init ./my-project
+  npx ai-instruct-sync --cwd ./my-project validate
+  npx ai-instruct-sync status --json
+  npx ai-instruct-sync diff --json
+  npx ai-instruct-sync list --json
+  npx ai-instruct-sync clients --json
+  npx ai-instruct-sync validate --json
 `;
 
 export function main(argv: string[]) {

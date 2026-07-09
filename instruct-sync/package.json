@@ -1,9 +1,10 @@
 {
-  "name": "instruct-sync",
-  "version": "0.2.0",
+  "name": "ai-instruct-sync",
+  "version": "0.2.0-beta.0",
   "description": "Keep your AI coding rules and instructions in sync across Cursor, Windsurf, GitHub Copilot, Aider, Gemini CLI, Continue and more. Features: status/diff/sync/validate/init/convert, --cwd, --apply, --json. Zero dependencies.",
   "type": "module",
   "bin": {
+    "ai-instruct-sync": "dist/cli.js",
     "instruct-sync": "dist/cli.js"
   },
   "main": "dist/index.js",
@@ -39,7 +40,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhaskarpandey2708/instruct-sync.git"
+    "url": "git+https://github.com/bhaskarpandey2708/ai-agent-tools.git"
   },
   "bugs": {
     "url": "https://github.com/bhaskarpandey2708/ai-agent-tools/issues"

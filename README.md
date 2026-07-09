@@ -4,13 +4,13 @@
 
 A focused repository for practical tools that solve daily friction for developers using AI coding agents (Cursor, Windsurf, GitHub Copilot, Aider, Gemini CLI, Continue, and more).
 
-## Primary Project: instruct-sync
+## Primary Project: instruct-sync (`ai-instruct-sync` on npm)
 
 One command to keep your AI coding rules and instructions in sync across tools.
 
 ```bash
-npx instruct-sync status
-npx instruct-sync sync --from cursor --dry-run
+npx ai-instruct-sync status
+npx ai-instruct-sync sync --from cursor --dry-run
 ```
 
 ### Key Features
@@ -29,28 +29,28 @@ See [`instruct-sync/`](./instruct-sync) for the CLI code and [`ai-agent-roadmap.
 ## Installation
 
 ```bash
-npm install -g instruct-sync
+npm install -g ai-instruct-sync
 # or
-npx instruct-sync
+npx ai-instruct-sync
 ```
 
 ## Quick Start
 
 ```bash
 # Scaffold samples in current directory
-npx instruct-sync init .
+npx ai-instruct-sync init .
 
 # Check what you have
-npx instruct-sync status
+npx ai-instruct-sync status
 
 # See differences
-npx instruct-sync diff
+npx ai-instruct-sync diff
 
 # Preview syncing Cursor rules to everything else
-npx instruct-sync sync --from cursor --dry-run
+npx ai-instruct-sync sync --from cursor --dry-run
 
 # Actually apply (with confirmation)
-npx instruct-sync sync --from cursor --apply
+npx ai-instruct-sync sync --from cursor --apply
 ```
 
 ## Development
@@ -70,7 +70,7 @@ The main package lives in `instruct-sync/`. To publish:
 cd instruct-sync
 npm run build
 npm test
-npm publish --tag beta   # or omit tag for latest
+npm publish --access public --tag beta   # package: ai-instruct-sync
 ```
 
 ## Philosophy
@@ -89,7 +89,7 @@ From the `instruct-sync` directory:
 npm run build
 npm test
 npm version patch   # minor or major as needed
-npm publish --tag beta
+npm publish --access public --tag beta   # package: ai-instruct-sync
 ```
 
 Then from repo root:
