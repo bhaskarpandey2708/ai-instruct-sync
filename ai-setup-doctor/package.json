@@ -18,10 +18,14 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "node --input-type=module -e '\nimport { severityScore, runChecks } from \"./dist/core.js\";\nconst r = runChecks(process.cwd());\nconsole.assert(Array.isArray(r.checks) && r.checks.length > 0, \"has checks\");\nconsole.assert(typeof severityScore(r) === \"number\", \"score is number\");\nconsole.log(\"✓ All tests passed\");\n'",
+    "build": "node scripts/build.mjs",
+    "build:tsc": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/hard.test.mjs",
+    "test:quick": "node --test tests/hard.test.mjs",
     "prepublishOnly": "npm run build && npm test",
-    "demo": "node dist/cli.js check"
+    "demo": "node dist/cli.js check --no-user",
+    "demo:hard": "npm run build && node scripts/demo-hard.mjs",
+    "demo:json": "node dist/cli.js check --no-user --json"
   },
   "keywords": [
     "ai",

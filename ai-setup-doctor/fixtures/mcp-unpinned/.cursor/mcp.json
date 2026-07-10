@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "fs": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+    "ghost-cmd": {
+      "command": "definitely-not-a-real-mcp-binary-xyz",
+      "args": ["serve"]
+    }
+  }
+}

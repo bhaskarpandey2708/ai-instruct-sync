@@ -22,11 +22,15 @@ When something fails, the error is rarely obvious. This tool is a **health check
 
 ## What it checks
 
-- **Node.js** version (≥20)
-- **Agent configs** — Cursor, Windsurf, Copilot, Claude Code, Gemini, Aider, Continue
-- **MCP configs** — project + user locations, empty/broken JSON
-- **Secrets safety** — `.env` gitignore, secret-like patterns in rule/MCP files
-- **Project hygiene** — git, README, oversized rules
+| Category | Examples |
+|----------|----------|
+| **runtime** | Node.js ≥20, `engines.node` mismatch |
+| **agents** | Cursor, Windsurf, Copilot, Claude, Gemini, Codex, Cline, Zed, Aider, Continue, `AGENTS.md` — empty shells, multi-agent drift, rule contradictions, empty stubs, legacy `.cursorrules`, broken `.mdc` frontmatter |
+| **mcp** | Project + user configs, broken JSON/JSONC, empty servers, missing `command`/`url`, bad URLs, name collisions, unpinned `npx` packages, missing commands on PATH |
+| **secrets** | `.env` gitignore, git-tracked secret files, keys in rules/MCP `env`/`args`/`headers`, live keys in `.env.example` — with docs-sample allowlisting (fewer false positives) |
+| **hygiene** | Git worktree (incl. monorepos), README, package.json validity, placeholders (`CHANGE_ME`), oversized rules, `.cursorignore` hints |
+
+Scoring applies **per-category caps** so one bad MCP file with many servers does not alone zero the whole score. Checks are sorted errors → warnings → info → ok.
 
 Safe by design: **read-only**. Never writes or uploads files.
 
@@ -49,8 +53,26 @@ ai-setup-doctor check --cwd ~/code/my-app
 
 # CI / scripts
 ai-setup-doctor --json
-ai-setup-doctor --strict   # exit 1 on warnings too
+ai-setup-doctor --strict          # exit 1 on warnings too
+
+# Focus / filter
+ai-setup-doctor --only secrets,mcp --verbose
+ai-setup-doctor --skip runtime --no-user   # project MCP only
 ```
+
+### CLI options
+
+| Flag | Meaning |
+|------|---------|
+| `--cwd <dir>` | Project directory |
+| `--json` | Machine-readable report (includes `summary.byCategory`) |
+| `--strict` | Exit 1 on warnings as well as errors |
+| `--min-score <n>` | Exit 1 if score is below `n` (CI gate) |
+| `--only <list>` | Categories: `runtime,agents,mcp,secrets,hygiene` |
+| `--skip <list>` | Skip categories |
+| `--no-user` | Ignore user-home MCP configs |
+| `-q, --quiet` | Hide ok checks (issues only) |
+| `-v, --verbose` | Show categories + details + per-category breakdown |
 
 ## Example output
 
@@ -73,9 +95,12 @@ Score 75/100
 cd ai-setup-doctor
 npm install
 npm run build
-npm test
-npm run demo
+npm test              # tough fixture suite (node:test)
+npm run demo          # this package
+npm run demo:hard     # all adversarial fixtures + sibling projects
 ```
+
+Fixtures under `fixtures/` cover broken MCP JSON, leaked keys, instruction drift, empty agent dirs, hardcoded MCP env, rule bloat, and more.
 
 ## License
 

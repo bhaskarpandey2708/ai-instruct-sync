@@ -74,12 +74,16 @@ Want another? Open an issue or PR on `src/clients.ts`.
 
 This repository is the **home of instruct-sync**. Other small tools may live alongside it as sibling folders:
 
-| Path | Product |
-|------|---------|
-| **[`instruct-sync/`](./instruct-sync)** | **★ Main product** — rules/instructions sync CLI |
-| [`ai-setup-doctor/`](./ai-setup-doctor) | Setup diagnostics (early) |
+| Path | Product | npm |
+|------|---------|-----|
+| **[`instruct-sync/`](./instruct-sync)** | **★ Main product** — rules/instructions sync CLI | [`ai-instruct-sync`](https://www.npmjs.com/package/ai-instruct-sync) |
+| [`ai-setup-doctor/`](./ai-setup-doctor) | Diagnose AI coding setup (agents, MCP, secrets) | [`ai-setup-doctor`](https://www.npmjs.com/package/ai-setup-doctor) |
 
-If you're here for the tool people talk about, you want **`instruct-sync`**.
+```bash
+npx ai-setup-doctor@beta
+```
+
+If you're here for rules sync, start with **`instruct-sync`**.
 
 ---
 

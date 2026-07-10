@@ -1,0 +1,1 @@
+# Empty cursor dir fixture

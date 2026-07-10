@@ -7,3 +7,8 @@ coverage/
 *.tgz
 .idea/
 .vscode/
+# Test fixtures may include sample .env / .vscode configs
+!ai-setup-doctor/fixtures/**/
+!ai-setup-doctor/fixtures/**/.env
+!ai-setup-doctor/fixtures/**/.vscode/
+!ai-setup-doctor/fixtures/**/.vscode/**
