@@ -3,8 +3,9 @@
  * Run: node --test tests/hard.test.mjs
  * (after npm run build)
  */
-import { describe, it } from "node:test";
+import { before, describe, it } from "node:test";
 import assert from "node:assert/strict";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -24,6 +25,27 @@ import {
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const fixtures = join(root, "fixtures");
+
+/**
+ * Fixture `.env` files are gitignored (and must stay untracked) so hermetic
+ * secrets checks don't see monorepo-tracked secrets. Materialize on disk for tests.
+ */
+function ensureFixtureEnv(name, contents) {
+  const p = join(fixtures, name, ".env");
+  if (!existsSync(p)) writeFileSync(p, contents, "utf8");
+}
+
+before(() => {
+  ensureFixtureEnv(
+    "healthy",
+    "OPENAI_API_KEY=sk-test-not-real-but-long-enough-key-abc123\n",
+  );
+  ensureFixtureEnv(
+    "leaky-secrets",
+    "OPENAI_API_KEY=sk-live-should-not-be-here-abcdefghijklmnop\n",
+  );
+  mkdirSync(join(fixtures, "empty-agents", ".cursor"), { recursive: true });
+});
 
 function doctor(name, extra = {}) {
   return runChecks({

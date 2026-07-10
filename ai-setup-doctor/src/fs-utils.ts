@@ -21,10 +21,13 @@ export function safeRead(path: string, max = 200_000): string | null {
   }
 }
 
+/** Placeholder names that do not count as real content (empty-dir markers in git). */
+const DIR_PLACEHOLDERS = new Set([".gitkeep", ".keep"]);
+
 export function dirHasFiles(path: string): boolean {
   try {
     if (!existsSync(path) || !statSync(path).isDirectory()) return false;
-    return readdirSync(path).length > 0;
+    return readdirSync(path).some((name) => !DIR_PLACEHOLDERS.has(name));
   } catch {
     return false;
   }
