@@ -10,7 +10,8 @@ export const SECRET_PATTERNS: { id: string; re: RegExp }[] = [
   { id: "vercel", re: /vercel_[A-Za-z0-9_]{20,}/i },
   { id: "huggingface", re: /hf_[A-Za-z0-9]{20,}/ },
   { id: "anthropic", re: /sk-ant-[A-Za-z0-9_-]{20,}/ },
-  { id: "openai", re: /sk-(?:proj-)?[A-Za-z0-9_-]{20,}/ },
+  // Negative lookahead: do not also flag Anthropic keys as OpenAI
+  { id: "openai", re: /sk-(?!ant-)(?:proj-)?[A-Za-z0-9_-]{20,}/ },
   { id: "jwt", re: /eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}/ },
   {
     id: "private-key",

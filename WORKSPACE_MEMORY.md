@@ -1,7 +1,8 @@
 # Workspace memory (agents + humans)
 
-**Last updated:** 2026-07-11  
-**Rule:** Do **not** `git push` any remote until Bhaskar explicitly asks.
+**Last updated:** 2026-07-11 (overnight ops)  
+**Rule:** Do **not** `git push` or **npm publish** until Bhaskar explicitly asks.  
+**Morning file:** `MORNING_BRIEFING.md`
 
 ## Where things live
 

@@ -11,7 +11,7 @@ export const SECRET_PATTERNS: { id: string; re: RegExp }[] = [
   { id: "huggingface", re: /hf_[A-Za-z0-9]{20,}/ },
   { id: "anthropic", re: /sk-ant-[A-Za-z0-9_-]{20,}/ },
   // OpenAI-style: sk-... and sk-proj-... (hyphens allowed after prefix)
-  { id: "openai", re: /sk-(?:proj-)?[A-Za-z0-9_-]{20,}/ },
+  { id: "openai", re: /sk-(?!ant-)(?:proj-)?[A-Za-z0-9_-]{20,}/ },
   { id: "jwt", re: /eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}/ },
   {
     id: "private-key",

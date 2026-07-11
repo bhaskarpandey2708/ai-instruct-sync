@@ -18,6 +18,7 @@ const PRODUCTS = [
   { id: "P02", dir: "ai-setup-doctor", test: ["npm", "test"] },
   { id: "P03", dir: "mcp-sync", test: ["npm", "test"] },
   { id: "P04", dir: "secret-guard", test: ["npm", "test"] },
+  { id: "P29", dir: "agent-skill-scan", test: ["npm", "test"] },
   // P05–P28 filled dynamically
 ];
 
@@ -78,21 +79,58 @@ for (const p of list) {
   console.log(r.ok ? `OK (${r.ms}ms)` : `FAIL (exit ${r.status})`);
 }
 
-// Cross-functional dataset: secret-guard + setup-doctor on shared fixture shapes
-console.log("\n→ cross: secret patterns vs doctor fixtures …");
+// Cross-functional dataset checks
+console.log("\n→ cross: patterns + shared AI workspace …");
 const cross = { ok: true, checks: [] };
 try {
-  const { findSecretHits } = await import(path.join(ROOT, "secret-guard/dist/patterns.js"));
+  // rebuild secret-guard dist if needed
+  spawnSync("npm", ["run", "build"], {
+    cwd: path.join(ROOT, "secret-guard"),
+    encoding: "utf8",
+    timeout: 60_000,
+  });
+  const { findSecretHits } = await import(
+    path.join(ROOT, "secret-guard/dist/patterns.js") + `?t=${Date.now()}`
+  );
   const hits = findSecretHits("token sk-ant-api03-THIS_IS_A_REAL_LOOKING_KEY_ABC123XYZ789");
-  cross.checks.push({ name: "secret-guard detects anthropic-like key", ok: hits.length > 0 });
+  cross.checks.push({
+    name: "detect anthropic-like key",
+    ok: hits.some((h) => h.id === "anthropic"),
+  });
+  cross.checks.push({
+    name: "anthropic key not also openai",
+    ok: !hits.some((h) => h.id === "openai"),
+  });
   const allow = findSecretHits("sk-ant-api03-example");
   cross.checks.push({ name: "allowlist example key", ok: allow.length === 0 });
+
+  const crossDir = path.join(ROOT, "suite/cross-fixtures/ai-workspace");
+  if (fs.existsSync(crossDir)) {
+    const scanCli = path.join(ROOT, "secret-guard/dist/cli.js");
+    const r = spawnSync(process.execPath, [scanCli, "--cwd", crossDir, "--json"], {
+      encoding: "utf8",
+      timeout: 30_000,
+    });
+    let report = null;
+    try {
+      report = JSON.parse(r.stdout || "{}");
+    } catch {
+      report = null;
+    }
+    const n = report?.summary?.error ?? 0;
+    cross.checks.push({
+      name: "cross-fixture finds >=2 secret errors",
+      ok: n >= 2,
+      detail: `errors=${n} exit=${r.status}`,
+    });
+  }
   cross.ok = cross.checks.every((c) => c.ok);
 } catch (e) {
   cross.ok = false;
   cross.error = String(e);
 }
 console.log(cross.ok ? "OK" : "FAIL");
+if (!cross.ok) console.log(JSON.stringify(cross, null, 2));
 
 const passed = results.filter((r) => r.ok).length;
 const failed = results.filter((r) => !r.ok);
