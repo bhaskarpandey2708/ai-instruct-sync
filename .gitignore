@@ -14,3 +14,4 @@ coverage/
 !ai-setup-doctor/fixtures/**/.vscode/**
 # Independent product repo (own GitHub: bhaskarpandey2708/mcp-sync) co-located for the suite
 mcp-sync/
+ai-setup-doctor/fixtures/leaky-secrets/.env
