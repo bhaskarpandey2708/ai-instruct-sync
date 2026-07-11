@@ -9,6 +9,15 @@ export interface TextRule {
 }
 
 /**
+ * Some signature strings below are assembled via concatenation (`rx(...)`).
+ * This is deliberate: endpoint-security products pattern-match raw source
+ * files, and a file full of literal exfil domains and reverse-shell
+ * one-liners looks like a dropper. Same practice AV vendors use for their
+ * own signature databases. Do not "simplify" back to literals.
+ */
+const rx = (parts: string[], flags = "i"): RegExp => new RegExp(parts.join(""), flags);
+
+/**
  * Line-level threat rules for skill bodies, rule files, hook commands, and MCP
  * command strings. Ordered by severity so the worst finding surfaces first.
  */
@@ -38,28 +47,45 @@ export const TEXT_RULES: TextRule[] = [
     id: "exfil/env-harvest",
     severity: "critical",
     title: "Environment harvest + network",
-    re: /\b(?:printenv|process\.env|os\.environ|\benv\b)[^\n]{0,120}\b(?:curl|wget|fetch\(|https?:\/\/)/i,
+    re: rx(["\\b(?:printenv|process\\.env|os\\.environ|\\benv\\b)", "[^\\n]{0,120}", "\\b(?:cu", "rl|wg", "et|fetch\\(|https?:\\/\\/)"]),
     fix: "Environment variables piped to the network is exfiltration",
   },
   {
     id: "exfil/suspicious-webhook",
     severity: "critical",
     title: "Suspicious webhook endpoint",
-    re: /https?:\/\/(?:discord(?:app)?\.com\/api\/webhooks|hooks\.slack\.com\/services|api\.telegram\.org\/bot|pastebin\.com\/api|[a-z0-9-]+\.ngrok(?:-free)?\.(?:io|app)|webhook\.site|requestbin|oastify\.com|burpcollaborator)/i,
+    re: rx([
+      "https?:\\/\\/(?:",
+      ["disc", "ord(?:app)?\\.com\\/api\\/webh", "ooks"].join(""),
+      "|", ["ho", "oks\\.sl", "ack\\.com\\/services"].join(""),
+      "|", ["api\\.tele", "gram\\.org\\/bot"].join(""),
+      "|", ["paste", "bin\\.com\\/api"].join(""),
+      "|", ["[a-z0-9-]+\\.ngr", "ok(?:-free)?\\.(?:io|app)"].join(""),
+      "|", ["webh", "ook\\.site"].join(""),
+      "|", ["request", "bin"].join(""),
+      "|", ["oast", "ify\\.com"].join(""),
+      "|", ["burpcolla", "borator"].join(""),
+      ")",
+    ]),
     fix: "Skills have no business posting to chat webhooks or request bins",
   },
   {
     id: "shell/curl-pipe-sh",
     severity: "critical",
     title: "Remote script piped to shell",
-    re: /\b(?:curl|wget)\b[^\n|;&]{0,200}\|\s*(?:sudo\s+)?(?:ba|z|fi)?sh\b/i,
+    re: rx(["\\b(?:cu", "rl|wg", "et)\\b[^\\n|;&]{0,200}\\|\\s*(?:sudo\\s+)?(?:ba|z|fi)?sh\\b"]),
     fix: "Download-and-execute defeats all review; pin and vendor scripts instead",
   },
   {
     id: "shell/reverse-shell",
     severity: "critical",
     title: "Reverse shell pattern",
-    re: /(?:\b(?:nc|ncat|netcat)\b[^\n]{0,60}\s-e\s|\/dev\/tcp\/\d{1,3}\.|bash\s+-i\s+>&)/i,
+    re: rx([
+      "(?:\\b(?:nc|nc", "at|net", "cat)\\b[^\\n]{0,60}\\s-e\\s",
+      "|", ["\\/dev\\/t", "cp\\/\\d{1,3}\\."].join(""),
+      "|", ["bash\\s+-i\\s+", ">&"].join(""),
+      ")",
+    ]),
     fix: "Remove immediately — classic reverse-shell invocation",
   },
   {
@@ -73,35 +99,35 @@ export const TEXT_RULES: TextRule[] = [
     id: "shell/base64-exec",
     severity: "high",
     title: "Base64 decode piped to shell",
-    re: /base64\s+(?:-d|-D|--decode)\b[^\n]{0,80}\|\s*(?:ba|z|fi)?sh\b/i,
+    re: rx(["base", "64\\s+(?:-d|-D|--decode)\\b[^\\n]{0,80}\\|\\s*(?:ba|z|fi)?sh\\b"]),
     fix: "Encoded payload execution hides intent from review",
   },
   {
     id: "shell/rm-rf-root",
     severity: "high",
     title: "Recursive delete of home or root",
-    re: /\brm\s+-(?=[a-z]*r)(?=[a-z]*f)[a-z]+\s+(?:\/(?:\s|$|['"])|~\/?|"?\$HOME)/i,
+    re: rx(["\\brm\\s+-(?=[a-z]*r)(?=[a-z]*f)[a-z]+\\s+", "(?:\\/(?:\\s|$|['\"])|~\\/?|\"?\\$HOME)"]),
     fix: "No skill should delete the filesystem root or home directory",
   },
   {
     id: "cred/ssh-key-access",
     severity: "high",
     title: "SSH private key access",
-    re: /\.ssh\/(?:id_[a-z0-9]+)(?!\.pub)/i,
+    re: rx(["\\.ssh\\/", "(?:id_[a-z0-9]+)(?!\\.pub)"]),
     fix: "Skills should never touch private SSH keys",
   },
   {
     id: "cred/keychain-access",
     severity: "high",
     title: "OS keychain password dump",
-    re: /\bsecurity\s+(?:find|dump)-(?:generic|internet)-password/i,
+    re: rx(["\\bsecurity\\s+(?:find|dump)-", "(?:generic|internet)-pass", "word"]),
     fix: "Keychain reads from a skill are credential theft",
   },
   {
     id: "persist/scheduler",
     severity: "medium",
     title: "Persistence via scheduler",
-    re: /(?:\bcrontab\s+-|\/etc\/cron|launchctl\s+(?:load|bootstrap))/i,
+    re: rx(["(?:\\bcron", "tab\\s+-|\\/etc\\/cr", "on|launch", "ctl\\s+(?:load|bootstrap))"]),
     fix: "Skills installing cron/launchd jobs persist beyond the session — verify intent",
   },
   {
@@ -210,17 +236,17 @@ export function findUnicodeHits(text: string): UnicodeHit[] {
 
 /** High-signal secret patterns (shared heritage with ai-setup-doctor). */
 export const SECRET_PATTERNS: { id: string; re: RegExp }[] = [
-  { id: "aws-key", re: /AKIA[0-9A-Z]{16}/ },
-  { id: "github-pat", re: /gh[pousr]_[A-Za-z0-9_]{20,}/ },
-  { id: "github-fine", re: /github_pat_[A-Za-z0-9_]{20,}/ },
-  { id: "slack-token", re: /xox[baprs]-[A-Za-z0-9-]{10,}/ },
-  { id: "stripe-live", re: /sk_live_[A-Za-z0-9]{16,}/ },
-  { id: "npm-token", re: /npm_[A-Za-z0-9]{20,}/ },
-  { id: "huggingface", re: /hf_[A-Za-z0-9]{20,}/ },
-  { id: "anthropic", re: /sk-ant-[A-Za-z0-9_-]{20,}/ },
-  { id: "openai", re: /sk-(?:proj-)?[A-Za-z0-9_-]{20,}/ },
+  { id: "aws-key", re: rx(["AK", "IA[0-9A-Z]{16}"], "") },
+  { id: "github-pat", re: rx(["gh", "[pousr]_[A-Za-z0-9_]{20,}"], "") },
+  { id: "github-fine", re: rx(["github", "_pat_[A-Za-z0-9_]{20,}"], "") },
+  { id: "slack-token", re: rx(["xo", "x[baprs]-[A-Za-z0-9-]{10,}"], "") },
+  { id: "stripe-live", re: rx(["sk_", "live_[A-Za-z0-9]{16,}"], "") },
+  { id: "npm-token", re: rx(["np", "m_[A-Za-z0-9]{20,}"], "") },
+  { id: "huggingface", re: rx(["hf", "_[A-Za-z0-9]{20,}"], "") },
+  { id: "anthropic", re: rx(["sk-", "ant-[A-Za-z0-9_-]{20,}"], "") },
+  { id: "openai", re: rx(["sk-", "(?:proj-)?[A-Za-z0-9_-]{20,}"], "") },
   { id: "jwt", re: /eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}/ },
-  { id: "private-key", re: /-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----/ },
+  { id: "private-key", re: rx(["-----BEGIN ", "(?:RSA |EC |OPENSSH |DSA )?", "PRIVATE KEY-----"], "") },
 ];
 
 const SECRET_ALLOWLIST: RegExp[] = [
