@@ -1,0 +1,53 @@
+{
+  "name": "ai-secret-guard",
+  "version": "0.1.0-beta.0",
+  "description": "Guard against secrets leaking into AI agent rules, MCP configs, and prompts. Pre-commit / CI friendly. Zero runtime dependencies.",
+  "type": "module",
+  "bin": {
+    "ai-secret-guard": "dist/cli.js",
+    "secret-guard": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "test:quick": "node --test tests/*.test.mjs",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "secrets",
+    "security",
+    "ai",
+    "mcp",
+    "cursor",
+    "claude",
+    "pre-commit",
+    "ci",
+    "sarif",
+    "cli"
+  ],
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskarpandey2708/ai-instruct-sync.git",
+    "directory": "secret-guard"
+  },
+  "bugs": {
+    "url": "https://github.com/bhaskarpandey2708/ai-instruct-sync/issues"
+  },
+  "homepage": "https://github.com/bhaskarpandey2708/ai-instruct-sync/tree/main/secret-guard#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

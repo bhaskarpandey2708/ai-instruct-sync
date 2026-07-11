@@ -10,7 +10,8 @@ single orientation point so no agent loses track of state or strategy.
 | `instruct-sync/` | P01 — AI rules/instructions sync CLI | **npm `ai-instruct-sync@0.2.0-beta.0`** |
 | `ai-setup-doctor/` | P02 — read-only AI setup diagnostics CLI | **npm `ai-setup-doctor@0.1.0-beta.0`** |
 | `mcp-sync/` | P03 — MCP config sync across Claude/Cursor/VS Code/… | **npm `mcp-config-sync@0.2.0`** (+ `@bhaskarauthor/mcp-sync`). Own git remote → [github.com/bhaskarpandey2708/mcp-sync](https://github.com/bhaskarpandey2708/mcp-sync). Gitignored by this monorepo. |
-| `agent-skill-scan/` | P29 — agent skills/MCP security scanner | Building now (next ship) |
+| `secret-guard/` | P04 — secrets in AI rules / MCP env / prompts | **Building** — `ai-secret-guard@0.1.0-beta.0` (local; patterns from setup-doctor) |
+| `agent-skill-scan/` | P29 — agent skills/MCP security scanner | Scaffolded; after secret-guard MVP or parallel |
 | `scripts/generate_software_portfolio.py` | Regenerates the portfolio files below | Source of truth for portfolio data |
 | `Software_Opportunity_Master_Portfolio.csv` | Flat portfolio export (32 items, scores, visibility) | Generated — do not hand-edit |
 | `Software_Opportunity_Research_Portfolio.xlsx` | 9-sheet research workbook | Generated — do not hand-edit |
@@ -53,9 +54,10 @@ voice dictation, PRIVATE-PAID, NEXT — parked until suite compounds or a cofoun
 
 ## Current focus (2026-07-11)
 
-1. Ship P29 agent-skill-scan MVP (~3 wks budget; reuses setup-doctor parser patterns).
-2. Launch & traction posts for the shipped trio (Show HN, r/cursor, dev.to).
-3. Then P30 agent-spend-guard design + eng-manager interviews.
+1. **P04 secret-guard** — ship CLI MVP (scan AI paths + MCP env, `--json` / `--sarif`, pre-commit exit codes).
+2. Launch traction for P01–P03 (Show HN, r/cursor, follow-ups).
+3. P29 agent-skill-scan next (broader supply-chain scan; can consume secret-guard as a module later).
+4. Then P30 agent-spend-guard design.
 
 Persistent agent memory also mirrors this strategy; if portfolio state changes, update
 both the generator script and this file.
