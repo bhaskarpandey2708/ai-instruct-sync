@@ -78,8 +78,10 @@ This repository is the **home of instruct-sync** and its sibling tools — an **
 |------|---------|-----|
 | **[`instruct-sync/`](./instruct-sync)** | **★ Main product** — rules/instructions sync CLI | [`ai-instruct-sync`](https://www.npmjs.com/package/ai-instruct-sync) |
 | [`ai-setup-doctor/`](./ai-setup-doctor) | Diagnose AI coding setup (agents, MCP, secrets) | [`ai-setup-doctor`](https://www.npmjs.com/package/ai-setup-doctor) |
+| [`mcp-sync/`](./mcp-sync) | MCP server config sync across AI clients | [`mcp-config-sync`](https://www.npmjs.com/package/mcp-config-sync) · [GitHub](https://github.com/bhaskarpandey2708/mcp-sync) |
 | [`agent-skill-scan/`](./agent-skill-scan) | Security scan for agent skills, MCP servers, rules files | in development |
-| (external) | MCP config sync across clients | [`@bhaskarauthor/mcp-sync`](https://www.npmjs.com/package/@bhaskarauthor/mcp-sync) |
+
+`mcp-sync/` is co-located here for the hygiene suite but is its **own git repo** (pushes go to `github.com/bhaskarpandey2708/mcp-sync`, not this monorepo).
 
 ```bash
 npx ai-setup-doctor@beta

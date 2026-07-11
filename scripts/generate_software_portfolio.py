@@ -180,7 +180,7 @@ OPPS = [
         "platforms": "CLI,API",
         "repo": "mcp-sync",
         "tags": "AI,MCP,CLI,config,suite",
-        "notes": "npm @bhaskarauthor/mcp-sync@0.2.0 + alias mcp-config-sync@0.2.0; hygiene suite #3 (MCP layer)",
+        "notes": "npm mcp-config-sync@0.2.0 + @bhaskarauthor/mcp-sync; hygiene suite #3; co-located at development/mcp-sync (own git remote)",
         "market": "MCP becoming standard transport for agent tools; multi-client users growing fast.",
         "competitors": "Manual JSON, vendor UI only, early MCP managers",
         "why_now": "MCP ecosystem still immature; window for open standard tooling.",
@@ -2274,7 +2274,7 @@ def write_index() -> None:
         "",
         "- `instruct-sync/` — P01 (npm `ai-instruct-sync@0.2.0-beta.0`)",
         "- `ai-setup-doctor/` — P02 (npm `ai-setup-doctor@0.1.0-beta.0`)",
-        "- P03 mcp-sync — npm `@bhaskarauthor/mcp-sync@0.2.0` + `mcp-config-sync@0.2.0` (repo not in this workspace)",
+        "- `mcp-sync/` — P03 (npm `mcp-config-sync@0.2.0` + `@bhaskarauthor/mcp-sync`; own git remote, co-located)",
         "- `ai-agent-roadmap.md` — 90-day AI tooling plan",
         "",
     ]

@@ -12,3 +12,5 @@ coverage/
 !ai-setup-doctor/fixtures/**/.env
 !ai-setup-doctor/fixtures/**/.vscode/
 !ai-setup-doctor/fixtures/**/.vscode/**
+# Independent product repo (own GitHub: bhaskarpandey2708/mcp-sync) co-located for the suite
+mcp-sync/

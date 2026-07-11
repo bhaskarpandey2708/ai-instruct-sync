@@ -9,7 +9,7 @@ single orientation point so no agent loses track of state or strategy.
 |------|-----------|-------|
 | `instruct-sync/` | P01 — AI rules/instructions sync CLI | **npm `ai-instruct-sync@0.2.0-beta.0`** |
 | `ai-setup-doctor/` | P02 — read-only AI setup diagnostics CLI | **npm `ai-setup-doctor@0.1.0-beta.0`** |
-| (external repo) | P03 — MCP config sync | **npm `@bhaskarauthor/mcp-sync@0.2.0`** + alias `mcp-config-sync@0.2.0` — NOT findable as plain `mcp-sync` |
+| `mcp-sync/` | P03 — MCP config sync across Claude/Cursor/VS Code/… | **npm `mcp-config-sync@0.2.0`** (+ `@bhaskarauthor/mcp-sync`). Own git remote → [github.com/bhaskarpandey2708/mcp-sync](https://github.com/bhaskarpandey2708/mcp-sync). Gitignored by this monorepo. |
 | `agent-skill-scan/` | P29 — agent skills/MCP security scanner | Building now (next ship) |
 | `scripts/generate_software_portfolio.py` | Regenerates the portfolio files below | Source of truth for portfolio data |
 | `Software_Opportunity_Master_Portfolio.csv` | Flat portfolio export (32 items, scores, visibility) | Generated — do not hand-edit |

@@ -54,7 +54,7 @@ Standalone revenue bet outside the suite: P31 indic-voice-flow (PRIVATE-PAID, NE
 | 1 | P01 | instruct-sync | 23 | OPEN-CORE | npm ai-instruct-sync@0.2.0-beta.0; hygiene suite #1 (sync); primary NOW product |
 | 2 | P29 | agent-skill-scan | 23 | OPEN-CORE | Hygiene suite #4 (secure); rides ToxicSkills wave; reuses setup-doctor config parsers |
 | 3 | P02 | ai-setup-doctor | 22 | OPEN-CORE | npm ai-setup-doctor@0.1.0-beta.0 (latest+beta); hygiene suite #2 (diagnose) |
-| 4 | P03 | mcp-sync | 21 | OPEN-CORE | npm @bhaskarauthor/mcp-sync@0.2.0 + alias mcp-config-sync@0.2.0; hygiene suite #3 (MCP layer) |
+| 4 | P03 | mcp-sync | 21 | OPEN-CORE | npm mcp-config-sync@0.2.0 + @bhaskarauthor/mcp-sync; hygiene suite #3; co-located at development/mcp-sync (own git remote) |
 | 5 | P04 | secret-guard | 21 | OPEN-CORE | Can extract patterns from setup-doctor secret checks |
 | 6 | P30 | agent-spend-guard | 21 | OPEN-CORE | Hygiene suite #5 (control spend); sharper guardrails wedge that supersedes P05 for NOW |
 
@@ -69,5 +69,5 @@ python3 scripts/generate_software_portfolio.py
 
 - `instruct-sync/` — P01 (npm `ai-instruct-sync@0.2.0-beta.0`)
 - `ai-setup-doctor/` — P02 (npm `ai-setup-doctor@0.1.0-beta.0`)
-- P03 mcp-sync — npm `@bhaskarauthor/mcp-sync@0.2.0` + `mcp-config-sync@0.2.0` (repo not in this workspace)
+- `mcp-sync/` — P03 (npm `mcp-config-sync@0.2.0` + `@bhaskarauthor/mcp-sync`; own git remote, co-located)
 - `ai-agent-roadmap.md` — 90-day AI tooling plan
