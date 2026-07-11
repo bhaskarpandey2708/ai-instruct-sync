@@ -72,18 +72,22 @@ Want another? Open an issue or PR on `src/clients.ts`.
 
 ## Repo layout
 
-This repository is the **home of instruct-sync**. Other small tools may live alongside it as sibling folders:
+This repository is the **home of instruct-sync** and its sibling tools — an **AI dev hygiene suite** (sync → diagnose → secure → control spend) sharing one audience and the npx flywheel:
 
 | Path | Product | npm |
 |------|---------|-----|
 | **[`instruct-sync/`](./instruct-sync)** | **★ Main product** — rules/instructions sync CLI | [`ai-instruct-sync`](https://www.npmjs.com/package/ai-instruct-sync) |
 | [`ai-setup-doctor/`](./ai-setup-doctor) | Diagnose AI coding setup (agents, MCP, secrets) | [`ai-setup-doctor`](https://www.npmjs.com/package/ai-setup-doctor) |
+| [`agent-skill-scan/`](./agent-skill-scan) | Security scan for agent skills, MCP servers, rules files | in development |
+| (external) | MCP config sync across clients | [`@bhaskarauthor/mcp-sync`](https://www.npmjs.com/package/@bhaskarauthor/mcp-sync) |
 
 ```bash
 npx ai-setup-doctor@beta
 ```
 
 If you're here for rules sync, start with **`instruct-sync`**.
+
+**Workspace orientation for contributors/agents:** see [CLAUDE.md](./CLAUDE.md) and [SOFTWARE_PORTFOLIO_INDEX.md](./SOFTWARE_PORTFOLIO_INDEX.md) for the full product portfolio, strategy, and conventions.
 
 ---
 
