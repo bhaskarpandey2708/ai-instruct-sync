@@ -2,3 +2,12 @@ node_modules/
 dist/
 *.log
 .DS_Store
+
+# Generated product demo (rebuild with demo/make_video.sh)
+demo/frames/
+demo/clips/
+demo/assets/
+demo/sfx/
+demo/social/
+demo/*.mp4
+demo/*.wav
