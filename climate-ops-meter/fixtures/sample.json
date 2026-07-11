@@ -1,0 +1,8 @@
+{
+  "activities": [
+    {
+      "type": "electricity_kwh",
+      "amount": 100
+    }
+  ]
+}

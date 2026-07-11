@@ -1,0 +1,47 @@
+{
+  "name": "agent-skill-scan",
+  "version": "0.1.0-beta.0",
+  "description": "Security scan for AI agent skills, MCP server configs, rules files, and hooks — prompt injection, secret exfiltration, hidden Unicode, dangerous shell patterns, hardcoded credentials. Read-only, zero dependencies.",
+  "type": "module",
+  "bin": {
+    "agent-skill-scan": "dist/cli.js",
+    "skill-scan": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:tsc": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/scan.test.mjs",
+    "test:quick": "node --test tests/scan.test.mjs",
+    "prepublishOnly": "npm run build && npm test",
+    "demo": "node dist/cli.js --no-user"
+  },
+  "keywords": [
+    "ai",
+    "ai-agents",
+    "security",
+    "prompt-injection",
+    "mcp",
+    "skills",
+    "supply-chain",
+    "claude",
+    "cursor",
+    "scanner",
+    "cli"
+  ],
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

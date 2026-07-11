@@ -1,0 +1,6 @@
+# Team rules
+
+Use TypeScript. Never paste live API keys here.
+
+# BAD EXAMPLE FOR LITMUS ONLY — DO NOT USE IN REAL PROJECTS
+ANTHROPIC_API_KEY=sk-ant-api03-CROSSFIX_LIVELOOKING_KEY_XYZ789ABC

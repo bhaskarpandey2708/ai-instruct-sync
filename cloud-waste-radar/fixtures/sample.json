@@ -1,0 +1,10 @@
+{
+  "inventory": [
+    {
+      "id": "vol-x",
+      "type": "ebs",
+      "attached": false,
+      "monthlyUsd": 10
+    }
+  ]
+}

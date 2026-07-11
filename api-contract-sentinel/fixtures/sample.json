@@ -1,0 +1,19 @@
+{
+  "prev": {
+    "paths": {
+      "/health": {
+        "get": {}
+      }
+    }
+  },
+  "next": {
+    "paths": {
+      "/health": {
+        "get": {}
+      },
+      "/v2": {
+        "get": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ai-wa-ops-desk",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite",
+  "type": "module",
+  "bin": {
+    "wa-ops-desk": "src/cli.js",
+    "ai-wa-ops-desk": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "India",
+    "SMB",
+    "WhatsApp",
+    "CRM"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

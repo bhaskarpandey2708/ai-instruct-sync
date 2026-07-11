@@ -1,0 +1,9 @@
+{
+  "tools": [
+    {
+      "name": "ChatGPT Free",
+      "approved": false,
+      "dataClass": "confidential"
+    }
+  ]
+}

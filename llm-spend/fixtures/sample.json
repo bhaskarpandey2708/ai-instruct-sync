@@ -1,0 +1,9 @@
+{
+  "events": [
+    {
+      "provider": "openai",
+      "tokens": 5000,
+      "pricePer1k": 0.01
+    }
+  ]
+}

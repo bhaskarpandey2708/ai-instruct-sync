@@ -1,0 +1,11 @@
+{
+  "cases": [
+    {
+      "id": "greet",
+      "actual": "Hello user",
+      "expectContains": [
+        "Hello"
+      ]
+    }
+  ]
+}

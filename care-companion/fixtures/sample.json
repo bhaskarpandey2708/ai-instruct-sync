@@ -1,0 +1,9 @@
+{
+  "meds": [
+    {
+      "id": "aspirin",
+      "everyHours": 12,
+      "nextAt": 0
+    }
+  ]
+}

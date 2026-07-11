@@ -1,0 +1,27 @@
+{
+  "name": "ai-clinic-admin-lite",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "Clinic admin lite: appointments, patient ledger, Rx print, WhatsApp follow-ups for small practices",
+  "type": "module",
+  "bin": {
+    "clinic-admin-lite": "src/cli.js",
+    "ai-clinic-admin-lite": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "health",
+    "India",
+    "SMB",
+    "clinic"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

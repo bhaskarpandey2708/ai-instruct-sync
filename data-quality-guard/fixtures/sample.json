@@ -1,0 +1,15 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "amount": 3
+    }
+  ],
+  "expectations": [
+    {
+      "id": "nn",
+      "type": "not_null",
+      "column": "id"
+    }
+  ]
+}

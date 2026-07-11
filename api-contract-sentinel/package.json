@@ -1,0 +1,27 @@
+{
+  "name": "ai-api-contract-sentinel",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "Detect breaking API contract changes in PRs with consumer impact maps",
+  "type": "module",
+  "bin": {
+    "api-contract-sentinel": "src/cli.js",
+    "ai-api-contract-sentinel": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "API",
+    "OpenAPI",
+    "CI",
+    "devtools"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

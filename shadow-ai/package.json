@@ -1,0 +1,27 @@
+{
+  "name": "ai-shadow-ai",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise",
+  "type": "module",
+  "bin": {
+    "shadow-ai": "src/cli.js",
+    "ai-shadow-ai": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "security",
+    "GRC",
+    "CASB",
+    "AI"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

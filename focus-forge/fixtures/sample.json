@@ -1,0 +1,9 @@
+{
+  "sessions": [
+    {
+      "plannedMin": 25,
+      "actualMin": 20,
+      "distractions": 1
+    }
+  ]
+}

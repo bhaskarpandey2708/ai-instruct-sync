@@ -1,0 +1,11 @@
+{
+  "invoices": [
+    {
+      "id": "i1",
+      "gstin": "27AAPFU0939F1ZV",
+      "taxable": 100,
+      "cgst": 9,
+      "sgst": 9
+    }
+  ]
+}

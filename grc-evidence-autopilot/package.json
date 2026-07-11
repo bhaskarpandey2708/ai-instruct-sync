@@ -1,0 +1,27 @@
+{
+  "name": "ai-grc-evidence-autopilot",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO startups",
+  "type": "module",
+  "bin": {
+    "grc-evidence-autopilot": "src/cli.js",
+    "ai-grc-evidence-autopilot": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "GRC",
+    "SOC2",
+    "compliance",
+    "SaaS"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

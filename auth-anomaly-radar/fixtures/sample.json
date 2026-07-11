@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "user": "u",
+      "ts": 0,
+      "geo": {
+        "lat": 0,
+        "lon": 0
+      },
+      "failures": 0
+    }
+  ]
+}

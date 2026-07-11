@@ -1,0 +1,9 @@
+{
+  "suppliers": [
+    {
+      "id": "sup-1",
+      "risk": "medium",
+      "lastCheckin": 1783794020442
+    }
+  ]
+}

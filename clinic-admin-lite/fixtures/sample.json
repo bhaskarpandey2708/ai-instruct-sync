@@ -1,0 +1,19 @@
+{
+  "patients": [
+    {
+      "id": "p1",
+      "name": "Asha"
+    }
+  ],
+  "appts": [
+    {
+      "id": "a1",
+      "patientId": "p1",
+      "at": 1
+    }
+  ],
+  "charge": {
+    "patientId": "p1",
+    "amount": 500
+  }
+}

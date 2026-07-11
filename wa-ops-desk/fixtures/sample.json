@@ -1,0 +1,14 @@
+{
+  "message": {
+    "text": "book tomorrow 3pm"
+  },
+  "staff": [
+    {
+      "id": "a",
+      "labels": [
+        "booking"
+      ],
+      "load": 0
+    }
+  ]
+}

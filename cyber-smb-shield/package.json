@@ -1,0 +1,27 @@
+{
+  "name": "ai-cyber-smb-shield",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "Managed cybersecurity starter pack for SMBs: DNS filter, phishing drills, backup check, score",
+  "type": "module",
+  "bin": {
+    "cyber-smb-shield": "src/cli.js",
+    "ai-cyber-smb-shield": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "cyber",
+    "SMB",
+    "MSSP",
+    "security"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

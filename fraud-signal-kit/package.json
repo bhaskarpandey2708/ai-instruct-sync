@@ -1,0 +1,27 @@
+{
+  "name": "ai-fraud-signal-kit",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "Composable fraud signal APIs (device, velocity, email risk) for Indian fintech and marketplaces",
+  "type": "module",
+  "bin": {
+    "fraud-signal-kit": "src/cli.js",
+    "ai-fraud-signal-kit": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "fraud",
+    "fintech",
+    "India",
+    "API"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

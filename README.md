@@ -74,23 +74,45 @@ Want another? Open an issue or PR on `src/clients.ts`.
 
 This repository is the **home of instruct-sync** and its sibling tools — an **AI dev hygiene suite** (sync → diagnose → secure → control spend) sharing one audience and the npx flywheel:
 
-| Path | Product | npm |
-|------|---------|-----|
-| **[`instruct-sync/`](./instruct-sync)** | **★ Main product** — rules/instructions sync CLI | [`ai-instruct-sync`](https://www.npmjs.com/package/ai-instruct-sync) |
-| [`ai-setup-doctor/`](./ai-setup-doctor) | Diagnose AI coding setup (agents, MCP, secrets) | [`ai-setup-doctor`](https://www.npmjs.com/package/ai-setup-doctor) |
-| [`mcp-sync/`](./mcp-sync) | MCP server config sync across AI clients | [`mcp-config-sync`](https://www.npmjs.com/package/mcp-config-sync) · [GitHub](https://github.com/bhaskarpandey2708/mcp-sync) |
-| [`secret-guard/`](./secret-guard) | Secrets in AI rules / MCP env / prompts (CI + pre-commit) | `ai-secret-guard` (beta, local) |
-| [`agent-skill-scan/`](./agent-skill-scan) | Security scan for agent skills, MCP servers, rules files | scaffolded |
+| Path | Product | Status |
+|------|---------|--------|
+| **[`instruct-sync/`](./instruct-sync)** | P01 rules sync | **npm** `ai-instruct-sync@beta` |
+| [`ai-setup-doctor/`](./ai-setup-doctor) | P02 diagnostics | **npm** `ai-setup-doctor@beta` |
+| [`mcp-sync/`](./mcp-sync) | P03 MCP config sync | **npm** `mcp-config-sync` (own GitHub remote) |
+| [`secret-guard/`](./secret-guard) | P04 AI-path secrets | local MVP · litmus green |
+| [`llm-spend/`](./llm-spend) … [`api-contract-sentinel/`](./api-contract-sentinel) | **P05–P28** | offline MVP + litmus + demo each |
+| [`agent-skill-scan/`](./agent-skill-scan) | P29 skills security | scaffolded |
 
-`mcp-sync/` is co-located here for the hygiene suite but is its **own git repo** (pushes go to `github.com/bhaskarpandey2708/mcp-sync`, not this monorepo).
+`mcp-sync/` is co-located for the suite but has its **own git remote** (`github.com/bhaskarpandey2708/mcp-sync`).
+
+### Suite verification (no publish required)
 
 ```bash
-npx ai-setup-doctor@beta
+# All P01–P28 litmus tests (retry once on failure)
+node scripts/suite-litmus.mjs
+
+# Continuous self-check every 10 minutes (Ctrl+C to stop) — never pushes
+node scripts/suite-watch.mjs --interval 600
+
+# Status report
+cat SUITE_STATUS.md
+```
+
+Latest: see [SUITE_STATUS.md](./SUITE_STATUS.md) · [WORKSPACE_MEMORY.md](./WORKSPACE_MEMORY.md) · [logs/litmus/](./logs/litmus/).
+
+### P05–P28 offline MVPs
+
+Each folder has `src/core.js` (domain logic), `tests/litmus.test.mjs`, `demo/run-demo.mjs`, MIT license.  
+Zero runtime deps. Commercial hosted layers later; OSS cores stay free.
+
+```bash
+cd eval-harness && npm test && npm run demo
+cd api-contract-sentinel && npm test && npm run demo
 ```
 
 If you're here for rules sync, start with **`instruct-sync`**.
 
-**Workspace orientation for contributors/agents:** see [CLAUDE.md](./CLAUDE.md) and [SOFTWARE_PORTFOLIO_INDEX.md](./SOFTWARE_PORTFOLIO_INDEX.md) for the full product portfolio, strategy, and conventions.
+**Workspace orientation:** [CLAUDE.md](./CLAUDE.md) · [SOFTWARE_PORTFOLIO_INDEX.md](./SOFTWARE_PORTFOLIO_INDEX.md) · [WORKSPACE_MEMORY.md](./WORKSPACE_MEMORY.md)
 
 ---
 

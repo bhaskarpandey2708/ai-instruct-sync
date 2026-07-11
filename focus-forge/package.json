@@ -1,0 +1,26 @@
+{
+  "name": "ai-focus-forge",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers",
+  "type": "module",
+  "bin": {
+    "focus-forge": "src/cli.js",
+    "ai-focus-forge": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "productivity",
+    "focus",
+    "consumer"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}

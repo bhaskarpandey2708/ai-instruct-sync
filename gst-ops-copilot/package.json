@@ -1,0 +1,28 @@
+{
+  "name": "ai-gst-ops-copilot",
+  "version": "0.1.0-beta.0",
+  "private": true,
+  "description": "GST filing prep copilot: invoice hygiene, GSTR mismatch alerts, CA handoff packs",
+  "type": "module",
+  "bin": {
+    "gst-ops-copilot": "src/cli.js",
+    "ai-gst-ops-copilot": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/litmus.test.mjs",
+    "demo": "node demo/run-demo.mjs",
+    "litmus": "node --test tests/litmus.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "India",
+    "GST",
+    "fintech",
+    "SMB",
+    "compliance"
+  ],
+  "license": "MIT",
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+}
