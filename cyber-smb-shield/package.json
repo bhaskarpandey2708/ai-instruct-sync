@@ -1,7 +1,7 @@
 {
-  "name": "ai-cyber-smb-shield",
+  "name": "@bhaskarauthor/cyber-smb-shield",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Managed cybersecurity starter pack for SMBs: DNS filter, phishing drills, backup check, score",
   "type": "module",
   "bin": {
@@ -24,5 +24,16 @@
     "security"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

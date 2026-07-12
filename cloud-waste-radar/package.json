@@ -1,7 +1,7 @@
 {
-  "name": "ai-cloud-waste-radar",
+  "name": "@bhaskarauthor/cloud-waste-radar",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups",
   "type": "module",
   "bin": {
@@ -24,5 +24,16 @@
     "cost"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -1,0 +1,222 @@
+{
+  "at": "2026-07-12T04:53:21.109Z",
+  "index": [
+    {
+      "dir": "agent-skill-scan",
+      "name": "agent-skill-scan",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "agent-spend-guard",
+      "name": "agent-spend-guard",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "ai-setup-doctor",
+      "name": "ai-setup-doctor",
+      "version": "0.1.0-beta.0",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "api-contract-sentinel",
+      "name": "@bhaskarauthor/api-contract-sentinel",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "appt-book-india",
+      "name": "@bhaskarauthor/appt-book-india",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "auth-anomaly-radar",
+      "name": "@bhaskarauthor/auth-anomaly-radar",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "care-companion",
+      "name": "@bhaskarauthor/care-companion",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "climate-ops-meter",
+      "name": "@bhaskarauthor/climate-ops-meter",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "clinic-admin-lite",
+      "name": "@bhaskarauthor/clinic-admin-lite",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "cloud-waste-radar",
+      "name": "@bhaskarauthor/cloud-waste-radar",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "creator-ops",
+      "name": "@bhaskarauthor/creator-ops",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "cyber-smb-shield",
+      "name": "@bhaskarauthor/cyber-smb-shield",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "data-quality-guard",
+      "name": "@bhaskarauthor/data-quality-guard",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "dev-onboard-os",
+      "name": "@bhaskarauthor/dev-onboard-os",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "eval-harness",
+      "name": "@bhaskarauthor/eval-harness",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "focus-forge",
+      "name": "@bhaskarauthor/focus-forge",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "fraud-signal-kit",
+      "name": "@bhaskarauthor/fraud-signal-kit",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "grc-evidence-autopilot",
+      "name": "@bhaskarauthor/grc-evidence-autopilot",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "gst-ops-copilot",
+      "name": "@bhaskarauthor/gst-ops-copilot",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "instruct-sync",
+      "name": "ai-instruct-sync",
+      "version": "0.2.0-beta.0",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "learn-loop",
+      "name": "@bhaskarauthor/learn-loop",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "llm-spend",
+      "name": "@bhaskarauthor/llm-spend",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "mcp-sync",
+      "name": "mcp-config-sync",
+      "version": "0.2.0",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "personal-crm",
+      "name": "@bhaskarauthor/personal-crm",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "pr-triage",
+      "name": "@bhaskarauthor/pr-triage",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "sbom-lite",
+      "name": "@bhaskarauthor/sbom-lite",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "sc-visibility-lite",
+      "name": "@bhaskarauthor/sc-visibility-lite",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "secret-guard",
+      "name": "ai-secret-guard",
+      "version": "0.1.0-beta.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "shadow-ai",
+      "name": "@bhaskarauthor/shadow-ai",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "skill-sync",
+      "name": "@bhaskarauthor/skill-sync",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    },
+    {
+      "dir": "wa-ops-desk",
+      "name": "@bhaskarauthor/wa-ops-desk",
+      "version": "0.1.0-alpha.1",
+      "ok": true,
+      "status": 0
+    }
+  ]
+}

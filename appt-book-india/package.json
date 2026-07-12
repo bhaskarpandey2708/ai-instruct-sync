@@ -1,7 +1,7 @@
 {
-  "name": "ai-appt-book-india",
+  "name": "@bhaskarauthor/appt-book-india",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Lightweight appointment booking with WhatsApp reminders for salons, tutors, clinics lite",
   "type": "module",
   "bin": {
@@ -24,5 +24,16 @@
     "WhatsApp"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

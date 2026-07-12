@@ -1,7 +1,7 @@
 {
-  "name": "ai-api-contract-sentinel",
+  "name": "@bhaskarauthor/api-contract-sentinel",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Detect breaking API contract changes in PRs with consumer impact maps",
   "type": "module",
   "bin": {
@@ -24,5 +24,16 @@
     "devtools"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

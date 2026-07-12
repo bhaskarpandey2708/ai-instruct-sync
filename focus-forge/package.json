@@ -1,7 +1,7 @@
 {
-  "name": "ai-focus-forge",
+  "name": "@bhaskarauthor/focus-forge",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers",
   "type": "module",
   "bin": {
@@ -23,5 +23,16 @@
     "consumer"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

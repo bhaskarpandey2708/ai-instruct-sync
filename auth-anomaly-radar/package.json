@@ -1,7 +1,7 @@
 {
-  "name": "ai-auth-anomaly-radar",
+  "name": "@bhaskarauthor/auth-anomaly-radar",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing signals)",
   "type": "module",
   "bin": {
@@ -24,5 +24,16 @@
     "SaaS"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "ai-sc-visibility-lite",
+  "name": "@bhaskarauthor/sc-visibility-lite",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Lite multi-tier supplier status & risk notes for SMEs without SAP budgets",
   "type": "module",
   "bin": {
@@ -23,5 +23,16 @@
     "risk"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

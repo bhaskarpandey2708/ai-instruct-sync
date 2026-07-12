@@ -1,7 +1,7 @@
 {
-  "name": "ai-learn-loop",
+  "name": "@bhaskarauthor/learn-loop",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Spaced-repetition + cohort homework OS for coaching institutes and online tutors",
   "type": "module",
   "bin": {
@@ -24,5 +24,16 @@
     "SRS"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "agent-spend-guard",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Token budgets and a kill-switch for AI coding agents — reads Claude Code/Cursor usage, prices it, and enforces daily/monthly/per-project USD limits. Read-only, zero dependencies.",
   "type": "module",
   "bin": {
@@ -43,5 +43,8 @@
   "devDependencies": {
     "@types/node": "^20.14.0",
     "typescript": "^5.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

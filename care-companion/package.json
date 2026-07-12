@@ -1,7 +1,7 @@
 {
-  "name": "ai-care-companion",
+  "name": "@bhaskarauthor/care-companion",
   "version": "0.1.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "Family care coordination app: meds, appointments, shared notes for elders",
   "type": "module",
   "bin": {
@@ -24,5 +24,16 @@
     "care"
   ],
   "license": "MIT",
-  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>"
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "PRODUCT_CYCLE.md",
+    "demo",
+    "fixtures"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
