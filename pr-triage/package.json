@@ -1,0 +1,45 @@
+{
+  "name": "pr-triage",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "description": "Risk-rank a diff so humans review the 20% that matters — blast radius, removed error handling, missing tests, placeholder/AI artifacts. Read-only, zero dependencies.",
+  "type": "module",
+  "bin": {
+    "pr-triage": "dist/cli.js",
+    "prt": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test tests/litmus.test.mjs",
+    "litmus": "node --test tests/litmus.test.mjs",
+    "test:quick": "node --test tests/litmus.test.mjs",
+    "prepublishOnly": "npm run build && npm test",
+    "demo": "node dist/cli.js --ref HEAD~1 --top 5"
+  },
+  "keywords": [
+    "code-review",
+    "diff",
+    "risk",
+    "ai",
+    "pull-request",
+    "ci",
+    "devtools",
+    "cli"
+  ],
+  "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
