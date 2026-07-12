@@ -85,20 +85,36 @@ This repository is the **home of instruct-sync** and its sibling tools — an **
 
 `mcp-sync/` is co-located for the suite but has its **own git remote** (`github.com/bhaskarpandey2708/mcp-sync`).
 
-### Suite verification (no publish required)
+### Suite verification
 
 ```bash
-# All P01–P28 litmus tests (retry once on failure)
+# All product litmus + cycle tests
 node scripts/suite-litmus.mjs
 
-# Continuous self-check every 10 minutes (Ctrl+C to stop) — never pushes
-node scripts/suite-watch.mjs --interval 600
+# Rebuild demo gallery (CLI captures for every package)
+node scripts/build-all-demos.mjs
 
-# Status report
+# Status / demos
+open demos/gallery/INDEX.md   # or: cat demos/gallery/INDEX.md
 cat SUITE_STATUS.md
 ```
 
-Latest: see [SUITE_STATUS.md](./SUITE_STATUS.md) · [WORKSPACE_MEMORY.md](./WORKSPACE_MEMORY.md) · [logs/litmus/](./logs/litmus/).
+**Demos:** [demos/gallery/INDEX.md](./demos/gallery/INDEX.md)  
+**Publish log:** [logs/publish-results.json](./logs/publish-results.json)  
+**Memory:** [WORKSPACE_MEMORY.md](./WORKSPACE_MEMORY.md)
+
+### npm (public)
+
+| Package | Install |
+|---------|---------|
+| instruct-sync | `npx ai-instruct-sync@beta` |
+| ai-setup-doctor | `npx ai-setup-doctor@beta` |
+| mcp-sync | `npx mcp-config-sync` |
+| secret-guard | `npx ai-secret-guard@0.1.0-beta.1` |
+| agent-skill-scan | `npx agent-skill-scan@0.1.0-alpha.1` |
+| P05–P28 alphas | `npx @bhaskarauthor/<name>@0.1.0-alpha.1` |
+
+Examples: `npx @bhaskarauthor/eval-harness@0.1.0-alpha.1`, `npx @bhaskarauthor/sbom-lite@0.1.0-alpha.1`
 
 ### P05–P28 offline MVPs
 
