@@ -15,3 +15,10 @@ coverage/
 # Independent product repo (own GitHub: bhaskarpandey2708/mcp-sync) co-located for the suite
 mcp-sync/
 ai-setup-doctor/fixtures/leaky-secrets/.env
+
+# phase-a intermediates
+**/demo/story/**/*.mp4
+**/demo/raw.mp4
+**/demo/concat.txt
+**/demo/story/bgm.wav
+**/demo/story/n_*.mp4
