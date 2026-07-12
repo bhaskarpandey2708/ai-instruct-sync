@@ -63,9 +63,8 @@ cd eval-harness && npm test && npm run demo
 3. Push monorepo `ai-instruct-sync` with scaffolds?  
 4. Prioritize P29 agent-skill-scan vs commercial layers on P01–P04?
 
-## Active claim (2026-07-12, interactive session + hourly cron a382c8d0)
+## Claim released (2026-07-12): P30 + P32 closed
 
-Building **P30 agent-spend-guard** and **P32 pr-triage** to the P29 bar
-(TS, zero-dep, build.mjs, node --test, litmus.test.mjs for auto-discovery,
-local commit only). Other sessions: please don't scaffold these two.
-Claim released when both appear in git log.
+**agent-spend-guard** (P30) and **pr-triage** (P32) are built, tested, and
+committed (34c43b6 / 44bace1). Suite litmus **31/31 green** including both.
+Hourly cron loop deleted. No push / no publish, per standing rule.

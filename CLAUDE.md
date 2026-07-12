@@ -13,6 +13,8 @@ single orientation point so no agent loses track of state or strategy.
 | `secret-guard/` | P04 — secrets in AI rules / MCP env / prompts | **MVP** — litmus green; demo at `secret-guard/demo/` |
 | `llm-spend/` … `api-contract-sentinel/` | P05–P28 portfolio products | **Scaffolded MVP** — offline cores + litmus + demos (2026-07-11) |
 | `agent-skill-scan/` | P29 — agent skills/MCP security scanner | **MVP verified** — 8/8 tests, suite litmus green; signatures AV-defused (concatenated, never literal) |
+| `agent-spend-guard/` | P30 — token budgets + kill-switch for agents | **MVP verified** (2026-07-12) — 7/7 tests; parses Claude Code JSONL + generic events; `check` exits 1 over budget for hooks/CI |
+| `pr-triage/` | P32 — risk-rank diff hunks for review triage | **MVP verified** (2026-07-12) — 6/6 tests; stdin/file/--ref; --min-score CI attention gate |
 | `scripts/suite-litmus.mjs` | Cross-product test harness + retry | Source of suite truth |
 | `scripts/suite-watch.mjs` | Interval self-check scheduler | No remote push |
 | `WORKSPACE_MEMORY.md` | Persistent agent memory | Read first on session resume |
