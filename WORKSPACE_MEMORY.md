@@ -62,3 +62,10 @@ cd eval-harness && npm test && npm run demo
 2. Publish `ai-secret-guard` beta?  
 3. Push monorepo `ai-instruct-sync` with scaffolds?  
 4. Prioritize P29 agent-skill-scan vs commercial layers on P01–P04?
+
+## Active claim (2026-07-12, interactive session + hourly cron a382c8d0)
+
+Building **P30 agent-spend-guard** and **P32 pr-triage** to the P29 bar
+(TS, zero-dep, build.mjs, node --test, litmus.test.mjs for auto-discovery,
+local commit only). Other sessions: please don't scaffold these two.
+Claim released when both appear in git log.
