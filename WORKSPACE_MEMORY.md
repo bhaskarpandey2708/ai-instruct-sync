@@ -1,8 +1,9 @@
 # Workspace memory (agents + humans)
 
-**Last updated:** 2026-07-11 (overnight ops)  
+**Last updated:** 2026-07-12  
 **Rule:** Do **not** `git push` or **npm publish** until Bhaskar explicitly asks.  
-**Morning file:** `MORNING_BRIEFING.md`
+**Morning file:** `MORNING_BRIEFING.md`  
+**Product cycles:** `PRODUCT_CYCLE_REGISTRY.md` — Alpha/Beta **closed** locally (29 packages).
 
 ## Where things live
 

@@ -1,6 +1,6 @@
 /** P15 wa-ops-desk — offline MVP core (zero deps) */
 export function main(input) {
-  return routeMessage(input.message || input, input.staff || []);
+  return routeMessage(input.message || input, (Array.isArray(input.staff) ? input.staff : []));
 }
 export function routeMessage(msg, staff) {
   const text = String(msg.text || "").toLowerCase();

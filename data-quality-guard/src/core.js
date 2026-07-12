@@ -1,6 +1,6 @@
 /** P21 data-quality-guard — offline MVP core (zero deps) */
 export function main(input) {
-  return runExpectations(input.rows || [], input.expectations || []);
+  return runExpectations((Array.isArray(input.rows) ? input.rows : []), (Array.isArray(input.expectations) ? input.expectations : []));
 }
 export function runExpectations(rows, expectations) {
   const results = [];

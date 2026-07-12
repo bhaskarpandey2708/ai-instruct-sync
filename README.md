@@ -80,7 +80,7 @@ This repository is the **home of instruct-sync** and its sibling tools — an **
 | [`ai-setup-doctor/`](./ai-setup-doctor) | P02 diagnostics | **npm** `ai-setup-doctor@beta` |
 | [`mcp-sync/`](./mcp-sync) | P03 MCP config sync | **npm** `mcp-config-sync` (own GitHub remote) |
 | [`secret-guard/`](./secret-guard) | P04 AI-path secrets | local MVP · litmus green |
-| [`llm-spend/`](./llm-spend) … [`api-contract-sentinel/`](./api-contract-sentinel) | **P05–P28** | offline MVP + litmus + demo each |
+| [`llm-spend/`](./llm-spend) … [`api-contract-sentinel/`](./api-contract-sentinel) | **P05–P28** | **Alpha cycle closed** (`0.1.0-alpha.1`) + litmus + cycle tests + demo |
 | [`agent-skill-scan/`](./agent-skill-scan) | P29 skills security | scaffolded |
 
 `mcp-sync/` is co-located for the suite but has its **own git remote** (`github.com/bhaskarpandey2708/mcp-sync`).

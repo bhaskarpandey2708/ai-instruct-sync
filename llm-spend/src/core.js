@@ -1,6 +1,6 @@
 /** P05 llm-spend — offline MVP core (zero deps) */
 export function main(input) {
-  const events = input.events || input || [];
+  const events = (Array.isArray(input.events) ? input.events : Array.isArray(input) ? input : []);
   const usage = parseUsageEvents(Array.isArray(events) ? events : []);
   const budget = input.budgetUsd || 100;
   return { usage, budget: budgetStatus(usage.totalCostUsd, budget) };
@@ -8,7 +8,7 @@ export function main(input) {
 export function parseUsageEvents(events) {
   const byProvider = {};
   let totalTokens = 0, totalCost = 0;
-  for (const e of events) {
+  for (const e of (Array.isArray(events) ? events : [])) {
     const p = e.provider || "unknown";
     const tokens = Number(e.tokens || 0);
     const cost = Number(e.costUsd ?? tokens * (e.pricePer1k || 0.002) / 1000);

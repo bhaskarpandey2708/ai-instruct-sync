@@ -1,0 +1,295 @@
+{
+  "ranAt": "2026-07-12T04:12:58.453Z",
+  "summary": {
+    "products": 29,
+    "passed": 21,
+    "failed": 8,
+    "crossOk": true,
+    "allGreen": false
+  },
+  "results": [
+    {
+      "id": "P01",
+      "dir": "instruct-sync",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 202,
+      "tail": "\n> ai-instruct-sync@0.2.0-beta.0 test\n> node --input-type=module -e '\n> import { rulesEqual } from \"./dist/core.js\";\n> const sample = { naming: { id: \"naming\", content: \"Use camelCase\" } };\n> console.log(\"Running direct tests...\");\n> console.assert(rulesEqual(sample, { ...sample }), \"detects equality\");\n> console.assert(!rulesEqual(sample, { naming: { id: \"naming\", content: \"Use PascalCase\" } }), \"detects difference\");\n> console.log(\"✓ All tests passed\");\n> '\n\nRunning direct tests...\n✓ All tests passed\n"
+    },
+    {
+      "id": "P02",
+      "dir": "ai-setup-doctor",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 1542,
+      "tail": "      ---\n      duration_ms: 33.705541\n      type: 'test'\n      ...\n    1..1\nok 19 - fixture: env-example-leak\n  ---\n  duration_ms: 33.759\n  type: 'suite'\n  ...\n1..19\n# tests 44\n# suites 19\n# pass 44\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 913.57975\n"
+    },
+    {
+      "id": "P03",
+      "dir": "mcp-sync",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 1117,
+      "tail": "  ...\n ❯ tests/cycle.test.mjs (0 test)\n ✓ tests/clients.test.ts (17 tests) 8ms\n ✓ tests/cli.test.ts (5 tests) 8ms\n ✓ tests/core.test.ts (21 tests) 31ms\n ✓ tests/param-matrix.test.ts (90 tests) 532ms\n\n Test Files  1 failed | 4 passed (5)\n      Tests  133 passed (133)\n   Start at  09:42:46\n   Duration  783ms (transform 367ms, setup 0ms, import 491ms, tests 580ms, environment 0ms)\n\n\n⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯\n\n FAIL  tests/cycle.test.mjs [ tests/cycle.test.mjs ]\nError: No test suite found in file /Users/bhaskar_pandey/Documents/development/mcp-sync/tests/cycle.test.mjs\n⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\n\n"
+    },
+    {
+      "id": "P04",
+      "dir": "secret-guard",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 1026,
+      "tail": "  ---\n  duration_ms: 44.948291\n  type: 'test'\n  ...\n# Subtest: snippets are redacted\nok 12 - snippets are redacted\n  ---\n  duration_ms: 47.896541\n  type: 'test'\n  ...\n1..12\n# tests 12\n# suites 0\n# pass 12\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 334.86225\n"
+    },
+    {
+      "id": "P29",
+      "dir": "agent-skill-scan",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 811,
+      "tail": "  ---\n  duration_ms: 0.088292\n  type: 'test'\n  ...\n# Subtest: unit: unpinned detection and secret heuristics\nok 8 - unit: unpinned detection and secret heuristics\n  ---\n  duration_ms: 0.138125\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 85.514083\n"
+    },
+    {
+      "id": "api-contract-sentinel",
+      "dir": "api-contract-sentinel",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 250,
+      "tail": "  ---\n  duration_ms: 0.60725\n  type: 'test'\n  ...\n# Subtest: required field is breaking\nok 5 - required field is breaking\n  ---\n  duration_ms: 0.099917\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 92.631292\n"
+    },
+    {
+      "id": "appt-book-india",
+      "dir": "appt-book-india",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 272,
+      "tail": "  ---\n  duration_ms: 41.883208\n  type: 'test'\n  ...\n# Subtest: finds free slots\nok 4 - finds free slots\n  ---\n  duration_ms: 0.514709\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 102.575583\n"
+    },
+    {
+      "id": "auth-anomaly-radar",
+      "dir": "auth-anomaly-radar",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 266,
+      "tail": "  ---\n  duration_ms: 0.682125\n  type: 'test'\n  ...\n# Subtest: haversine positive\nok 5 - haversine positive\n  ---\n  duration_ms: 0.092625\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 3\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 100.025584\n"
+    },
+    {
+      "id": "care-companion",
+      "dir": "care-companion",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 256,
+      "tail": "  ---\n  duration_ms: 38.102875\n  type: 'test'\n  ...\n# Subtest: meds due and reschedule\nok 4 - meds due and reschedule\n  ---\n  duration_ms: 0.496\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 93.873042\n"
+    },
+    {
+      "id": "climate-ops-meter",
+      "dir": "climate-ops-meter",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 260,
+      "tail": "  ---\n  duration_ms: 40.095584\n  type: 'test'\n  ...\n# Subtest: emission estimate\nok 4 - emission estimate\n  ---\n  duration_ms: 0.515541\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 2\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 94.397709\n"
+    },
+    {
+      "id": "clinic-admin-lite",
+      "dir": "clinic-admin-lite",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 264,
+      "tail": "  ---\n  duration_ms: 41.226041\n  type: 'test'\n  ...\n# Subtest: patient appt charge\nok 4 - patient appt charge\n  ---\n  duration_ms: 0.506334\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 97.79925\n"
+    },
+    {
+      "id": "cloud-waste-radar",
+      "dir": "cloud-waste-radar",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 256,
+      "tail": "  ---\n  duration_ms: 37.689\n  type: 'test'\n  ...\n# Subtest: detects idle ebs and eip\nok 4 - detects idle ebs and eip\n  ---\n  duration_ms: 0.507709\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 2\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 92.403167\n"
+    },
+    {
+      "id": "creator-ops",
+      "dir": "creator-ops",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 248,
+      "tail": "  ---\n  duration_ms: 37.997667\n  type: 'test'\n  ...\n# Subtest: pipeline + conflicts\nok 4 - pipeline + conflicts\n  ---\n  duration_ms: 0.482458\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 92.923875\n"
+    },
+    {
+      "id": "cyber-smb-shield",
+      "dir": "cyber-smb-shield",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 266,
+      "tail": "  ---\n  duration_ms: 42.139167\n  type: 'test'\n  ...\n# Subtest: score bands\nok 4 - score bands\n  ---\n  duration_ms: 0.523417\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 100.713208\n"
+    },
+    {
+      "id": "data-quality-guard",
+      "dir": "data-quality-guard",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 267,
+      "tail": "  ---\n  duration_ms: 42.046583\n  type: 'test'\n  ...\n# Subtest: dq checks\nok 4 - dq checks\n  ---\n  duration_ms: 0.552917\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 97.185542\n"
+    },
+    {
+      "id": "dev-onboard-os",
+      "dir": "dev-onboard-os",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 272,
+      "tail": "  ---\n  duration_ms: 42.554875\n  type: 'test'\n  ...\n# Subtest: progress pct\nok 4 - progress pct\n  ---\n  duration_ms: 0.508083\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 103.657333\n"
+    },
+    {
+      "id": "eval-harness",
+      "dir": "eval-harness",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 251,
+      "tail": "  ---\n  duration_ms: 40.126125\n  type: 'test'\n  ...\n# Subtest: eval suite pass/fail\nok 4 - eval suite pass/fail\n  ---\n  duration_ms: 0.492875\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 2\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 93.73825\n"
+    },
+    {
+      "id": "focus-forge",
+      "dir": "focus-forge",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 261,
+      "tail": "  ---\n  duration_ms: 41.481417\n  type: 'test'\n  ...\n# Subtest: focus scoring\nok 4 - focus scoring\n  ---\n  duration_ms: 0.5575\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 98.788208\n"
+    },
+    {
+      "id": "fraud-signal-kit",
+      "dir": "fraud-signal-kit",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 261,
+      "tail": "  ---\n  duration_ms: 0.657959\n  type: 'test'\n  ...\n# Subtest: velocity spikes\nok 5 - velocity spikes\n  ---\n  duration_ms: 0.182875\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 97.155083\n"
+    },
+    {
+      "id": "grc-evidence-autopilot",
+      "dir": "grc-evidence-autopilot",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 274,
+      "tail": "  ---\n  duration_ms: 41.976459\n  type: 'test'\n  ...\n# Subtest: coverage\nok 4 - coverage\n  ---\n  duration_ms: 0.517417\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 101.718416\n"
+    },
+    {
+      "id": "gst-ops-copilot",
+      "dir": "gst-ops-copilot",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 256,
+      "tail": "  ---\n  duration_ms: 39.254708\n  type: 'test'\n  ...\n# Subtest: detects tax mismatch\nok 4 - detects tax mismatch\n  ---\n  duration_ms: 0.55475\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 2\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 95.906375\n"
+    },
+    {
+      "id": "learn-loop",
+      "dir": "learn-loop",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 304,
+      "tail": "  ---\n  duration_ms: 48.645292\n  type: 'test'\n  ...\n# Subtest: SRS interval grows\nok 4 - SRS interval grows\n  ---\n  duration_ms: 0.495667\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 110.43675\n"
+    },
+    {
+      "id": "llm-spend",
+      "dir": "llm-spend",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 273,
+      "tail": "  ---\n  duration_ms: 0.632167\n  type: 'test'\n  ...\n# Subtest: budget over triggers\nok 5 - budget over triggers\n  ---\n  duration_ms: 0.104875\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 97.083667\n"
+    },
+    {
+      "id": "personal-crm",
+      "dir": "personal-crm",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 277,
+      "tail": "  ---\n  duration_ms: 44.085375\n  type: 'test'\n  ...\n# Subtest: nudge list\nok 4 - nudge list\n  ---\n  duration_ms: 0.503458\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 104.278958\n"
+    },
+    {
+      "id": "sbom-lite",
+      "dir": "sbom-lite",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 269,
+      "tail": "  ---\n  duration_ms: 0.633584\n  type: 'test'\n  ...\n# Subtest: policy gate fails on GPL\nok 5 - policy gate fails on GPL\n  ---\n  duration_ms: 0.124208\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 95.507583\n"
+    },
+    {
+      "id": "sc-visibility-lite",
+      "dir": "sc-visibility-lite",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 275,
+      "tail": "  ---\n  duration_ms: 42.217791\n  type: 'test'\n  ...\n# Subtest: risk rollup\nok 4 - risk rollup\n  ---\n  duration_ms: 0.517084\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 2\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 104.148458\n"
+    },
+    {
+      "id": "shadow-ai",
+      "dir": "shadow-ai",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 288,
+      "tail": "  ---\n  duration_ms: 47.378917\n  type: 'test'\n  ...\n# Subtest: flags unauthorized confidential tools\nok 4 - flags unauthorized confidential tools\n  ---\n  duration_ms: 0.517125\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 2\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 109.716\n"
+    },
+    {
+      "id": "skill-sync",
+      "dir": "skill-sync",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 261,
+      "tail": "  ---\n  duration_ms: 0.712917\n  type: 'test'\n  ...\n# Subtest: planInstall diffs\nok 5 - planInstall diffs\n  ---\n  duration_ms: 0.455875\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 95.615292\n"
+    },
+    {
+      "id": "wa-ops-desk",
+      "dir": "wa-ops-desk",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 296,
+      "tail": "  ---\n  duration_ms: 37.065833\n  type: 'test'\n  ...\n# Subtest: routes order to staff\nok 4 - routes order to staff\n  ---\n  duration_ms: 0.538334\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 92.162875\n"
+    }
+  ],
+  "cross": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "detect anthropic-like key",
+        "ok": true
+      },
+      {
+        "name": "anthropic key not also openai",
+        "ok": true
+      },
+      {
+        "name": "allowlist example key",
+        "ok": true
+      },
+      {
+        "name": "cross-fixture finds >=2 secret errors",
+        "ok": true,
+        "detail": "errors=2 exit=1"
+      }
+    ]
+  }
+}

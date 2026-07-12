@@ -25,7 +25,9 @@
     "prepublishOnly": "npm run build && npm test",
     "demo": "node dist/cli.js check --no-user",
     "demo:hard": "npm run build && node scripts/demo-hard.mjs",
-    "demo:json": "node dist/cli.js check --no-user --json"
+    "demo:json": "node dist/cli.js check --no-user --json",
+    "cycle:check": "node --test tests/cycle.test.mjs",
+    "test:cycle": "node --test tests/cycle.test.mjs"
   },
   "keywords": [
     "ai",

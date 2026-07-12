@@ -1,10 +1,10 @@
 /** P11 cloud-waste-radar — offline MVP core (zero deps) */
 export function main(input) {
-  return findWaste(input.inventory || input || []);
+  return findWaste((Array.isArray(input.inventory) ? input.inventory : Array.isArray(input) ? input : []));
 }
 export function findWaste(inventory) {
   const findings = [];
-  for (const r of inventory || []) {
+  for (const r of (Array.isArray(inventory) ? inventory : [])) {
     if (r.type === "ebs" && r.attached === false) findings.push({ id: r.id, kind: "idle_ebs", monthlyUsd: r.monthlyUsd || 5 });
     if (r.type === "eip" && r.associated === false) findings.push({ id: r.id, kind: "idle_eip", monthlyUsd: r.monthlyUsd || 3.6 });
     if (r.type === "rds" && r.connections === 0 && r.daysIdle >= 7) findings.push({ id: r.id, kind: "idle_rds", monthlyUsd: r.monthlyUsd || 50 });

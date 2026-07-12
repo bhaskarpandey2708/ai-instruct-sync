@@ -1,6 +1,6 @@
 {
   "name": "agent-skill-scan",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-alpha.1",
   "description": "Security scan for AI agent skills, MCP server configs, rules files, and hooks — prompt injection, secret exfiltration, hidden Unicode, dangerous shell patterns, hardcoded credentials. Read-only, zero dependencies.",
   "type": "module",
   "bin": {
@@ -23,7 +23,9 @@
     "test": "npm run build && node --test tests/scan.test.mjs",
     "test:quick": "node --test tests/scan.test.mjs",
     "prepublishOnly": "npm run build && npm test",
-    "demo": "node dist/cli.js --no-user"
+    "demo": "node dist/cli.js --no-user",
+    "cycle:check": "node --test tests/cycle.test.mjs",
+    "test:cycle": "node --test tests/cycle.test.mjs"
   },
   "keywords": [
     "ai",
@@ -43,5 +45,6 @@
   "devDependencies": {
     "@types/node": "^20.14.0",
     "typescript": "^5.5.0"
-  }
+  },
+  "private": true
 }

@@ -1,6 +1,6 @@
 /** P09 auth-anomaly-radar — offline MVP core (zero deps) */
 export function main(input) {
-  return scoreLoginSequence(input.events || input || []);
+  return scoreLoginSequence((Array.isArray(input.events) ? input.events : Array.isArray(input) ? input : []));
 }
 export function haversineKm(a, b) {
   const R = 6371, toR = (d) => d * Math.PI / 180;
@@ -9,7 +9,7 @@ export function haversineKm(a, b) {
   return 2 * R * Math.asin(Math.sqrt(x));
 }
 export function scoreLoginSequence(events) {
-  const sorted = [...events].sort((a,b) => a.ts - b.ts);
+  const sorted = [...(Array.isArray(events) ? events : [])].sort((a,b) => a.ts - b.ts);
   const flags = [];
   for (let i = 1; i < sorted.length; i++) {
     const prev = sorted[i-1], cur = sorted[i];

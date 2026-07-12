@@ -1,8 +1,8 @@
 /** P18 clinic-admin-lite — offline MVP core (zero deps) */
 export function main(input) {
   let L = createLedger();
-  for (const p of input.patients || []) L = addPatient(L, p);
-  for (const a of input.appts || []) L = addAppt(L, a);
+  for (const p of (Array.isArray(input.patients) ? input.patients : [])) L = addPatient(L, p);
+  for (const a of (Array.isArray(input.appts) ? input.appts : [])) L = addAppt(L, a);
   if (input.charge) charge(L, input.charge.patientId, input.charge.amount);
   return L;
 }

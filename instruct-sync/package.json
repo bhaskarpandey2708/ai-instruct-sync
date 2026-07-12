@@ -22,7 +22,9 @@
     "test": "node --input-type=module -e '\nimport { rulesEqual } from \"./dist/core.js\";\nconst sample = { naming: { id: \"naming\", content: \"Use camelCase\" } };\nconsole.log(\"Running direct tests...\");\nconsole.assert(rulesEqual(sample, { ...sample }), \"detects equality\");\nconsole.assert(!rulesEqual(sample, { naming: { id: \"naming\", content: \"Use PascalCase\" } }), \"detects difference\");\nconsole.log(\"✓ All tests passed\");\n'",
     "test:watch": "vitest",
     "prepublishOnly": "npm run build && npm test",
-    "demo": "node dist/cli.js status && node dist/cli.js diff && node dist/cli.js validate"
+    "demo": "node dist/cli.js status && node dist/cli.js diff && node dist/cli.js validate",
+    "cycle:check": "node --test tests/cycle.test.mjs",
+    "test:cycle": "node --test tests/cycle.test.mjs"
   },
   "keywords": [
     "ai",

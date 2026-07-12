@@ -1,6 +1,6 @@
 /** P19 learn-loop — offline MVP core (zero deps) */
 export function main(input) {
-  const cards = (input.cards || []).map((c) => nextReview(c, input.quality ?? 4));
+  const cards = ((Array.isArray(input.cards) ? input.cards : [])).map((c) => nextReview(c, input.quality ?? 4));
   return { cards, due: dueCards(cards, input.day || 0) };
 }
 export function nextReview(card, quality /* 0-5 */) {
@@ -13,5 +13,5 @@ export function nextReview(card, quality /* 0-5 */) {
   return { ...card, reps: reps + 1, interval, ef, dueInDays: interval };
 }
 export function dueCards(cards, day = 0) {
-  return (cards || []).filter((c) => (c.dueDay ?? 0) <= day);
+  return (Array.isArray(cards) ? cards : []).filter((c) => (c.dueDay ?? 0) <= day);
 }

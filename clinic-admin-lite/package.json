@@ -1,6 +1,6 @@
 {
   "name": "ai-clinic-admin-lite",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-alpha.1",
   "private": true,
   "description": "Clinic admin lite: appointments, patient ledger, Rx print, WhatsApp follow-ups for small practices",
   "type": "module",
@@ -9,9 +9,10 @@
     "ai-clinic-admin-lite": "src/cli.js"
   },
   "scripts": {
-    "test": "node --test tests/litmus.test.mjs",
+    "test": "node --test tests/litmus.test.mjs tests/cycle.test.mjs",
     "demo": "node demo/run-demo.mjs",
-    "litmus": "node --test tests/litmus.test.mjs"
+    "litmus": "node --test tests/litmus.test.mjs",
+    "cycle:check": "node --test tests/litmus.test.mjs tests/cycle.test.mjs"
   },
   "engines": {
     "node": ">=20"

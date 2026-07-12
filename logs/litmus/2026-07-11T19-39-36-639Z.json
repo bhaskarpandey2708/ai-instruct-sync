@@ -1,0 +1,295 @@
+{
+  "ranAt": "2026-07-11T19:39:36.638Z",
+  "summary": {
+    "products": 29,
+    "passed": 28,
+    "failed": 1,
+    "crossOk": true,
+    "allGreen": false
+  },
+  "results": [
+    {
+      "id": "P01",
+      "dir": "instruct-sync",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 23489,
+      "tail": "\n> ai-instruct-sync@0.2.0-beta.0 test\n> node --input-type=module -e '\n> import { rulesEqual } from \"./dist/core.js\";\n> const sample = { naming: { id: \"naming\", content: \"Use camelCase\" } };\n> console.log(\"Running direct tests...\");\n> console.assert(rulesEqual(sample, { ...sample }), \"detects equality\");\n> console.assert(!rulesEqual(sample, { naming: { id: \"naming\", content: \"Use PascalCase\" } }), \"detects difference\");\n> console.log(\"✓ All tests passed\");\n> '\n\nRunning direct tests...\n✓ All tests passed\n"
+    },
+    {
+      "id": "P02",
+      "dir": "ai-setup-doctor",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 110047,
+      "tail": "      ---\n      duration_ms: 1188.409\n      type: 'test'\n      ...\n    1..1\nok 19 - fixture: env-example-leak\n  ---\n  duration_ms: 1188.607292\n  type: 'suite'\n  ...\n1..19\n# tests 44\n# suites 19\n# pass 44\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 60303.459042\n"
+    },
+    {
+      "id": "P03",
+      "dir": "mcp-sync",
+      "ok": false,
+      "status": 1,
+      "attempt": 2,
+      "ms": 62211,
+      "tail": "⎯⎯⎯⎯⎯⎯⎯ Startup Error ⎯⎯⎯⎯⎯⎯⎯⎯\nError: ECANCELED: operation canceled, read\n    at Object.readSync (node:fs:736:18)\n    at tryReadSync (node:fs:416:20)\n    at readFileSync (node:fs:462:19)\n    at getSourceSync (node:internal/modules/esm/load:41:14)\n    at defaultLoadSync (node:internal/modules/esm/load:157:34)\n    at ModuleLoader.load (node:internal/modules/esm/loader:831:12)\n    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:609:31)\n    at #createModuleJob (node:internal/modules/esm/loader:640:36)\n    at #getJobFromResolveResult (node:internal/modules/esm/loader:353:34)\n    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:321:41) {\n  errno: -89,\n  code: 'ECANCELED',\n  syscall: 'read'\n}\n\n\n\n"
+    },
+    {
+      "id": "P04",
+      "dir": "secret-guard",
+      "ok": true,
+      "status": 0,
+      "attempt": 2,
+      "ms": 79050,
+      "tail": "  ---\n  duration_ms: 41.121917\n  type: 'test'\n  ...\n# Subtest: snippets are redacted\nok 8 - snippets are redacted\n  ---\n  duration_ms: 33.542583\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 15736.223833\n"
+    },
+    {
+      "id": "P29",
+      "dir": "agent-skill-scan",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 60765,
+      "tail": "  ---\n  duration_ms: 0.071\n  type: 'test'\n  ...\n# Subtest: unit: unpinned detection and secret heuristics\nok 8 - unit: unpinned detection and secret heuristics\n  ---\n  duration_ms: 0.144792\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1933.358958\n"
+    },
+    {
+      "id": "api-contract-sentinel",
+      "dir": "api-contract-sentinel",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 10088,
+      "tail": "  ---\n  duration_ms: 2.738459\n  type: 'test'\n  ...\n# Subtest: required field is breaking\nok 2 - required field is breaking\n  ---\n  duration_ms: 0.346667\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 8668.538\n"
+    },
+    {
+      "id": "appt-book-india",
+      "dir": "appt-book-india",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 8863,
+      "tail": "> ai-appt-book-india@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: finds free slots\nok 1 - finds free slots\n  ---\n  duration_ms: 1.726708\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 7541.943583\n"
+    },
+    {
+      "id": "auth-anomaly-radar",
+      "dir": "auth-anomaly-radar",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 2554,
+      "tail": "  ---\n  duration_ms: 0.884333\n  type: 'test'\n  ...\n# Subtest: haversine positive\nok 2 - haversine positive\n  ---\n  duration_ms: 0.074166\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 53.800125\n"
+    },
+    {
+      "id": "care-companion",
+      "dir": "care-companion",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 4480,
+      "tail": "> ai-care-companion@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: meds due and reschedule\nok 1 - meds due and reschedule\n  ---\n  duration_ms: 1.098875\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1306.802542\n"
+    },
+    {
+      "id": "climate-ops-meter",
+      "dir": "climate-ops-meter",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 10705,
+      "tail": "> ai-climate-ops-meter@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: emission estimate\nok 1 - emission estimate\n  ---\n  duration_ms: 1.615708\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 5960.448\n"
+    },
+    {
+      "id": "clinic-admin-lite",
+      "dir": "clinic-admin-lite",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 26498,
+      "tail": "> ai-clinic-admin-lite@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: patient appt charge\nok 1 - patient appt charge\n  ---\n  duration_ms: 1.19175\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 5576.179916\n"
+    },
+    {
+      "id": "cloud-waste-radar",
+      "dir": "cloud-waste-radar",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 10836,
+      "tail": "> ai-cloud-waste-radar@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: detects idle ebs and eip\nok 1 - detects idle ebs and eip\n  ---\n  duration_ms: 1.215375\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 5623.531667\n"
+    },
+    {
+      "id": "creator-ops",
+      "dir": "creator-ops",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 11336,
+      "tail": "> ai-creator-ops@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: pipeline + conflicts\nok 1 - pipeline + conflicts\n  ---\n  duration_ms: 1.110583\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 9957.713458\n"
+    },
+    {
+      "id": "cyber-smb-shield",
+      "dir": "cyber-smb-shield",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 201,
+      "tail": "> ai-cyber-smb-shield@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: score bands\nok 1 - score bands\n  ---\n  duration_ms: 0.415458\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 47.89175\n"
+    },
+    {
+      "id": "data-quality-guard",
+      "dir": "data-quality-guard",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 4610,
+      "tail": "> ai-data-quality-guard@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: dq checks\nok 1 - dq checks\n  ---\n  duration_ms: 0.433625\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 49.973916\n"
+    },
+    {
+      "id": "dev-onboard-os",
+      "dir": "dev-onboard-os",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 5771,
+      "tail": "> ai-dev-onboard-os@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: progress pct\nok 1 - progress pct\n  ---\n  duration_ms: 1.320708\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2544.972917\n"
+    },
+    {
+      "id": "eval-harness",
+      "dir": "eval-harness",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 3742,
+      "tail": "> ai-eval-harness@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: eval suite pass/fail\nok 1 - eval suite pass/fail\n  ---\n  duration_ms: 1.984625\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3588.596875\n"
+    },
+    {
+      "id": "focus-forge",
+      "dir": "focus-forge",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 5882,
+      "tail": "> ai-focus-forge@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: focus scoring\nok 1 - focus scoring\n  ---\n  duration_ms: 1.2595\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3144.537917\n"
+    },
+    {
+      "id": "fraud-signal-kit",
+      "dir": "fraud-signal-kit",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 31900,
+      "tail": "  ---\n  duration_ms: 1.398625\n  type: 'test'\n  ...\n# Subtest: velocity spikes\nok 2 - velocity spikes\n  ---\n  duration_ms: 0.422125\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 26735.053125\n"
+    },
+    {
+      "id": "grc-evidence-autopilot",
+      "dir": "grc-evidence-autopilot",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 6633,
+      "tail": "> ai-grc-evidence-autopilot@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: coverage\nok 1 - coverage\n  ---\n  duration_ms: 0.5795\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2600.106333\n"
+    },
+    {
+      "id": "gst-ops-copilot",
+      "dir": "gst-ops-copilot",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 4255,
+      "tail": "> ai-gst-ops-copilot@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: detects tax mismatch\nok 1 - detects tax mismatch\n  ---\n  duration_ms: 1.653334\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2841.657\n"
+    },
+    {
+      "id": "learn-loop",
+      "dir": "learn-loop",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 4289,
+      "tail": "> ai-learn-loop@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: SRS interval grows\nok 1 - SRS interval grows\n  ---\n  duration_ms: 1.295792\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2480.557166\n"
+    },
+    {
+      "id": "llm-spend",
+      "dir": "llm-spend",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 4424,
+      "tail": "  ---\n  duration_ms: 1.66525\n  type: 'test'\n  ...\n# Subtest: budget over triggers\nok 2 - budget over triggers\n  ---\n  duration_ms: 0.245791\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2819.745166\n"
+    },
+    {
+      "id": "personal-crm",
+      "dir": "personal-crm",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 5016,
+      "tail": "> ai-personal-crm@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: nudge list\nok 1 - nudge list\n  ---\n  duration_ms: 1.206334\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3645.02075\n"
+    },
+    {
+      "id": "sbom-lite",
+      "dir": "sbom-lite",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 1365,
+      "tail": "  ---\n  duration_ms: 0.509584\n  type: 'test'\n  ...\n# Subtest: policy gate fails on GPL\nok 2 - policy gate fails on GPL\n  ---\n  duration_ms: 0.098208\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 52.59025\n"
+    },
+    {
+      "id": "sc-visibility-lite",
+      "dir": "sc-visibility-lite",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 7006,
+      "tail": "> ai-sc-visibility-lite@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: risk rollup\nok 1 - risk rollup\n  ---\n  duration_ms: 1.163667\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 5050.342875\n"
+    },
+    {
+      "id": "shadow-ai",
+      "dir": "shadow-ai",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 7634,
+      "tail": "> ai-shadow-ai@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: flags unauthorized confidential tools\nok 1 - flags unauthorized confidential tools\n  ---\n  duration_ms: 1.589542\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2680.440833\n"
+    },
+    {
+      "id": "skill-sync",
+      "dir": "skill-sync",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 2602,
+      "tail": "  ---\n  duration_ms: 0.781958\n  type: 'test'\n  ...\n# Subtest: planInstall diffs\nok 2 - planInstall diffs\n  ---\n  duration_ms: 0.744541\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1263.061917\n"
+    },
+    {
+      "id": "wa-ops-desk",
+      "dir": "wa-ops-desk",
+      "ok": true,
+      "status": 0,
+      "attempt": 1,
+      "ms": 4453,
+      "tail": "> ai-wa-ops-desk@0.1.0-beta.0 test\n> node --test tests/litmus.test.mjs\n\nTAP version 13\n# Subtest: routes order to staff\nok 1 - routes order to staff\n  ---\n  duration_ms: 1.192542\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2969.2375\n"
+    }
+  ],
+  "cross": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "detect anthropic-like key",
+        "ok": true
+      },
+      {
+        "name": "anthropic key not also openai",
+        "ok": true
+      },
+      {
+        "name": "allowlist example key",
+        "ok": true
+      },
+      {
+        "name": "cross-fixture finds >=2 secret errors",
+        "ok": true,
+        "detail": "errors=2 exit=1"
+      }
+    ]
+  }
+}

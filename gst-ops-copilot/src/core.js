@@ -1,10 +1,10 @@
 /** P16 gst-ops-copilot — offline MVP core (zero deps) */
 export function main(input) {
-  return invoiceHygiene(input.invoices || input || []);
+  return invoiceHygiene((Array.isArray(input.invoices) ? input.invoices : Array.isArray(input) ? input : []));
 }
 export function invoiceHygiene(invoices) {
   const issues = [];
-  for (const inv of invoices || []) {
+  for (const inv of (Array.isArray(invoices) ? invoices : [])) {
     if (!inv.gstin || !/^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$/.test(inv.gstin)) {
       issues.push({ id: inv.id, code: "bad_gstin" });
     }
@@ -16,5 +16,5 @@ export function invoiceHygiene(invoices) {
       }
     }
   }
-  return { issues, ok: issues.length === 0, count: (invoices || []).length };
+  return { issues, ok: issues.length === 0, count: (Array.isArray(invoices) ? invoices : []).length };
 }

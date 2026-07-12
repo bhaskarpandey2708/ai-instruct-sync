@@ -1,6 +1,6 @@
 {
   "name": "ai-secret-guard",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-beta.1",
   "description": "Guard against secrets leaking into AI agent rules, MCP configs, and prompts. Pre-commit / CI friendly. Zero runtime dependencies.",
   "type": "module",
   "bin": {
@@ -21,7 +21,9 @@
     "build": "node scripts/build.mjs",
     "test": "npm run build && node --test tests/*.test.mjs",
     "test:quick": "node --test tests/*.test.mjs",
-    "prepublishOnly": "npm run build && npm test"
+    "prepublishOnly": "npm run build && npm test",
+    "cycle:check": "node --test tests/cycle.test.mjs",
+    "test:cycle": "node --test tests/cycle.test.mjs"
   },
   "keywords": [
     "secrets",

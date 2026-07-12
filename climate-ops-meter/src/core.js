@@ -2,12 +2,12 @@
 // simplified emission factors kg CO2e
 const FACTORS = { electricity_kwh: 0.7, diesel_l: 2.68, flight_km: 0.15, waste_kg: 0.5 };
 export function main(input) {
-  return estimateEmissions(input.activities || input || []);
+  return estimateEmissions(Array.isArray(input.activities) ? input.activities : Array.isArray(input) ? input : []);
 }
 export function estimateEmissions(activities) {
   let total = 0;
   const lines = [];
-  for (const a of activities || []) {
+  for (const a of (Array.isArray(activities) ? activities : [])) {
     const f = FACTORS[a.type] || 0;
     const kg = f * Number(a.amount || 0);
     total += kg;

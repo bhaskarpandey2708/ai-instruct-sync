@@ -1,0 +1,179 @@
+{
+  "closedAt": "2026-07-12T04:12:35.713Z",
+  "products": [
+    {
+      "dir": "agent-skill-scan",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": false
+    },
+    {
+      "dir": "ai-setup-doctor",
+      "track": "ship-beta",
+      "version": "0.1.0-beta.0",
+      "hasMain": false
+    },
+    {
+      "dir": "api-contract-sentinel",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "appt-book-india",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "auth-anomaly-radar",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "care-companion",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "climate-ops-meter",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "clinic-admin-lite",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "cloud-waste-radar",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "creator-ops",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "cyber-smb-shield",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "data-quality-guard",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "dev-onboard-os",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "eval-harness",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "focus-forge",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "fraud-signal-kit",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "grc-evidence-autopilot",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "gst-ops-copilot",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "instruct-sync",
+      "track": "ship-beta",
+      "version": "0.2.0-beta.0",
+      "hasMain": false
+    },
+    {
+      "dir": "learn-loop",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "llm-spend",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "mcp-sync",
+      "track": "ship-beta",
+      "version": "0.2.0",
+      "hasMain": false
+    },
+    {
+      "dir": "personal-crm",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "sbom-lite",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "sc-visibility-lite",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "secret-guard",
+      "track": "ship-beta",
+      "version": "0.1.0-beta.1",
+      "hasMain": false
+    },
+    {
+      "dir": "shadow-ai",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "skill-sync",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    },
+    {
+      "dir": "wa-ops-desk",
+      "track": "alpha",
+      "version": "0.1.0-alpha.1",
+      "hasMain": true
+    }
+  ]
+}
