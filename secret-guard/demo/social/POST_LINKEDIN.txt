@@ -1,0 +1,38 @@
+I keep finding API keys in places classic secret scanners never look.
+
+Not .env.
+Not source files.
+
+CLAUDE.md. Cursor rules. MCP server env blocks. “Example” files that aren’t examples.
+
+gitleaks and GitHub secret scanning are great at the old surface. The AI coding stack created a new one — and teams paste live tokens into it every day.
+
+So I built secret-guard (open source beta).
+
+What it does:
+→ Scans AI agent rules, MCP configs, and sample env files
+→ Flags live-looking keys (redacted in output)
+→ Exits non-zero for pre-commit / CI
+→ Optional SARIF for GitHub Code Scanning
+
+One command (no install):
+
+npx ai-secret-guard@beta
+
+Design principles:
+• Zero runtime dependencies
+• Read-only by default
+• Built for the AI workspace, not a generic repo crawl
+
+Part of a small suite I’m shipping for multi-tool AI setups:
+• instruct-sync — keep rules in sync
+• ai-setup-doctor — diagnose the whole setup
+• mcp-sync — sync MCP servers across clients
+• secret-guard — stop secrets in AI paths
+
+npm: https://www.npmjs.com/package/ai-secret-guard
+Source: https://github.com/bhaskarpandey2708/ai-instruct-sync/tree/main/secret-guard
+
+If you’ve ever pasted a key into a rules file “just for a minute,” this one’s for you. Feedback welcome.
+
+#OpenSource #DevTools #CyberSecurity #ClaudeAI #Cursor #BuildInPublic #AIcoding #SoftwareEngineering

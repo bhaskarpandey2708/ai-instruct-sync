@@ -1,0 +1,16 @@
+SMBs are ransomware targets but cannot staff a SOC.
+
+I built **cyber-smb-shield** — a free, local, open-source alpha CLI:
+
+→ Managed cybersecurity starter pack for SMBs: DNS filter, phishing drills, backup check, score
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/cyber-smb-shield
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

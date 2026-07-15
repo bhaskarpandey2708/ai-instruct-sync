@@ -1,0 +1,7 @@
+Pipeline data quality checks as code with anomaly alerts for analytics teams
+
+Shipped **data-quality-guard** as a free local OSS alpha:
+
+npx @bhaskarauthor/data-quality-guard
+
+Zero deps · --json · MIT

@@ -1,0 +1,16 @@
+Adult children coordinate elder care over chaotic WhatsApp groups.
+
+I built **care-companion** — a free, local, open-source alpha CLI:
+
+→ Family care coordination app: meds, appointments, shared notes for elders
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/care-companion
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

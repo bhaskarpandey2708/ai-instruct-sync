@@ -1,0 +1,7 @@
+Family care coordination app: meds, appointments, shared notes for elders
+
+Shipped **care-companion** as a free local OSS alpha:
+
+npx @bhaskarauthor/care-companion
+
+Zero deps · --json · MIT

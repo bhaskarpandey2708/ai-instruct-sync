@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Zero-friction SBOM generate, diff, and policy gate for npm/PyPI/Go in CI — free OSS alpha CLI (P13)
+
+BODY:
+Executive orders and enterprise buyers demand SBOMs; SMBs find tools heavy.
+
+I shipped a free open-source alpha CLI for this: **sbom-lite**
+
+```
+npx @bhaskarauthor/sbom-lite
+npx @bhaskarauthor/sbom-lite --json
+```
+
+What it is:
+- Zero-friction SBOM generate, diff, and policy gate for npm/PyPI/Go in CI
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

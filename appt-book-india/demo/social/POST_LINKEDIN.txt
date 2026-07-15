@@ -1,0 +1,16 @@
+No-shows and phone tag; Calendly-class tools not localized/priced for Bharat SMB.
+
+I built **appt-book-india** — a free, local, open-source alpha CLI:
+
+→ Lightweight appointment booking with WhatsApp reminders for salons, tutors, clinics lite
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/appt-book-india
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

@@ -1,38 +1,36 @@
-# Product cycle — llm-spend
+# Product cycle — llm-spend (P05)
 
 | Field | Value |
 |-------|--------|
 | **Track** | Alpha (`alpha`) |
-| **Version** | `0.1.0-alpha.1` |
-| **Cycle** | **CLOSED** (Alpha) |
-| **Closed at** | 2026-07-12T04:12:35.713Z |
-| **Publish** | **Not published** — local workspace only until explicit go-ahead |
+| **Version** | `0.1.0-alpha.2` |
+| **Cycle** | **CLOSED** (Alpha) — product deepened 2026-07-15 |
+| **Publish** | **Not published** — local until explicit go-ahead |
 
 ## Closed-cycle checklist
 
-- [x] `package.json` name + version set
-- [x] MIT LICENSE
-- [x] README documents scope + limitations
-- [x] Automated tests exist and pass under suite litmus
-- [x] Cycle smoke tests (`tests/cycle.test.mjs`) for core entrypoints
-- [x] Demo or usage path documented
-- [x] Zero runtime dependencies (suite convention)
-- [x] Known limitations listed (below)
+- [x] Dual bin: `llm-spend` + `ai-llm-spend`
+- [x] Multi-provider pricing table + flexible event normalize
+- [x] Human report + `--json` + `--budget` + `--strict` exit codes
+- [x] Fixtures: sample multi-provider + over-budget
+- [x] Litmus + cycle tests
+- [x] Demo script
+- [x] README (honest limits)
+- [x] Zero runtime dependencies
+- [x] Social pack + 1080p video paths
 - [ ] npm publish (blocked until owner says go)
 - [ ] git remote push (blocked until owner says go)
 
 ## Known limitations (Alpha)
 
-- Offline domain MVP — no live cloud / WhatsApp / payments integrations.
-- Litmus + cycle smoke tests, not full E2E or load tests.
-- Commercial hosted layers are future work; OSS core stays free.
+- Offline rollup only — no live provider billing API
+- List prices approximate; not invoice-exact
+- Not a kill-switch for Claude Code hooks (see agent-spend-guard)
 
 ## How to verify
 
 ```bash
 cd llm-spend
 npm test
-npm run cycle:check 2>/dev/null || node --test tests/*.test.mjs tests/**/*.test.mjs
+npm run demo
 ```
-
-Suite: `node scripts/suite-litmus.mjs` from workspace root.

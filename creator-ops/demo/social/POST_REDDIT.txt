@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Ops OS for mid-tier creators: content calendar, sponsor CRM, asset vault, analytics rollup — free OSS alpha CLI (P24)
+
+BODY:
+Creators juggle Notion + Sheets + Drive + native analytics without an ops spine.
+
+I shipped a free open-source alpha CLI for this: **creator-ops**
+
+```
+npx @bhaskarauthor/creator-ops
+npx @bhaskarauthor/creator-ops --json
+```
+
+What it is:
+- Ops OS for mid-tier creators: content calendar, sponsor CRM, asset vault, analytics rollup
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

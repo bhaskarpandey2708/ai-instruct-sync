@@ -1,0 +1,7 @@
+Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups
+
+Shipped **cloud-waste-radar** as a free local OSS alpha:
+
+npx @bhaskarauthor/cloud-waste-radar
+
+Zero deps · --json · MIT

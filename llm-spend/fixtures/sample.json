@@ -1,9 +1,61 @@
 {
+  "budgetUsd": 100,
   "events": [
     {
       "provider": "openai",
-      "tokens": 5000,
-      "pricePer1k": 0.01
+      "model": "gpt-4o",
+      "inputTokens": 12000,
+      "outputTokens": 3500,
+      "project": "chat-api",
+      "ts": "2026-07-01T10:00:00Z"
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "inputTokens": 80000,
+      "outputTokens": 20000,
+      "project": "chat-api",
+      "ts": "2026-07-01T14:00:00Z"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4",
+      "inputTokens": 45000,
+      "outputTokens": 12000,
+      "project": "agent-coder",
+      "ts": "2026-07-02T09:30:00Z"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-haiku",
+      "inputTokens": 200000,
+      "outputTokens": 40000,
+      "project": "agent-coder",
+      "ts": "2026-07-02T16:00:00Z"
+    },
+    {
+      "provider": "google",
+      "model": "gemini-1.5-pro",
+      "inputTokens": 60000,
+      "outputTokens": 15000,
+      "project": "rag-index",
+      "ts": "2026-07-03T11:00:00Z"
+    },
+    {
+      "provider": "openai",
+      "model": "o3-mini",
+      "inputTokens": 8000,
+      "outputTokens": 4000,
+      "project": "eval-suite",
+      "ts": "2026-07-03T18:00:00Z"
+    },
+    {
+      "provider": "azure",
+      "model": "azure-gpt-4o",
+      "inputTokens": 25000,
+      "outputTokens": 6000,
+      "project": "enterprise-bot",
+      "ts": "2026-07-04T08:00:00Z"
     }
   ]
 }

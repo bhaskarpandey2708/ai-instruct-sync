@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Spaced-repetition + cohort homework OS for coaching institutes and online tutors — free OSS alpha CLI (P19)
+
+BODY:
+Tutors lack simple tool for assignments, revision loops, and parent updates.
+
+I shipped a free open-source alpha CLI for this: **learn-loop**
+
+```
+npx @bhaskarauthor/learn-loop
+npx @bhaskarauthor/learn-loop --json
+```
+
+What it is:
+- Spaced-repetition + cohort homework OS for coaching institutes and online tutors
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

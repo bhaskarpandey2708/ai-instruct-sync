@@ -1,0 +1,7 @@
+Spaced-repetition + cohort homework OS for coaching institutes and online tutors
+
+Shipped **learn-loop** as a free local OSS alpha:
+
+npx @bhaskarauthor/learn-loop
+
+Zero deps · --json · MIT

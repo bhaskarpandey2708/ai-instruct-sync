@@ -1,0 +1,16 @@
+Surveys classically cite ~30% cloud waste; startups overprovision without FinOps staff.
+
+I built **cloud-waste-radar** — a free, local, open-source alpha CLI:
+
+→ Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/cloud-waste-radar
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

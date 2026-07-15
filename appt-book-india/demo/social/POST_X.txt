@@ -1,0 +1,7 @@
+Lightweight appointment booking with WhatsApp reminders for salons, tutors, clinics lite
+
+Shipped **appt-book-india** as a free local OSS alpha:
+
+npx @bhaskarauthor/appt-book-india
+
+Zero deps · --json · MIT

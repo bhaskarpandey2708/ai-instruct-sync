@@ -1,0 +1,16 @@
+Employees paste company data into consumer ChatGPT/Claude without IT visibility.
+
+I built **shadow-ai** — a free, local, open-source alpha CLI:
+
+→ Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/shadow-ai
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

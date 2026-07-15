@@ -1,0 +1,12 @@
+Your agent doesn’t have a credit limit.
+
+Dashboards show the bill later. By then it’s too late.
+
+agent-spend-guard:
+• meter Claude Code + events
+• daily/monthly budgets
+• check → exit 1 = kill-switch
+
+npx agent-spend-guard check
+
+Zero deps. Local. Wire into PreToolUse hooks.

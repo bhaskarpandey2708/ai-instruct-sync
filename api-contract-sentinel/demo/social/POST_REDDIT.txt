@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Detect breaking API contract changes in PRs with consumer impact maps — free OSS alpha CLI (P28)
+
+BODY:
+Microservices break silent consumers; OpenAPI drift is common.
+
+I shipped a free open-source alpha CLI for this: **api-contract-sentinel**
+
+```
+npx @bhaskarauthor/api-contract-sentinel
+npx @bhaskarauthor/api-contract-sentinel --json
+```
+
+What it is:
+- Detect breaking API contract changes in PRs with consumer impact maps
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

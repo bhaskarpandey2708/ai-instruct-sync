@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO star… — free OSS alpha CLI (P14)
+
+BODY:
+SOC2 prep is spreadsheet hell; evidence collection is continuous toil.
+
+I shipped a free open-source alpha CLI for this: **grc-evidence-autopilot**
+
+```
+npx @bhaskarauthor/grc-evidence-autopilot
+npx @bhaskarauthor/grc-evidence-autopilot --json
+```
+
+What it is:
+- Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO startups
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

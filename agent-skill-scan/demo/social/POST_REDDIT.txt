@@ -1,0 +1,54 @@
+=== r/ClaudeAI (PRIMARY) ===
+Submit: https://www.reddit.com/r/ClaudeAI/submit
+Type: Image & Video
+
+TITLE:
+Your agent will happily run a marketplace skill. I built a one-command security scan for skills / MCP / rules / hooks
+
+BODY:
+A 2026 audit of ~4,000 marketplace agent skills found **36.8% with at least one security flaw** and **1,467 malicious payloads** (Snyk ToxicSkills). MCP audits graded most servers F.
+
+I got tired of installing a “helpful” skill without knowing if it:
+
+- injects “ignore previous instructions”
+- harvests env vars to Discord/Telegram/request bins
+- hides zero-width Unicode in CLAUDE.md
+- runs `curl | sh` from a hook that fires automatically
+
+So I shipped **agent-skill-scan** (open source, read-only, zero deps):
+
+```
+npx agent-skill-scan
+npx agent-skill-scan --no-user
+npx agent-skill-scan --strict --min-score 80
+```
+
+What it checks:
+- skills — injection, exfil, reverse shells, obfuscation, live credentials
+- mcp — hardcoded secrets, unpinned npx/uvx, plain HTTP remotes
+- rules — same threats + invisible Unicode smuggling
+- hooks — dangerous commands that auto-run with your shell
+
+Score out of 100. Exit 1 on high/critical for CI.
+
+npm: https://www.npmjs.com/package/agent-skill-scan
+
+Sibling tools: instruct-sync, ai-setup-doctor, mcp-sync, secret-guard.
+
+Honest limit: heuristic, not a sandbox. Feedback welcome.
+
+
+=== r/cursor ===
+TITLE:
+Scan Cursor rules, MCP, and commands for prompt injection / exfil before they run
+
+BODY:
+One command, local, zero deps:
+
+```
+npx agent-skill-scan --no-user
+```
+
+Flags injection, env harvesting, hidden Unicode, unpinned MCP packages, dangerous hooks.
+
+https://www.npmjs.com/package/agent-skill-scan

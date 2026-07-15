@@ -1,0 +1,7 @@
+Privacy-first personal CRM for founders: follow-ups, context notes, birthday nudges
+
+Shipped **personal-crm** as a free local OSS alpha:
+
+npx @bhaskarauthor/personal-crm
+
+Zero deps · --json · MIT

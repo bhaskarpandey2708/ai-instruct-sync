@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Composable fraud signal APIs (device, velocity, email risk) for Indian fintech and mark… — free OSS alpha CLI (P10)
+
+BODY:
+India digital payments fraud needs local signal stacks cheaper than global suites.
+
+I shipped a free open-source alpha CLI for this: **fraud-signal-kit**
+
+```
+npx @bhaskarauthor/fraud-signal-kit
+npx @bhaskarauthor/fraud-signal-kit --json
+```
+
+What it is:
+- Composable fraud signal APIs (device, velocity, email risk) for Indian fintech and marketplaces
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

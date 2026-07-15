@@ -1,0 +1,23 @@
+2026 is the year the token bill came due.
+
+Teams blowing annual AI budgets by April. Licenses revoked. Finance discovering agent spend after the fact.
+
+Dashboards explain the damage. Almost nothing indie-sized enforces a limit mid-session.
+
+I built agent-spend-guard (open source, zero dependencies, local-only):
+
+→ Meter real usage (Claude Code transcripts + generic events)
+→ Budget daily / monthly / per-project USD
+→ Kill-switch: check exits 1 so a hook or CI job can stop the agent
+
+npx agent-spend-guard
+npx agent-spend-guard check
+
+Wire it into Claude Code PreToolUse hooks or your pipeline. One config file: .spend-guard.json.
+
+This is the “control spend” layer of the AI dev hygiene suite I’m shipping:
+sync → diagnose → secrets → skill security → spend guardrails
+
+If you’ve ever been surprised by an AI invoice, this one’s for you. Feedback welcome.
+
+#OpenSource #FinOps #AI #DevTools #ClaudeAI #BuildInPublic #SoftwareEngineering

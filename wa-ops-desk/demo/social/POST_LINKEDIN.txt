@@ -1,0 +1,16 @@
+Indian SMBs live on WhatsApp; Excel + personal phones do not scale multi-staff.
+
+I built **wa-ops-desk** — a free, local, open-source alpha CLI:
+
+→ WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/wa-ops-desk
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

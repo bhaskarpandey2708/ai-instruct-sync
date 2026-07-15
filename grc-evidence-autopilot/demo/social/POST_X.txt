@@ -1,0 +1,7 @@
+Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO startups
+
+Shipped **grc-evidence-autopilot** as a free local OSS alpha:
+
+npx @bhaskarauthor/grc-evidence-autopilot
+
+Zero deps · --json · MIT

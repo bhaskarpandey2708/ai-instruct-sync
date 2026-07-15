@@ -1,0 +1,10 @@
+OpenAI bill. Anthropic bill. Gemini bill. Azure bill.
+
+I shipped llm-spend — free local CLI, one command:
+
+npx @bhaskarauthor/llm-spend usage.json
+
+provider · model · project · day
+budget + --strict for CI
+
+Zero deps · MIT

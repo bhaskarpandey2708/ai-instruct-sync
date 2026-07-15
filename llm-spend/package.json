@@ -1,8 +1,8 @@
 {
   "name": "@bhaskarauthor/llm-spend",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "private": false,
-  "description": "Unified LLM cost, token, and budget observability across OpenAI, Anthropic, Google, Azure, open models",
+  "description": "Multi-provider LLM cost, token, and budget observability — free local CLI",
   "type": "module",
   "bin": {
     "llm-spend": "src/cli.js",
@@ -21,7 +21,13 @@
     "AI",
     "FinOps",
     "observability",
-    "cost"
+    "cost",
+    "LLM",
+    "tokens",
+    "budget",
+    "openai",
+    "anthropic",
+    "gemini"
   ],
   "license": "MIT",
   "author": "Bhaskar Pandey <bhaskarauthor@gmail.com>",

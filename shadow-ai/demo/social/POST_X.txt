@@ -1,0 +1,7 @@
+Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise
+
+Shipped **shadow-ai** as a free local OSS alpha:
+
+npx @bhaskarauthor/shadow-ai
+
+Zero deps · --json · MIT

@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Lightweight Scope 1–3 carbon estimate and supplier survey tool for mid-market exporters — free OSS alpha CLI (P25)
+
+BODY:
+Exporters face ESG questionnaires without enterprise sustainability teams.
+
+I shipped a free open-source alpha CLI for this: **climate-ops-meter**
+
+```
+npx @bhaskarauthor/climate-ops-meter
+npx @bhaskarauthor/climate-ops-meter --json
+```
+
+What it is:
+- Lightweight Scope 1–3 carbon estimate and supplier survey tool for mid-market exporters
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

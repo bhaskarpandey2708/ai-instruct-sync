@@ -1,0 +1,7 @@
+Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing signals)
+
+Shipped **auth-anomaly-radar** as a free local OSS alpha:
+
+npx @bhaskarauthor/auth-anomaly-radar
+
+Zero deps · --json · MIT

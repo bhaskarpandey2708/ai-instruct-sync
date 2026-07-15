@@ -1,0 +1,7 @@
+Composable fraud signal APIs (device, velocity, email risk) for Indian fintech and marketplaces
+
+Shipped **fraud-signal-kit** as a free local OSS alpha:
+
+npx @bhaskarauthor/fraud-signal-kit
+
+Zero deps · --json · MIT

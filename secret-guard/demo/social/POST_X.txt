@@ -1,0 +1,11 @@
+gitleaks and GitHub secret scanning miss the new leak surface:
+
+CLAUDE.md · .cursor/rules · MCP env blocks · .env.example
+
+I built secret-guard — one command that scans the AI paths classic tools ignore.
+
+npx ai-secret-guard@beta
+
+Zero deps · redacted output · pre-commit / CI / SARIF
+
+npmjs.com/package/ai-secret-guard

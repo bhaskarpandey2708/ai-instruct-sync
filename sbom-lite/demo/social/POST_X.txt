@@ -1,0 +1,7 @@
+Zero-friction SBOM generate, diff, and policy gate for npm/PyPI/Go in CI
+
+Shipped **sbom-lite** as a free local OSS alpha:
+
+npx @bhaskarauthor/sbom-lite
+
+Zero deps · --json · MIT

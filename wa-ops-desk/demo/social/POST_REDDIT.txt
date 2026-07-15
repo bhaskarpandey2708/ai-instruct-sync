@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite — free OSS alpha CLI (P15)
+
+BODY:
+Indian SMBs live on WhatsApp; Excel + personal phones do not scale multi-staff.
+
+I shipped a free open-source alpha CLI for this: **wa-ops-desk**
+
+```
+npx @bhaskarauthor/wa-ops-desk
+npx @bhaskarauthor/wa-ops-desk --json
+```
+
+What it is:
+- WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

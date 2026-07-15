@@ -1,0 +1,16 @@
+Tutors lack simple tool for assignments, revision loops, and parent updates.
+
+I built **learn-loop** — a free, local, open-source alpha CLI:
+
+→ Spaced-repetition + cohort homework OS for coaching institutes and online tutors
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/learn-loop
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

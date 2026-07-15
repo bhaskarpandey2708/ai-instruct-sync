@@ -1,0 +1,16 @@
+Creators juggle Notion + Sheets + Drive + native analytics without an ops spine.
+
+I built **creator-ops** — a free, local, open-source alpha CLI:
+
+→ Ops OS for mid-tier creators: content calendar, sponsor CRM, asset vault, analytics rollup
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/creator-ops
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

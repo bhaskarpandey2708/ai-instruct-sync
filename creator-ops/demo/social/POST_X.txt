@@ -1,0 +1,7 @@
+Ops OS for mid-tier creators: content calendar, sponsor CRM, asset vault, analytics rollup
+
+Shipped **creator-ops** as a free local OSS alpha:
+
+npx @bhaskarauthor/creator-ops
+
+Zero deps · --json · MIT

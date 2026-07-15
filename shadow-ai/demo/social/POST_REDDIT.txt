@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise — free OSS alpha CLI (P07)
+
+BODY:
+Employees paste company data into consumer ChatGPT/Claude without IT visibility.
+
+I shipped a free open-source alpha CLI for this: **shadow-ai**
+
+```
+npx @bhaskarauthor/shadow-ai
+npx @bhaskarauthor/shadow-ai --json
+```
+
+What it is:
+- Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

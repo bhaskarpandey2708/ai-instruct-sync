@@ -1,0 +1,24 @@
+I kept answering “how much did we spend on LLMs?” by opening four browser tabs.
+
+So I built llm-spend — a free, local, open-source CLI that rolls up multi-provider usage in one command.
+
+What it does:
+→ Reads JSON or JSONL usage exports
+→ Breaks cost down by provider, model, project, and day
+→ Applies approximate list prices (or your own costUsd)
+→ Shows budget used % and can fail CI with --strict
+
+One command:
+
+npx @bhaskarauthor/llm-spend usage.json
+
+Design principles:
+• Zero runtime dependencies
+• Read-only, nothing leaves your machine
+• Built for engineers who need a rollup now — not a finance dashboard next quarter
+
+Honest limit: list prices are budget-accurate, not invoice-exact. Override with real costs when you have them.
+
+If you’ve ever paste-reconciled three provider invoices into a spreadsheet, this one’s for you. Feedback welcome.
+
+#OpenSource #DevTools #FinOps #LLM #BuildInPublic #AIcoding

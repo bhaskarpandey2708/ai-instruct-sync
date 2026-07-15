@@ -1,0 +1,22 @@
+1/3
+Hot take: your AI coding setup is a secret scanner blind spot.
+
+Keys get pasted into CLAUDE.md, Cursor rules, and MCP JSON.
+gitleaks never looks there.
+
+2/3
+So I shipped secret-guard (open source beta).
+
+• Scans agent rules + MCP env + .env.example
+• Redacts findings
+• Exit codes for pre-commit / CI
+• SARIF for GitHub Code Scanning
+
+npx ai-secret-guard@beta
+
+3/3
+Part of the AI dev hygiene suite:
+instruct-sync → setup-doctor → mcp-sync → secret-guard
+
+Video + repo ↓
+github.com/bhaskarpandey2708/ai-instruct-sync/tree/main/secret-guard

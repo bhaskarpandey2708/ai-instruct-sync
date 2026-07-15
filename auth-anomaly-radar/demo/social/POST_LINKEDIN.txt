@@ -1,0 +1,16 @@
+SMBs enable Auth0/Cognito but lack fraud signals without enterprise SIEM.
+
+I built **auth-anomaly-radar** — a free, local, open-source alpha CLI:
+
+→ Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing signals)
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/auth-anomaly-radar
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

@@ -22,3 +22,6 @@ ai-setup-doctor/fixtures/leaky-secrets/.env
 **/demo/concat.txt
 **/demo/story/bgm.wav
 **/demo/story/n_*.mp4
+# story_v2 render workdir (frames/audio scratch)
+**/demo/story_v2/frames/
+**/demo/story_v2/*.wav

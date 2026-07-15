@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing sig… — free OSS alpha CLI (P09)
+
+BODY:
+SMBs enable Auth0/Cognito but lack fraud signals without enterprise SIEM.
+
+I shipped a free open-source alpha CLI for this: **auth-anomaly-radar**
+
+```
+npx @bhaskarauthor/auth-anomaly-radar
+npx @bhaskarauthor/auth-anomaly-radar --json
+```
+
+What it is:
+- Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing signals)
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

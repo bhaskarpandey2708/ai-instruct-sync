@@ -1,0 +1,79 @@
+=== r/ClaudeAI (PRIMARY) ===
+Submit: https://www.reddit.com/r/ClaudeAI/submit
+Type: Image & Video → upload secret-guard-social-1080p.mp4
+Flair: Tools / Projects if available
+
+TITLE:
+Classic secret scanners miss CLAUDE.md / Cursor rules / MCP env — so I built a focused open-source guard
+
+BODY:
+I use gitleaks. Still found live keys in `.cursor/rules` and hardcoded MCP `env` blocks — paths most scanners never prioritize.
+
+**secret-guard** is a tiny CLI for that surface:
+
+```
+npx ai-secret-guard@beta
+npx ai-secret-guard@beta --strict
+npx ai-secret-guard@beta --sarif > out.sarif
+```
+
+What it scans:
+- Agent rules (`CLAUDE.md`, `.cursor/rules`, AGENTS.md, …)
+- MCP config env blocks (hardcoded tokens)
+- `.env.example` “samples” that are actually live keys
+
+Design:
+- Zero runtime deps
+- Redacted output
+- Pre-commit / CI exit codes
+- SARIF for GitHub Code Scanning
+- MIT
+
+[video attached — ~35s: problem → live scan on leaky fixture → CTA]
+
+npm: https://www.npmjs.com/package/ai-secret-guard
+Repo: https://github.com/bhaskarpandey2708/ai-instruct-sync/tree/main/secret-guard
+
+Sibling tools in the same suite: instruct-sync, ai-setup-doctor, mcp-sync.
+
+Would love feedback on false positives / patterns to add.
+
+
+=== r/cursor (same day or +1) ===
+Submit: https://www.reddit.com/r/cursor/submit
+
+TITLE:
+Built a tiny OSS CLI that finds API keys in .cursor/rules and MCP env (gitleaks often misses these)
+
+BODY:
+Pasted a key into a Cursor rule “just for a minute” once. Classic scanners never looked there.
+
+```
+npx ai-secret-guard@beta
+```
+
+Scans agent rules + MCP env + .env.example. Zero deps, redacted output, CI-friendly.
+
+npm: https://www.npmjs.com/package/ai-secret-guard
+Repo: https://github.com/bhaskarpandey2708/ai-instruct-sync/tree/main/secret-guard
+
+Video in post. Feedback welcome.
+
+
+=== r/devops (optional) ===
+Submit: https://www.reddit.com/r/devops/submit
+
+TITLE:
+Pre-commit/CI secret scan for AI agent configs — not just .env
+
+BODY:
+We keep finding live keys in CLAUDE.md, Cursor rules, and MCP env blocks. gitleaks is great on source — these paths slip through.
+
+```
+npx ai-secret-guard@beta --strict
+npx ai-secret-guard@beta --sarif > secret-guard.sarif
+```
+
+Zero runtime deps, redacted output, MIT.
+
+https://www.npmjs.com/package/ai-secret-guard

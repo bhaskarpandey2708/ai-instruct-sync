@@ -1,0 +1,29 @@
+AI coding agents now execute content you didn’t write: marketplace skills, MCP servers, shared rules, auto-firing hooks.
+
+That is a supply chain.
+
+A 2026 audit found over a third of marketplace agent skills with security flaws — and hundreds of malicious payloads. Most MCP servers scored poorly on security reviews. Prompt injection is a top developer concern for a reason.
+
+I built agent-skill-scan (open source, read-only, zero dependencies).
+
+What it does:
+→ Scans skills, MCP configs, rules files, and hooks
+→ Flags injection, secret exfiltration, dangerous shell, hidden Unicode
+→ Scores 0–100 and fails CI with --strict / --min-score
+
+One command:
+
+npx agent-skill-scan
+
+Part of the AI dev hygiene suite I’m shipping:
+• instruct-sync — keep rules in sync
+• ai-setup-doctor — diagnose the whole setup
+• mcp-sync — sync MCP servers
+• secret-guard — secrets in AI paths
+• agent-skill-scan — skill/MCP/rules/hooks security
+
+npm: https://www.npmjs.com/package/agent-skill-scan
+
+If you install skills or MCP servers from the internet, this is for you. Feedback welcome.
+
+#OpenSource #AISecurity #DevTools #ClaudeAI #Cursor #BuildInPublic #CyberSecurity #SoftwareEngineering

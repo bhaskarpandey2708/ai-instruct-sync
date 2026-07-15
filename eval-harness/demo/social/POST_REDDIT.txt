@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Lightweight eval harness for prompt/agent regression tests in CI for product teams — free OSS alpha CLI (P08)
+
+BODY:
+Prompt changes break behavior silently; full ML platforms are overkill for app teams.
+
+I shipped a free open-source alpha CLI for this: **eval-harness**
+
+```
+npx @bhaskarauthor/eval-harness
+npx @bhaskarauthor/eval-harness --json
+```
+
+What it is:
+- Lightweight eval harness for prompt/agent regression tests in CI for product teams
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

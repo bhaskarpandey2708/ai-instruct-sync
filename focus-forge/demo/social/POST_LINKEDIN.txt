@@ -1,0 +1,16 @@
+Attention fragmentation; existing blockers lack outcome review loops.
+
+I built **focus-forge** — a free, local, open-source alpha CLI:
+
+→ Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/focus-forge
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

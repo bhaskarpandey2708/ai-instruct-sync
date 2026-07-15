@@ -1,0 +1,12 @@
+Your agent will run SKILL.md without reading it.
+
+Marketplace skills: injection, env exfil, curl|sh, hidden Unicode.
+
+I shipped agent-skill-scan — one command, local, zero deps:
+
+npx agent-skill-scan
+
+skills · MCP · rules · hooks
+score / 100 · CI exit codes
+
+npmjs.com/package/agent-skill-scan

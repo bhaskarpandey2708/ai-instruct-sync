@@ -1,0 +1,7 @@
+WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite
+
+Shipped **wa-ops-desk** as a free local OSS alpha:
+
+npx @bhaskarauthor/wa-ops-desk
+
+Zero deps · --json · MIT

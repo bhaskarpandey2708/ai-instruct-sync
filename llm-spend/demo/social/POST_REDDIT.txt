@@ -1,0 +1,48 @@
+=== r/ClaudeAI (PRIMARY) ===
+Submit: https://www.reddit.com/r/ClaudeAI/submit
+Type: Image & Video → upload llm-spend-social-1080p.mp4
+
+TITLE:
+OpenAI + Anthropic + Gemini bills live in five tabs — I built a free one-command cost rollup
+
+BODY:
+I kept bouncing between provider dashboards to answer “what did we actually spend on LLMs this week?”
+
+**llm-spend** is a tiny free CLI that rolls up a usage export:
+
+```
+npx @bhaskarauthor/llm-spend usage.json
+npx @bhaskarauthor/llm-spend --budget 50 --strict usage.jsonl
+```
+
+What you get:
+- By **provider** (OpenAI, Anthropic, Google, Azure, …)
+- By **model** (built-in list prices for Claude / GPT / Gemini families)
+- By **project** and **day**
+- Budget line + **exit 1** with `--strict` for CI
+
+Design:
+- Zero runtime deps
+- Local only — nothing leaves your machine
+- JSON or JSONL exports
+- MIT
+
+Honest: list prices ≠ enterprise invoices. Bring your own `costUsd` per event if you have exact numbers.
+
+[video attached]
+
+Feedback on export formats welcome.
+
+
+=== r/devops (optional) ===
+TITLE:
+CI-friendly multi-provider LLM cost rollup from usage JSON (--strict exit codes)
+
+BODY:
+Roll up OpenAI / Anthropic / Gemini / Azure usage exports in one free CLI:
+
+```
+npx @bhaskarauthor/llm-spend --budget 50 --strict usage.json
+```
+
+Zero deps, local only, MIT. Video in post.

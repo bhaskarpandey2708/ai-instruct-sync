@@ -1,0 +1,21 @@
+{
+  "budgetUsd": 1,
+  "events": [
+    {
+      "provider": "anthropic",
+      "model": "claude-opus",
+      "inputTokens": 100000,
+      "outputTokens": 20000,
+      "project": "heavy-run",
+      "ts": "2026-07-10T12:00:00Z"
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-4o",
+      "inputTokens": 50000,
+      "outputTokens": 10000,
+      "project": "heavy-run",
+      "ts": "2026-07-10T13:00:00Z"
+    }
+  ]
+}

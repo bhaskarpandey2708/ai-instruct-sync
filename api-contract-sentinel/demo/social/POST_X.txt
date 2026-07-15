@@ -1,0 +1,7 @@
+Detect breaking API contract changes in PRs with consumer impact maps
+
+Shipped **api-contract-sentinel** as a free local OSS alpha:
+
+npx @bhaskarauthor/api-contract-sentinel
+
+Zero deps · --json · MIT

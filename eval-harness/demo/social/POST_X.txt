@@ -1,0 +1,7 @@
+Lightweight eval harness for prompt/agent regression tests in CI for product teams
+
+Shipped **eval-harness** as a free local OSS alpha:
+
+npx @bhaskarauthor/eval-harness
+
+Zero deps · --json · MIT

@@ -1,0 +1,7 @@
+Package, version, and sync agent skills/tools/prompts like packages across teams
+
+Shipped **skill-sync** as a free local OSS alpha:
+
+npx @bhaskarauthor/skill-sync
+
+Zero deps · --json · MIT

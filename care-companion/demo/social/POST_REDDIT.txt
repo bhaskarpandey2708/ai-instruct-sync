@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Family care coordination app: meds, appointments, shared notes for elders — free OSS alpha CLI (P22)
+
+BODY:
+Adult children coordinate elder care over chaotic WhatsApp groups.
+
+I shipped a free open-source alpha CLI for this: **care-companion**
+
+```
+npx @bhaskarauthor/care-companion
+npx @bhaskarauthor/care-companion --json
+```
+
+What it is:
+- Family care coordination app: meds, appointments, shared notes for elders
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.

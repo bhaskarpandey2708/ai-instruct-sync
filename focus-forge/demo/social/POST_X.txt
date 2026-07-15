@@ -1,0 +1,7 @@
+Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers
+
+Shipped **focus-forge** as a free local OSS alpha:
+
+npx @bhaskarauthor/focus-forge
+
+Zero deps · --json · MIT

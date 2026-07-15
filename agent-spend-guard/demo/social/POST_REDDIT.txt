@@ -1,0 +1,25 @@
+=== r/ClaudeAI ===
+TITLE:
+I built a kill-switch for Claude Code token bills — daily/monthly budgets, exit 1 when over
+
+BODY:
+Dashboards tell you what you spent *after* the damage. Indie teams still get 3× over budget by spring.
+
+**agent-spend-guard** is a tiny local CLI:
+
+```
+npx agent-spend-guard
+npx agent-spend-guard init
+npx agent-spend-guard check
+```
+
+- Claude Code transcripts + generic JSON events
+- Daily / monthly / per-project USD ceilings
+- check exits 1 when over → stop the agent in hooks/CI
+- Zero runtime deps
+
+Wire into PreToolUse in .claude/settings.json.
+
+Part of the hygiene suite: sync → doctor → mcp-sync → secret-guard → skill-scan → spend-guard.
+
+Feedback welcome.

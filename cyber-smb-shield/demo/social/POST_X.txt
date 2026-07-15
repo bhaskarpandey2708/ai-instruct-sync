@@ -1,0 +1,7 @@
+Managed cybersecurity starter pack for SMBs: DNS filter, phishing drills, backup check, score
+
+Shipped **cyber-smb-shield** as a free local OSS alpha:
+
+npx @bhaskarauthor/cyber-smb-shield
+
+Zero deps · --json · MIT

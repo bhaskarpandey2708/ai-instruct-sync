@@ -1,0 +1,16 @@
+SOC2 prep is spreadsheet hell; evidence collection is continuous toil.
+
+I built **grc-evidence-autopilot** — a free, local, open-source alpha CLI:
+
+→ Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO startups
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/grc-evidence-autopilot
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

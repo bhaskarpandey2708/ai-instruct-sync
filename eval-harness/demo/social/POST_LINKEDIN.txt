@@ -1,0 +1,16 @@
+Prompt changes break behavior silently; full ML platforms are overkill for app teams.
+
+I built **eval-harness** — a free, local, open-source alpha CLI:
+
+→ Lightweight eval harness for prompt/agent regression tests in CI for product teams
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/eval-harness
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

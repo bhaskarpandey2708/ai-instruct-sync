@@ -1,0 +1,16 @@
+Silent data breakage destroys dashboards; Great Expectations-class tools feel heavy.
+
+I built **data-quality-guard** — a free, local, open-source alpha CLI:
+
+→ Pipeline data quality checks as code with anomaly alerts for analytics teams
+→ Offline-first core (fixtures + litmus tests)
+→ Zero runtime dependencies
+→ JSON output for scripts / CI
+
+Try:
+
+npx @bhaskarauthor/data-quality-guard
+
+Honest limit: alpha MVP core, not a full hosted product.
+
+#OpenSource #BuildInPublic #DevTools #AI

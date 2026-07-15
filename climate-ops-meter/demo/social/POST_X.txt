@@ -1,0 +1,7 @@
+Lightweight Scope 1–3 carbon estimate and supplier survey tool for mid-market exporters
+
+Shipped **climate-ops-meter** as a free local OSS alpha:
+
+npx @bhaskarauthor/climate-ops-meter
+
+Zero deps · --json · MIT

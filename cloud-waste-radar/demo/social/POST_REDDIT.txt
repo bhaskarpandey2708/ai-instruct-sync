@@ -1,0 +1,26 @@
+=== PRIMARY ===
+TITLE:
+Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups — free OSS alpha CLI (P11)
+
+BODY:
+Surveys classically cite ~30% cloud waste; startups overprovision without FinOps staff.
+
+I shipped a free open-source alpha CLI for this: **cloud-waste-radar**
+
+```
+npx @bhaskarauthor/cloud-waste-radar
+npx @bhaskarauthor/cloud-waste-radar --json
+```
+
+What it is:
+- Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups
+- Offline / local-first MVP core
+- Zero runtime dependencies
+- --json for CI / scripts
+- MIT
+
+Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+
+[video attached]
+
+Feedback welcome.
