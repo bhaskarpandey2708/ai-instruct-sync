@@ -1,6 +1,6 @@
 # Publish pack — Reddit · X · LinkedIn
 
-**Product:** P05 llm-spend (`@bhaskarauthor/llm-spend@0.1.0-alpha.2`)  
+**Product:** P05 llm-spend (`@bhaskarauthor/llm-spend@0.1.0-alpha.3`)  
 **Framing:** **Free open-source CLI only** — no seats, no SaaS, no paid tier in copy.
 
 **Video (attach everywhere):**  

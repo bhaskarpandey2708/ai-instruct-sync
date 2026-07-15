@@ -1,6 +1,6 @@
 {
   "name": "@bhaskarauthor/llm-spend",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "private": false,
   "description": "Multi-provider LLM cost, token, and budget observability — free local CLI",
   "type": "module",
