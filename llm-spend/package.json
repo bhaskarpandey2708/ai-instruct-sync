@@ -1,6 +1,6 @@
 {
   "name": "@bhaskarauthor/llm-spend",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "private": false,
   "description": "Multi-provider LLM cost, token, and budget observability — free local CLI",
   "type": "module",
@@ -36,8 +36,12 @@
     "README.md",
     "LICENSE",
     "PRODUCT_CYCLE.md",
-    "demo",
-    "fixtures"
+    "fixtures",
+    "demo/run-demo.mjs",
+    "demo/DEMO.md",
+    "demo/llm-spend-demo-1080p.mp4",
+    "demo/llm-spend-preview.gif",
+    "demo/social"
   ],
   "publishConfig": {
     "access": "public"

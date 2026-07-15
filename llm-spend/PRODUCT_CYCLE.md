@@ -3,7 +3,7 @@
 | Field | Value |
 |-------|--------|
 | **Track** | Alpha (`alpha`) |
-| **Version** | `0.1.0-alpha.3` |
+| **Version** | `0.1.0-alpha.4` |
 | **Cycle** | **CLOSED** (Alpha) — product deepened 2026-07-15 |
 | **Publish** | **Not published** — local until explicit go-ahead |
 
