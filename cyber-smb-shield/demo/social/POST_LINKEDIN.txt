@@ -1,16 +1,11 @@
-SMBs are ransomware targets but cannot staff a SOC.
+MFA on. Backups untested. 11 of 40 clicked the phish sim.
 
-I built **cyber-smb-shield** — a free, local, open-source alpha CLI:
+Score baseline controls before the real phish.
 
-→ Managed cybersecurity starter pack for SMBs: DNS filter, phishing drills, backup check, score
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built cyber-smb-shield: free, local, OSS alpha for SMB security scoring + phishing click rate.
 
 npx @bhaskarauthor/cyber-smb-shield
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not MDR.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #CyberSecurity #SMB #DevTools

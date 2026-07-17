@@ -1,0 +1,25 @@
+MFA: on.
+Backups: untested.
+Phish sim: 11 of 40 clicked (27%).
+
+That’s not “pretty good for an SMB.”
+That’s a **weak band with a loud click rate.**
+
+**cyber-smb-shield** — free, local, OSS alpha:
+
+→ score mfa · backups · dns · training · patching  
+→ phishing click % → risk band  
+→ weak / fair / strong  
+→ zero deps · MIT  
+
+Investigation prints OK/GAP per control and phishing risk — before the real attachment.
+
+Honest limit: offline baseline — not a full SOC.
+
+npx @bhaskarauthor/cyber-smb-shield
+
+Video below.
+
+Would your team fail the click-rate test?
+
+#OpenSource #DevTools #BuildInPublic #CyberSecurity #SMB #InfoSec #IndiaStartups #indiehacker

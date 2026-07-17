@@ -1,7 +1,9 @@
-Family care coordination app: meds, appointments, shared notes for elders
+10 reminders.
+0 idea what’s due.
 
-Shipped **care-companion** as a free local OSS alpha:
+care-companion — free local OSS alpha
+due list · nextAt
 
 npx @bhaskarauthor/care-companion
 
-Zero deps · --json · MIT
+#OpenSource #HealthTech

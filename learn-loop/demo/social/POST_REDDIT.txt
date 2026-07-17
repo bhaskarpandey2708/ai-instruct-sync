@@ -1,26 +1,18 @@
 === PRIMARY ===
 TITLE:
-Spaced-repetition + cohort homework OS for coaching institutes and online tutors — free OSS alpha CLI (P19)
+You binge-read the notes. The card was due yesterday.
 
 BODY:
-Tutors lack simple tool for assignments, revision loops, and parent updates.
+Highlighting feels like learning. Spaced repetition is learning on a schedule.
 
-I shipped a free open-source alpha CLI for this: **learn-loop**
+**learn-loop** (free local OSS alpha) runs a simple SM-2-ish loop: quality 0–5 → next interval · due queue.
 
 ```
 npx @bhaskarauthor/learn-loop
-npx @bhaskarauthor/learn-loop --json
 ```
 
-What it is:
-- Spaced-repetition + cohort homework OS for coaching institutes and online tutors
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline SRS core — not a full LMS.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video: documentary cut.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/learn-loop

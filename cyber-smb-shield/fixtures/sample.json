@@ -1,6 +1,12 @@
 {
   "answers": {
     "mfa": true,
-    "backups": false
-  }
+    "backups": false,
+    "dnsFilter": false,
+    "phishingTrain": true,
+    "patching": false
+  },
+  "sent": 40,
+  "clicked": 11,
+  "org": "Acme Traders Pvt Ltd"
 }

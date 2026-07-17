@@ -25,8 +25,8 @@ Space 2–3h · Reddit → X Premium long → LinkedIn. Deep terminal proof in e
 |----|---------|------------------|------------------|
 | P09 | auth-anomaly-radar | `auth-anomaly-radar/demo/social/auth-anomaly-radar-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
 | P10 | fraud-signal-kit | `fraud-signal-kit/demo/social/fraud-signal-kit-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
-| P20 | cyber-smb-shield | *(baseline pack — doc upgrade later)* | pack |
-| P28 | api-contract-sentinel | *(baseline pack — doc upgrade later)* | pack |
+| P20 | cyber-smb-shield | `cyber-smb-shield/demo/social/…` (**doc ready**) | + Premium X |
+| P28 | api-contract-sentinel | *(baseline — doc in later batch)* | pack |
 
 **Re-render P07–P10:** `python3 scripts/render_documentary_product.py --only shadow-ai,eval-harness,auth-anomaly-radar,fraud-signal-kit`
 
@@ -56,16 +56,18 @@ P21 data-quality-guard → next batch.
 
 **Re-render:** `python3 scripts/render_documentary_product.py --only wa-ops-desk,gst-ops-copilot,appt-book-india,clinic-admin-lite`
 
-## Day 5 — Fri — Life / learning
+## Day 5 — Fri — Learn / cyber / data / care (**documentary ready**)
 
-| ID | Product | Video | Pack |
-|----|---------|-------|------|
-| P19 | learn-loop | `learn-loop/demo/social/learn-loop-social-1080p.mp4` | `learn-loop/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P22 | care-companion | `care-companion/demo/social/care-companion-social-1080p.mp4` | `care-companion/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P23 | personal-crm | `personal-crm/demo/social/personal-crm-social-1080p.mp4` | `personal-crm/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P27 | focus-forge | `focus-forge/demo/social/focus-forge-social-1080p.mp4` | `focus-forge/docs/launch/SOCIAL-PUBLISH-PACK.md` |
+| ID | Product | Video (~50s doc) | Pack + Premium X |
+|----|---------|------------------|------------------|
+| P19 | learn-loop | `learn-loop/demo/social/learn-loop-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P20 | cyber-smb-shield | `cyber-smb-shield/demo/social/cyber-smb-shield-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P21 | data-quality-guard | `data-quality-guard/demo/social/data-quality-guard-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P22 | care-companion | `care-companion/demo/social/care-companion-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
 
-**Copy-paste posts:** each product’s `demo/social/POST_*.txt`
+**Re-render:** `python3 scripts/render_documentary_product.py --only learn-loop,cyber-smb-shield,data-quality-guard,care-companion`
+
+P23 personal-crm · P27 focus-forge → next batches.
 
 ## Day 6 — Sat — Creator & climate & SC
 

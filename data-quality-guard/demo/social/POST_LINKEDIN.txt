@@ -1,16 +1,11 @@
-Silent data breakage destroys dashboards; Great Expectations-class tools feel heavy.
+Pipeline green. Empty emails, duplicate ids, amount=-5.
 
-I built **data-quality-guard** — a free, local, open-source alpha CLI:
+Gate rows like you gate tests.
 
-→ Pipeline data quality checks as code with anomaly alerts for analytics teams
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built data-quality-guard: free, local, OSS alpha for not_null / unique / range expectations.
 
 npx @bhaskarauthor/data-quality-guard
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not full DQ suite.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #DataEngineering #DevTools

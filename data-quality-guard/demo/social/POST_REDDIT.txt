@@ -1,26 +1,18 @@
 === PRIMARY ===
 TITLE:
-Pipeline data quality checks as code with anomaly alerts for analytics teams — free OSS alpha CLI (P21)
+Pipeline green. Empty emails, duplicate ids, amount = -5.
 
 BODY:
-Silent data breakage destroys dashboards; Great Expectations-class tools feel heavy.
+Code has tests. Rows still ship garbage.
 
-I shipped a free open-source alpha CLI for this: **data-quality-guard**
+**data-quality-guard** runs not_null · unique · range expectations → suite GREEN/RED.
 
 ```
 npx @bhaskarauthor/data-quality-guard
-npx @bhaskarauthor/data-quality-guard --json
 ```
 
-What it is:
-- Pipeline data quality checks as code with anomaly alerts for analytics teams
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline expectations — not full Great Expectations cloud.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/data-quality-guard

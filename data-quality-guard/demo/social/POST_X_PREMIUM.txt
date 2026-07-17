@@ -1,0 +1,24 @@
+Pipeline: green.
+Dashboard: refreshed.
+Data: empty emails, duplicate ids, amount=-5 and 99999.
+
+That’s the green pipeline lie.
+
+**data-quality-guard** — free, local, OSS alpha:
+
+→ not_null · unique · range  
+→ PASS/FAIL with bad counts  
+→ suite GREEN or RED  
+→ zero deps · MIT · offline  
+
+Investigation fails the load before the war room.
+
+Honest limit: offline core — not a full DQ platform.
+
+npx @bhaskarauthor/data-quality-guard
+
+Video below.
+
+Which expectation would fail first in *your* warehouse?
+
+#OpenSource #DevTools #BuildInPublic #DataEngineering #DataQuality #Analytics #indiehacker

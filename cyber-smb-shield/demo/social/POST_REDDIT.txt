@@ -1,26 +1,18 @@
 === PRIMARY ===
 TITLE:
-Managed cybersecurity starter pack for SMBs: DNS filter, phishing drills, backup check,… — free OSS alpha CLI (P20)
+MFA on. Backups untested. 11 of 40 staff clicked the phish sim.
 
 BODY:
-SMBs are ransomware targets but cannot staff a SOC.
+SMBs often buy one tool and call it security.
 
-I shipped a free open-source alpha CLI for this: **cyber-smb-shield**
+**cyber-smb-shield** scores baseline controls (MFA, backups, DNS, training, patching) + phishing click rate.
 
 ```
 npx @bhaskarauthor/cyber-smb-shield
-npx @bhaskarauthor/cyber-smb-shield --json
 ```
 
-What it is:
-- Managed cybersecurity starter pack for SMBs: DNS filter, phishing drills, backup check, score
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline score — not MDR/EDR.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/cyber-smb-shield

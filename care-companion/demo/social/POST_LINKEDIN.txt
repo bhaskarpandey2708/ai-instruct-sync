@@ -1,16 +1,11 @@
-Adult children coordinate elder care over chaotic WhatsApp groups.
+Ten reminders. None know which med is actually due.
 
-I built **care-companion** — a free, local, open-source alpha CLI:
+Adherence is a schedule — not notification volume.
 
-→ Family care coordination app: meds, appointments, shared notes for elders
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built care-companion: free, local, OSS alpha for due meds + next interval scheduling.
 
 npx @bhaskarauthor/care-companion
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full EMR / medical device.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #HealthTech #DevTools

@@ -1,16 +1,11 @@
-Tutors lack simple tool for assignments, revision loops, and parent updates.
+You binge-read the notes. The card was due yesterday.
 
-I built **learn-loop** — a free, local, open-source alpha CLI:
+Memory is a schedule — not a highlight color.
 
-→ Spaced-repetition + cohort homework OS for coaching institutes and online tutors
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built learn-loop: free, local, OSS alpha for spaced-repetition scheduling (due queue + interval updates).
 
 npx @bhaskarauthor/learn-loop
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full LMS.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #Learning #DevTools

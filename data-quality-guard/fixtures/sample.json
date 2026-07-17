@@ -1,15 +1,14 @@
 {
   "rows": [
-    {
-      "id": 1,
-      "amount": 3
-    }
+    { "id": "o1", "email": "a@corp.io", "amount": 120, "status": "paid" },
+    { "id": "o2", "email": "", "amount": 50, "status": "paid" },
+    { "id": "o3", "email": "b@corp.io", "amount": -5, "status": "paid" },
+    { "id": "o3", "email": "c@corp.io", "amount": 80, "status": "paid" },
+    { "id": "o4", "email": "d@corp.io", "amount": 99999, "status": "paid" }
   ],
   "expectations": [
-    {
-      "id": "nn",
-      "type": "not_null",
-      "column": "id"
-    }
+    { "id": "email_not_null", "type": "not_null", "column": "email" },
+    { "id": "id_unique", "type": "unique", "column": "id" },
+    { "id": "amount_range", "type": "range", "column": "amount", "min": 0, "max": 10000 }
   ]
 }

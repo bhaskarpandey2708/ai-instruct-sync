@@ -1,7 +1,9 @@
-Pipeline data quality checks as code with anomaly alerts for analytics teams
+Pipeline green.
+amount=-5. Duplicate ids.
 
-Shipped **data-quality-guard** as a free local OSS alpha:
+data-quality-guard — free local OSS alpha
+not_null · unique · range
 
 npx @bhaskarauthor/data-quality-guard
 
-Zero deps · --json · MIT
+#OpenSource #DataEngineering

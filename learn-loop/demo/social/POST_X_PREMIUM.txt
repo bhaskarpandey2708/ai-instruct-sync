@@ -1,0 +1,24 @@
+You binge-read the notes.
+The card was due yesterday.
+
+That’s the binge trap:
+highlight everything → re-read the PDF → blank on the interview card.
+
+**learn-loop** — free, local, OSS alpha:
+
+→ cards with EF / interval / reps  
+→ review quality 0–5 updates schedule  
+→ due queue for today  
+→ zero deps · MIT · offline  
+
+Investigation shows due cards and post-review intervals — not a guilt pile.
+
+Honest limit: offline SRS core — not Duolingo/Anki cloud.
+
+npx @bhaskarauthor/learn-loop
+
+Video below.
+
+What card would be due if you were honest?
+
+#OpenSource #DevTools #BuildInPublic #Learning #SpacedRepetition #indiehacker #AIcoding

@@ -1,9 +1,9 @@
 {
+  "now": 1784300000000,
+  "patient": "Asha",
   "meds": [
-    {
-      "id": "aspirin",
-      "everyHours": 12,
-      "nextAt": 0
-    }
+    { "id": "metformin", "label": "Metformin 500", "everyHours": 12, "nextAt": 1784290000000 },
+    { "id": "atorva", "label": "Atorvastatin", "everyHours": 24, "nextAt": 1784300000000 },
+    { "id": "vitd", "label": "Vitamin D", "everyHours": 168, "nextAt": 1784400000000 }
   ]
 }

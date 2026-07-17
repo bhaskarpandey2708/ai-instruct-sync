@@ -1,26 +1,18 @@
 === PRIMARY ===
 TITLE:
-Family care coordination app: meds, appointments, shared notes for elders — free OSS alpha CLI (P22)
+Ten reminders. None know which med is actually due.
 
 BODY:
-Adult children coordinate elder care over chaotic WhatsApp groups.
+Adherence is a schedule problem.
 
-I shipped a free open-source alpha CLI for this: **care-companion**
+**care-companion** lists meds due now and advances nextAt by interval.
 
 ```
 npx @bhaskarauthor/care-companion
-npx @bhaskarauthor/care-companion --json
 ```
 
-What it is:
-- Family care coordination app: meds, appointments, shared notes for elders
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline schedule — not a full EMR / regulated medical device.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/care-companion

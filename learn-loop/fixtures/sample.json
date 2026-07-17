@@ -1,8 +1,10 @@
 {
+  "day": 0,
+  "quality": 4,
   "cards": [
-    {
-      "id": "c1",
-      "dueDay": 0
-    }
+    { "id": "git-rebase", "ef": 2.5, "interval": 0, "reps": 0, "dueDay": 0, "front": "What does git rebase do?" },
+    { "id": "http-429", "ef": 2.6, "interval": 6, "reps": 2, "dueDay": 0, "front": "When do you get HTTP 429?" },
+    { "id": "sql-index", "ef": 2.4, "interval": 15, "reps": 4, "dueDay": 12, "front": "When does an index not help?" },
+    { "id": "weak-card", "ef": 1.8, "interval": 3, "reps": 1, "dueDay": 0, "front": "Name three MFA factors" }
   ]
 }

@@ -1,0 +1,29 @@
+Ten app reminders.
+None know which med is actually due.
+
+That’s notification spam, not care.
+
+**care-companion** — free, local, OSS alpha:
+
+→ meds with everyHours + nextAt  
+→ due-now list  
+→ scheduleNext advances the interval  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+due now
+  DUE   Metformin 500
+  DUE   Atorvastatin
+next schedule
+  NEXT  Vitamin D     …
+```
+
+Honest limit: offline schedule core — not a regulated medical product.
+
+npx @bhaskarauthor/care-companion
+
+Video below.
+
+#OpenSource #DevTools #BuildInPublic #HealthTech #Caregiving #indiehacker

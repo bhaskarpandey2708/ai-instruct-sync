@@ -1,7 +1,9 @@
-Spaced-repetition + cohort homework OS for coaching institutes and online tutors
+Binge notes.
+Card was due yesterday.
 
-Shipped **learn-loop** as a free local OSS alpha:
+learn-loop — free local OSS alpha
+SRS · due queue
 
 npx @bhaskarauthor/learn-loop
 
-Zero deps · --json · MIT
+#OpenSource #Learning #DevTools
