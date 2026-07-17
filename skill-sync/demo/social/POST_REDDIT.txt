@@ -1,62 +1,70 @@
 === r/ClaudeAI (PRIMARY) ===
 Submit: https://www.reddit.com/r/ClaudeAI/submit
 Type: Image & Video → upload skill-sync-social-1080p.mp4
+Flair: Tools / Projects if available
 
 TITLE:
-I kept pasting the same agent skill into 3 tools. One of them was always stale.
+Your Claude skill is fixed. Your Cursor skill is still broken. You just don’t know yet.
 
 BODY:
-You know the move:
+Last month I “fixed” a review skill in Claude Code.
 
-- Claude gets the good SKILL.md
-- Cursor gets last week’s version
-- Someone’s fork still has the “temporary” prompt from March
+Two days later a teammate hit the same bug in Cursor.
+Same skill name. Different file. Old content.
 
-No semver. No “what changed.” Just Slack screenshots and hope.
+That’s when it clicked: we don’t have a skill system.
+We have a paste system.
 
-I got tired of treating agent skills like random markdown files, so I shipped **skill-sync** — a free, local OSS alpha that treats skills like packages:
+- Claude folder → good version  
+- Cursor rules → last week  
+- That one shared Drive doc → “final_v3_USE_THIS”  
+- No version. No diff. No idea who changed what.
+
+I built **skill-sync** so agent skills can behave a little more like packages and a little less like folklore.
 
 ```
 npx @bhaskarauthor/skill-sync
 ```
 
-What it does today:
-- Validate a skill package (name, version, skills[])
-- Diff local vs remote → what would be **added** / **updated**
+Today (free OSS alpha, local, zero deps):
+- Validate a skill package — name, semver, skills[]
+- Plan install — what would be **added** vs **updated** vs remote
 - `--json` for scripts / CI
-- Zero runtime deps · MIT · nothing leaves your machine
+- MIT · nothing leaves your machine
 
-Honest limit: alpha core (schema + plan/install math), not a full private registry SaaS yet. The point is stop the copy-paste drift *before* you build the whole platform.
+Honest limit: offline core (validate + plan), not a private registry SaaS. I’m shipping the discipline layer first.
 
-Video ~40s attached.
+~40s video attached.
 
 npm: https://www.npmjs.com/package/@bhaskarauthor/skill-sync
 
-If your “source of truth” for skills is a Notion page + vibes, I’d love feedback on the package shape.
+If your source of truth is still a Notion page and goodwill, tell me what fields you’d want in the package schema.
 
 
 === r/cursor (same day or +1) ===
 TITLE:
-Cursor rules / skills drift every time you “just paste the latest version”
+I stopped trusting “I pasted the latest skill into Cursor”
 
 BODY:
-Same skill, three folders, three slightly different copies. Classic.
+Paste is not sync.
 
-**skill-sync** (free OSS alpha) validates a skill package and plans adds/updates like a tiny package manager for agent skills:
+Three tools. Three copies. One of them is always lying.
+
+**skill-sync** (free local OSS alpha) validates skill packs and plans adds/updates like a tiny package manager for agent skills:
 
 ```
 npx @bhaskarauthor/skill-sync
 ```
 
-Zero deps, local, MIT. Video in post. Feedback welcome.
+Zero deps · MIT · video in post. Schema feedback welcome.
 
 
 === r/LocalLLaMA (optional) ===
 TITLE:
-Tiny free CLI to version/sync agent skill packs (validate + install plan)
+Free local CLI: version + validate agent skill packs (before you paste them everywhere)
 
 BODY:
-If you maintain shared skills/prompts across tools, paste-sync breaks.
+If you maintain shared skills/prompts across tools, copy-paste drift is undefeated.
 
 ```
 npx @bhaskarauthor/skill-sync --json

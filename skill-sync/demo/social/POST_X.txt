@@ -1,7 +1,11 @@
-Package, version, and sync agent skills/tools/prompts like packages across teams
+Your Claude skill is fixed.
+Your Cursor skill is still broken.
+You just don’t know yet.
 
-Shipped **skill-sync** as a free local OSS alpha:
+We version npm packages.
+We version agent skills as final_v3_REAL.md.
+
+skill-sync — free local OSS alpha
+validate packs · plan adds/updates · zero deps
 
 npx @bhaskarauthor/skill-sync
-
-Zero deps · --json · MIT
