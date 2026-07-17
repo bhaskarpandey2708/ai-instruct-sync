@@ -1,7 +1,9 @@
-Privacy-first personal CRM for founders: follow-ups, context notes, birthday nudges
+38 days silent.
+Lead: never.
 
-Shipped **personal-crm** as a free local OSS alpha:
+personal-crm — free local OSS alpha
+nudge list
 
 npx @bhaskarauthor/personal-crm
 
-Zero deps · --json · MIT
+#OpenSource #CRM #Founders

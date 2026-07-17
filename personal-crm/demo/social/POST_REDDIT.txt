@@ -1,26 +1,18 @@
 === PRIMARY ===
 TITLE:
-Privacy-first personal CRM for founders: follow-ups, context notes, birthday nudges — free OSS alpha CLI (P23)
+Investor silent 38 days. Lead: never touched. Who’s on your nudge list?
 
 BODY:
-LinkedIn is not a relationship system; people forget follow-ups.
+Relationships decay on a timer — not a vibe.
 
-I shipped a free open-source alpha CLI for this: **personal-crm**
+**personal-crm** (free local OSS alpha): lastTouch + window → nudge list.
 
 ```
 npx @bhaskarauthor/personal-crm
-npx @bhaskarauthor/personal-crm --json
 ```
 
-What it is:
-- Privacy-first personal CRM for founders: follow-ups, context notes, birthday nudges
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline nudge core — not a full CRM suite.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video: documentary cut.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/personal-crm

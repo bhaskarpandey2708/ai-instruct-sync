@@ -1,16 +1,11 @@
-LinkedIn is not a relationship system; people forget follow-ups.
+Investor silent 38 days. Lead never touched.
 
-I built **personal-crm** — a free, local, open-source alpha CLI:
+Relationships decay on a timer.
 
-→ Privacy-first personal CRM for founders: follow-ups, context notes, birthday nudges
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built personal-crm: free, local, OSS alpha for lastTouch → nudge lists.
 
 npx @bhaskarauthor/personal-crm
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full CRM suite.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #CRM #DevTools

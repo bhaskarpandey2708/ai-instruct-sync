@@ -1,8 +1,8 @@
 {
   "activities": [
-    {
-      "type": "electricity_kwh",
-      "amount": 100
-    }
+    { "type": "electricity_kwh", "amount": 4200, "site": "HQ" },
+    { "type": "diesel_l", "amount": 180, "site": "genset" },
+    { "type": "flight_km", "amount": 6400, "note": "BOM-DEL-BOM x2" },
+    { "type": "waste_kg", "amount": 90, "site": "HQ" }
   ]
 }

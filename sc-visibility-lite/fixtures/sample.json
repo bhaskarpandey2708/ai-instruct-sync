@@ -1,9 +1,10 @@
 {
+  "now": 1784300000000,
+  "maxDays": 14,
   "suppliers": [
-    {
-      "id": "sup-1",
-      "risk": "medium",
-      "lastCheckin": 1783794020442
-    }
+    { "id": "fab-a", "name": "Fabric Mill A", "risk": "high", "lastCheckin": 1782000000000, "region": "Tiruppur" },
+    { "id": "dye-b", "name": "Dye House B", "risk": "medium", "lastCheckin": 1784200000000, "region": "Surat" },
+    { "id": "pack-c", "name": "Pack Co C", "risk": "low", "lastCheckin": 1784250000000, "region": "Pune" },
+    { "id": "log-d", "name": "Logistics D", "risk": "high", "lastCheckin": 0, "region": "Nhava Sheva" }
   ]
 }

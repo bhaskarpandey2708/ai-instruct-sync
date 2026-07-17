@@ -1,7 +1,9 @@
-Lite multi-tier supplier status & risk notes for SMEs without SAP budgets
+High-risk mill.
+Never checked in.
 
-Shipped **sc-visibility-lite** as a free local OSS alpha:
+sc-visibility-lite — free local OSS alpha
+risk · stale
 
 npx @bhaskarauthor/sc-visibility-lite
 
-Zero deps · --json · MIT
+#OpenSource #SupplyChain

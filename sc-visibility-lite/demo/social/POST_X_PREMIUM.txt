@@ -1,0 +1,22 @@
+Two high-risk suppliers.
+One never checked in.
+
+Brand story says ethical.
+Tier reality says blind.
+
+**sc-visibility-lite** — free, local, OSS alpha:
+
+→ risk bands low/med/high  
+→ stale if lastCheckin > maxDays  
+→ high-risk id list  
+→ zero deps · MIT · offline  
+
+Investigation flags HIGH + STALE before the recall headline.
+
+Honest limit: offline core — not a full supply-chain platform.
+
+npx @bhaskarauthor/sc-visibility-lite
+
+Video below.
+
+#OpenSource #DevTools #BuildInPublic #SupplyChain #ESG #Manufacturing #indiehacker

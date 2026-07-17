@@ -1,0 +1,19 @@
+Electricity. Diesel. Flights. Waste.
+One number: kgCO2e.
+
+You can’t cut what you never measured.
+
+**climate-ops-meter** — free, local, OSS alpha:
+
+→ factor × amount per activity  
+→ line kg + total tCO2e  
+→ hotspot = top line  
+→ zero deps · MIT · offline  
+
+Honest limit: simplified factors — not a full GHG inventory consultancy product.
+
+npx @bhaskarauthor/climate-ops-meter
+
+Video below.
+
+#OpenSource #DevTools #BuildInPublic #Climate #ESG #Sustainability #indiehacker

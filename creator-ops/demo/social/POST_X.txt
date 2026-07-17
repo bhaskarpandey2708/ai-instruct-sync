@@ -1,7 +1,9 @@
-Ops OS for mid-tier creators: content calendar, sponsor CRM, asset vault, analytics rollup
+Fat pipeline.
+Overlapping shoots.
 
-Shipped **creator-ops** as a free local OSS alpha:
+creator-ops — free local OSS alpha
+deals · conflicts
 
 npx @bhaskarauthor/creator-ops
 
-Zero deps · --json · MIT
+#OpenSource #CreatorEconomy

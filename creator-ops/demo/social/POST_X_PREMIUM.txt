@@ -1,0 +1,26 @@
+Pipeline: tens of thousands on paper.
+Calendar: two shoots overlap.
+
+That’s cash meeting chaos.
+
+**creator-ops** — free, local, OSS alpha:
+
+→ deals by stage · pipelineValue  
+→ calendar conflict pairs  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+pipeline value     $…
+by stage           pitch / negotiate / signed …
+CLASH  shoot-a ↔ shoot-b
+```
+
+Honest limit: offline core — not a full creator suite.
+
+npx @bhaskarauthor/creator-ops
+
+Video below.
+
+#OpenSource #DevTools #BuildInPublic #CreatorEconomy #InfluencerMarketing #indiehacker

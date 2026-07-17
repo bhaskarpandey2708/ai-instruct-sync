@@ -1,0 +1,21 @@
+Investor: silent 38 days.
+Lead: never touched.
+Peer: fine.
+
+Who’s on your nudge list?
+
+**personal-crm** — free, local, OSS alpha:
+
+→ people + lastTouch  
+→ window (e.g. 30d) → NUDGE list  
+→ zero deps · MIT · offline  
+
+Investigation prints who went cold — before the deal does.
+
+Honest limit: offline core — not Salesforce-for-founders cloud.
+
+npx @bhaskarauthor/personal-crm
+
+Video below.
+
+#OpenSource #DevTools #BuildInPublic #CRM #Networking #indiehacker #Founders

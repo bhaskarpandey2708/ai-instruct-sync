@@ -1,8 +1,14 @@
 {
   "deals": [
-    {
-      "stage": "pitch",
-      "value": 2000
-    }
+    { "id": "d1", "stage": "pitch", "value": 2000, "brand": "SnackCo" },
+    { "id": "d2", "stage": "negotiate", "value": 8000, "brand": "FitApp" },
+    { "id": "d3", "stage": "signed", "value": 15000, "brand": "BankX" },
+    { "id": "d4", "stage": "pitch", "value": 3500, "brand": "TeaBrand" },
+    { "id": "d5", "stage": "lost", "value": 5000, "brand": "OldCo" }
+  ],
+  "items": [
+    { "id": "shoot-a", "start": 1000, "end": 2000, "title": "Brand shoot A" },
+    { "id": "shoot-b", "start": 1500, "end": 2500, "title": "Collab shoot B" },
+    { "id": "edit", "start": 3000, "end": 4000, "title": "Edit day" }
   ]
 }

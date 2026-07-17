@@ -1,26 +1,18 @@
 === PRIMARY ===
 TITLE:
-Ops OS for mid-tier creators: content calendar, sponsor CRM, asset vault, analytics rollup — free OSS alpha CLI (P24)
+Pipeline looks fat. Two shoots overlap. Cash meets chaos.
 
 BODY:
-Creators juggle Notion + Sheets + Drive + native analytics without an ops spine.
+Creator businesses die on double-books and fuzzy pipelines.
 
-I shipped a free open-source alpha CLI for this: **creator-ops**
+**creator-ops** rolls deals by stage + value and flags calendar conflicts.
 
 ```
 npx @bhaskarauthor/creator-ops
-npx @bhaskarauthor/creator-ops --json
 ```
 
-What it is:
-- Ops OS for mid-tier creators: content calendar, sponsor CRM, asset vault, analytics rollup
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline ops core — not a full agency OS.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/creator-ops

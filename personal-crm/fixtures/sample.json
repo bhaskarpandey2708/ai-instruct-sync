@@ -1,8 +1,10 @@
 {
+  "now": 1784300000000,
+  "days": 30,
   "people": [
-    {
-      "id": "founder-friend",
-      "lastTouch": 0
-    }
+    { "id": "priya", "name": "Priya (investor)", "lastTouch": 1781000000000, "tags": ["investor"] },
+    { "id": "dev-mentor", "name": "Ravi (mentor)", "lastTouch": 1784000000000, "tags": ["mentor"] },
+    { "id": "cold-lead", "name": "Sam (lead)", "lastTouch": 0, "tags": ["lead"] },
+    { "id": "fresh", "name": "Maya (peer)", "lastTouch": 1784200000000, "tags": ["peer"] }
   ]
 }

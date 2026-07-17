@@ -1,16 +1,11 @@
-SMEs lack visibility beyond tier-1 suppliers; enterprise SC tools are overkill.
+Two high-risk suppliers. One never checked in.
 
-I built **sc-visibility-lite** — a free, local, open-source alpha CLI:
+Visibility is risk bands + freshness — not last year’s PDF.
 
-→ Lite multi-tier supplier status & risk notes for SMEs without SAP budgets
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built sc-visibility-lite: free, local, OSS alpha for supplier risk rollup + stale check-ins.
 
 npx @bhaskarauthor/sc-visibility-lite
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not full SCM.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #SupplyChain #ESG #DevTools

@@ -1,26 +1,16 @@
 === PRIMARY ===
 TITLE:
-Lite multi-tier supplier status & risk notes for SMEs without SAP budgets — free OSS alpha CLI (P26)
+Two high-risk suppliers. One never checked in. Blind tiers become headlines.
 
 BODY:
-SMEs lack visibility beyond tier-1 suppliers; enterprise SC tools are overkill.
-
-I shipped a free open-source alpha CLI for this: **sc-visibility-lite**
+**sc-visibility-lite** rolls supplier risk bands + stale check-ins (maxDays).
 
 ```
 npx @bhaskarauthor/sc-visibility-lite
-npx @bhaskarauthor/sc-visibility-lite --json
 ```
 
-What it is:
-- Lite multi-tier supplier status & risk notes for SMEs without SAP budgets
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline visibility — not full SCM/traceability suite.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/sc-visibility-lite

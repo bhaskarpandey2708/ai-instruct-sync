@@ -69,15 +69,18 @@ P21 data-quality-guard → next batch.
 
 P23 personal-crm · P27 focus-forge → next batches.
 
-## Day 6 — Sat — Creator & climate & SC
+## Day 6 — Sat — CRM / creator / climate / SC (**documentary ready**)
 
-| ID | Product | Video | Pack |
-|----|---------|-------|------|
-| P24 | creator-ops | `creator-ops/demo/social/creator-ops-social-1080p.mp4` | `creator-ops/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P25 | climate-ops-meter | `climate-ops-meter/demo/social/climate-ops-meter-social-1080p.mp4` | `climate-ops-meter/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P26 | supply-chain-visibility-lite | `sc-visibility-lite/demo/social/sc-visibility-lite-social-1080p.mp4` | `sc-visibility-lite/docs/launch/SOCIAL-PUBLISH-PACK.md` |
+| ID | Product | Video (~50s doc) | Pack + Premium X |
+|----|---------|------------------|------------------|
+| P23 | personal-crm | `personal-crm/demo/social/personal-crm-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P24 | creator-ops | `creator-ops/demo/social/creator-ops-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P25 | climate-ops-meter | `climate-ops-meter/demo/social/climate-ops-meter-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P26 | sc-visibility-lite | `sc-visibility-lite/demo/social/sc-visibility-lite-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
 
-**Copy-paste posts:** each product’s `demo/social/POST_*.txt`
+**Re-render:** `python3 scripts/render_documentary_product.py --only personal-crm,creator-ops,climate-ops-meter,sc-visibility-lite`
+
+P27 focus-forge · P28 api-contract-sentinel → final batch.
 
 ## Day 7 — Sun — buffer / repost best + engagement
 
