@@ -18,7 +18,6 @@ I got tired of treating agent skills like random markdown files, so I shipped **
 
 ```
 npx @bhaskarauthor/skill-sync
-npx @bhaskarauthor/llm-spend   # sibling FinOps tool if you care about spend too
 ```
 
 What it does today:
