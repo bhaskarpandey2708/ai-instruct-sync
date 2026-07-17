@@ -16,6 +16,7 @@ Installed for the AI hygiene suite monorepo. Grok auto-loads from `.grok/skills/
 | `social-launch` | `/social-launch` | Next post, pack QA |
 | `product-ops` | `/product-ops` | Status, memory, priorities |
 | `frontend-design` | `/frontend-design` | UI craft (marketplace import) |
+| `documentary-demo` | `/documentary-demo` | Tech mini-doc video beats, cold open, re-renders |
 
 **Standard:** every skill assumes a **20+ year professional** bar — opinionated, anti-pattern aware, no junior templates.
 

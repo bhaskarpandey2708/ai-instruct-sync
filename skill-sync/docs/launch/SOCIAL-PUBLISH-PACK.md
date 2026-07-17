@@ -4,10 +4,14 @@
 **Framing:** Free OSS alpha · local · zero deps · no paid pitch  
 **Bar:** Principal copywriting — hook first, product second  
 
-**Video**  
+**Video (documentary cut · 47.5s · 1080p)**  
 `/Users/bhaskar_pandey/Documents/development/skill-sync/demo/social/skill-sync-social-1080p.mp4`  
 
-Also: `skill-sync/demo/skill-sync-demo-1080p.mp4`
+Also: `skill-sync/demo/skill-sync-demo-1080p.mp4`  
+
+**Story beats:** cold open (3 realities) → THE PASTE SYSTEM → THE COST → live proof (validate/plan) → discipline → CTA  
+
+**Re-render:** `python3 scripts/render_skill_sync_documentary.py`
 
 **Try**
 ```bash
