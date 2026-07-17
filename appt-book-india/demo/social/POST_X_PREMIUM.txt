@@ -1,0 +1,32 @@
+WhatsApp: “book 3pm.”
+Calendar: three busy blocks.
+
+Do you double-book…
+or **compute free slots**?
+
+**appt-book-india** — free, local, OSS alpha:
+
+→ day window · duration · busy intervals  
+→ open SLOT list  
+→ book preferred start or first free  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+open slots         N
+  SLOT  … → …
+book attempt
+  OK    …
+signal  WhatsApp booking needs real availability
+```
+
+Honest limit: offline slot core — not a full clinic PMS.
+
+npx @bhaskarauthor/appt-book-india
+
+Video below.
+
+How many double-books would free-slot math have prevented last month?
+
+#OpenSource #DevTools #BuildInPublic #HealthTech #IndiaStartups #WhatsApp #SMB #indiehacker

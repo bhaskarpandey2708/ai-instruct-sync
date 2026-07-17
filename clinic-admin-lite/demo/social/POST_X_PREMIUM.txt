@@ -1,0 +1,35 @@
+Patients in one notebook.
+Appointments in another.
+Balances in the owner’s head.
+
+That’s not “simple ops.”
+That’s **three sources of truth.**
+
+**clinic-admin-lite** — free, local, OSS alpha:
+
+→ patients with balance  
+→ appointments linked by patientId  
+→ charge updates balance  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+patients / balance
+  p-asha   Asha K    bal=₹500
+  p-rahul  Rahul M   bal=₹1200
+appointments
+  a1  consult …
+charge             +₹500 → p-asha
+signal  N patient(s) with open balance
+```
+
+Honest limit: offline ledger — not a full HMS / insurance stack.
+
+npx @bhaskarauthor/clinic-admin-lite
+
+Video below.
+
+Would your front desk pass a “one ledger” test?
+
+#OpenSource #DevTools #BuildInPublic #HealthTech #IndiaStartups #SMB #clinic #indiehacker

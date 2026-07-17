@@ -1,12 +1,27 @@
 #!/usr/bin/env node
-import { spawnSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { main } from "../src/core.js";
+
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-console.log("=== DEMO P16 gst-ops-copilot ===");
-console.log("GST filing prep copilot: invoice hygiene, GSTR mismatch alerts, CA handoff packs");
-const r = spawnSync(process.execPath, [path.join(root, "src/cli.js"), "--json", path.join(root, "fixtures/sample.json")], {
-  encoding: "utf8",
-});
-console.log(r.stdout || r.stderr);
-process.exit(r.status ?? 0);
+const input = JSON.parse(readFileSync(path.join(root, "fixtures/sample.json"), "utf8"));
+const r = main(input);
+
+console.log("=== gst-ops-copilot · investigation ===");
+console.log("invoices scanned   " + r.count);
+console.log("hygiene            " + (r.ok ? "CLEAN" : "ISSUES"));
+console.log("issue count        " + r.issues.length);
+console.log("");
+console.log("issues");
+if (!r.issues.length) console.log("  (none)");
+for (const i of r.issues) {
+  const extra = i.expect != null ? "  expect~" + i.expect : "";
+  console.log("  FAIL  " + String(i.id).padEnd(10) + "  " + i.code + extra);
+}
+console.log("");
+const by = {};
+for (const i of r.issues) by[i.code] = (by[i.code] || 0) + 1;
+console.log("by code            " + Object.entries(by).map(([k, v]) => k + "=" + v).join(" · "));
+console.log("signal  bad GSTIN / tax math is cheaper to catch before filing week");
+console.log("discipline  invoice hygiene offline — before the CA fire drill");

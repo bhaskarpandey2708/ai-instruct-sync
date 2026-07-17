@@ -1,0 +1,33 @@
+Three WhatsApp threads.
+Refund. Book 3pm. Password reset.
+The founder is still the router.
+
+That’s not “customer love.”
+That’s an **inbox architecture** problem.
+
+**wa-ops-desk** — free, local, OSS alpha:
+
+→ label messages (orders / booking / faq / general)  
+→ route to least-load staff with matching labels  
+→ auto-FAQ reply when safe  
+→ zero runtime deps · MIT · offline  
+
+Investigation:
+
+```
+routing
+  m1 → orders    @riya
+  m2 → booking   @arjun
+  m3 → faq       @bot-faq · auto-FAQ
+signal  WhatsApp chaos is a routing problem
+```
+
+Honest limit: offline rules — not a hosted WA Cloud product.
+
+npx @bhaskarauthor/wa-ops-desk
+
+Video below.
+
+What % of your WhatsApp is actually FAQ?
+
+#OpenSource #DevTools #BuildInPublic #WhatsApp #IndiaStartups #SMB #CustomerSupport #indiehacker

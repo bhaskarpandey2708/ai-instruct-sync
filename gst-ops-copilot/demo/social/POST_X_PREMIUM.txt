@@ -1,0 +1,35 @@
+Filing week.
+Three invoices already fail hygiene.
+
+• bad GSTIN pattern  
+• CGST/SGST don’t match taxable × 9%  
+• tax fields missing entirely  
+
+The CA finds it at the portal.
+You can find it in a CLI **first**.
+
+**gst-ops-copilot** — free, local, OSS alpha:
+
+→ invoice hygiene scan  
+→ issue codes: bad_gstin · missing_tax · tax_mismatch  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+hygiene            ISSUES
+  FAIL  INV-1002   bad_gstin
+  FAIL  INV-1003   tax_mismatch
+  FAIL  INV-1004   missing_tax
+signal  cheaper to catch before filing week
+```
+
+Honest limit: offline checks — not a full GST suite / e-invoice network.
+
+npx @bhaskarauthor/gst-ops-copilot
+
+Video below.
+
+How many invoices would fail a 60-second hygiene pass?
+
+#OpenSource #DevTools #BuildInPublic #GST #IndiaStartups #FinOps #Compliance #indiehacker

@@ -1,16 +1,11 @@
-Small Indian clinics still paper/Excel; full HMS is overkill and expensive.
+Patients in one notebook, appointments in another, balances in the owner’s head.
 
-I built **clinic-admin-lite** — a free, local, open-source alpha CLI:
+Small clinics need one local ledger — not enterprise bloat.
 
-→ Clinic admin lite: appointments, patient ledger, Rx print, WhatsApp follow-ups for small practices
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built clinic-admin-lite: free, local, OSS alpha for patients, appointments, and charges.
 
 npx @bhaskarauthor/clinic-admin-lite
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full hospital system.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #HealthTech #India #SMB #DevTools

@@ -1,7 +1,8 @@
-GST filing prep copilot: invoice hygiene, GSTR mismatch alerts, CA handoff packs
+Filing week.
+bad_gstin · tax_mismatch · missing_tax.
 
-Shipped **gst-ops-copilot** as a free local OSS alpha:
+gst-ops-copilot — free local OSS alpha
 
 npx @bhaskarauthor/gst-ops-copilot
 
-Zero deps · --json · MIT
+#OpenSource #GST #IndiaStartups

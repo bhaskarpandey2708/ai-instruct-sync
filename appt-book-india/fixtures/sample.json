@@ -1,1 +1,24 @@
-{}
+{
+  "dayStart": 1784259000000,
+  "dayEnd": 1784287800000,
+  "durationMin": 30,
+  "preferredStart": 1784280600000,
+  "clinic": "SmileCare Andheri",
+  "busy": [
+    {
+      "start": 1784259000000,
+      "end": 1784262600000,
+      "label": "Dr block"
+    },
+    {
+      "start": 1784269800000,
+      "end": 1784273400000,
+      "label": "existing patient"
+    },
+    {
+      "start": 1784278800000,
+      "end": 1784282400000,
+      "label": "lunch / admin"
+    }
+  ]
+}

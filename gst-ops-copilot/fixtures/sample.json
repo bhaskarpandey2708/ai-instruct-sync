@@ -1,11 +1,34 @@
 {
   "invoices": [
     {
-      "id": "i1",
+      "id": "INV-1001",
       "gstin": "27AAPFU0939F1ZV",
-      "taxable": 100,
-      "cgst": 9,
-      "sgst": 9
+      "taxable": 10000,
+      "cgst": 900,
+      "sgst": 900,
+      "party": "Acme Retail"
+    },
+    {
+      "id": "INV-1002",
+      "gstin": "27BADGSTIN",
+      "taxable": 5000,
+      "cgst": 450,
+      "sgst": 450,
+      "party": "Quick Supplies"
+    },
+    {
+      "id": "INV-1003",
+      "gstin": "29AABCT1332L1ZV",
+      "taxable": 2000,
+      "cgst": 100,
+      "sgst": 100,
+      "party": "South Traders"
+    },
+    {
+      "id": "INV-1004",
+      "gstin": "07AAACB2894M1ZM",
+      "taxable": 8000,
+      "party": "Delhi Mart"
     }
   ]
 }

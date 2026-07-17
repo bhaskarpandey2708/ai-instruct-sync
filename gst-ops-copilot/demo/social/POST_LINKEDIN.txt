@@ -1,16 +1,9 @@
-SMEs struggle with invoice data quality and GSTR mismatches before CA filing.
+Filing week: bad GSTIN, tax mismatch, missing tax lines — catch them before the portal does.
 
-I built **gst-ops-copilot** — a free, local, open-source alpha CLI:
-
-→ GST filing prep copilot: invoice hygiene, GSTR mismatch alerts, CA handoff packs
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built gst-ops-copilot: free, local, OSS alpha for invoice hygiene (GSTIN + CGST/SGST checks).
 
 npx @bhaskarauthor/gst-ops-copilot
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not full GSTR filing.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #GST #India #Compliance #DevTools

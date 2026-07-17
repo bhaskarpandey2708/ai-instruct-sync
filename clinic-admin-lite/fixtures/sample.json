@@ -1,19 +1,12 @@
 {
   "patients": [
-    {
-      "id": "p1",
-      "name": "Asha"
-    }
+    { "id": "p-asha", "name": "Asha K", "phone": "+91-98xxx", "balance": 0 },
+    { "id": "p-rahul", "name": "Rahul M", "phone": "+91-99xxx", "balance": 1200 }
   ],
   "appts": [
-    {
-      "id": "a1",
-      "patientId": "p1",
-      "at": 1
-    }
+    { "id": "a1", "patientId": "p-asha", "at": "2026-07-17T11:00+05:30", "service": "consult" },
+    { "id": "a2", "patientId": "p-rahul", "at": "2026-07-17T11:30+05:30", "service": "follow-up" },
+    { "id": "a3", "patientId": "p-asha", "at": "2026-07-17T16:00+05:30", "service": "labs" }
   ],
-  "charge": {
-    "patientId": "p1",
-    "amount": 500
-  }
+  "charge": { "patientId": "p-asha", "amount": 500, "note": "consult fee" }
 }

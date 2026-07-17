@@ -1,26 +1,18 @@
 === PRIMARY ===
 TITLE:
-Lightweight appointment booking with WhatsApp reminders for salons, tutors, clinics lite — free OSS alpha CLI (P17)
+WhatsApp says “book 3pm.” The day has three busy blocks. Do you double-book or compute free slots?
 
 BODY:
-No-shows and phone tag; Calendly-class tools not localized/priced for Bharat SMB.
+Indian clinics live on WhatsApp + a paper grid.
 
-I shipped a free open-source alpha CLI for this: **appt-book-india**
+**appt-book-india** computes free slots from busy intervals, then books preferred or first free.
 
 ```
 npx @bhaskarauthor/appt-book-india
-npx @bhaskarauthor/appt-book-india --json
 ```
 
-What it is:
-- Lightweight appointment booking with WhatsApp reminders for salons, tutors, clinics lite
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline slot math — not a full PMS / WhatsApp bot.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/appt-book-india

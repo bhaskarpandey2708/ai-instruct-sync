@@ -1,7 +1,9 @@
-Clinic admin lite: appointments, patient ledger, Rx print, WhatsApp follow-ups for small practices
+Notebook. Grid. Owner’s head.
+Three truths for one clinic.
 
-Shipped **clinic-admin-lite** as a free local OSS alpha:
+clinic-admin-lite — free local OSS alpha
+patients · appts · charges
 
 npx @bhaskarauthor/clinic-admin-lite
 
-Zero deps · --json · MIT
+#OpenSource #HealthTech #IndiaStartups

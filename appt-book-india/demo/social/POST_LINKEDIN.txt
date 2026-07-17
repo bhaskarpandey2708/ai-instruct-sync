@@ -1,16 +1,11 @@
-No-shows and phone tag; Calendly-class tools not localized/priced for Bharat SMB.
+WhatsApp says “book 3pm.” The day has three busy blocks.
 
-I built **appt-book-india** — a free, local, open-source alpha CLI:
+Slots are math over busy intervals — not vibes over a spreadsheet.
 
-→ Lightweight appointment booking with WhatsApp reminders for salons, tutors, clinics lite
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built appt-book-india: free, local, OSS alpha for free-slot computation and booking.
 
 npx @bhaskarauthor/appt-book-india
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full PMS.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #HealthTech #India #DevTools

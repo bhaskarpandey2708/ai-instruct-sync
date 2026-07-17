@@ -1,14 +1,30 @@
 {
-  "message": {
-    "text": "book tomorrow 3pm"
-  },
-  "staff": [
+  "inbox": [
     {
-      "id": "a",
-      "labels": [
-        "booking"
-      ],
-      "load": 0
+      "id": "m1",
+      "from": "+91-98xxx",
+      "text": "Where is my order #4821 refund?",
+      "ts": "2026-07-17T10:02:00+05:30"
+    },
+    {
+      "id": "m2",
+      "from": "+91-99xxx",
+      "text": "book tomorrow 3pm for dental",
+      "ts": "2026-07-17T10:05:00+05:30"
+    },
+    {
+      "id": "m3",
+      "from": "+91-97xxx",
+      "text": "how do I reset my account password?",
+      "ts": "2026-07-17T10:06:00+05:30"
     }
-  ]
+  ],
+  "staff": [
+    { "id": "riya", "labels": ["orders", "general"], "load": 4 },
+    { "id": "arjun", "labels": ["booking"], "load": 1 },
+    { "id": "bot-faq", "labels": ["faq"], "load": 0 }
+  ],
+  "message": {
+    "text": "Where is my order #4821 refund?"
+  }
 }

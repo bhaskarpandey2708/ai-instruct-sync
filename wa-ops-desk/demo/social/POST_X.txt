@@ -1,7 +1,9 @@
-WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite
+Refund. Book 3pm. FAQ.
+Founder still routing.
 
-Shipped **wa-ops-desk** as a free local OSS alpha:
+wa-ops-desk — free local OSS alpha
+label · least-load · auto-FAQ
 
 npx @bhaskarauthor/wa-ops-desk
 
-Zero deps · --json · MIT
+#OpenSource #WhatsApp #IndiaStartups

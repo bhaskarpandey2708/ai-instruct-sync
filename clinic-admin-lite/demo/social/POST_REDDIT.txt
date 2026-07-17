@@ -1,26 +1,20 @@
 === PRIMARY ===
 TITLE:
-Clinic admin lite: appointments, patient ledger, Rx print, WhatsApp follow-ups for smal… — free OSS alpha CLI (P18)
+Patients in one notebook, appointments in another, balances in the owner’s head.
 
 BODY:
-Small Indian clinics still paper/Excel; full HMS is overkill and expensive.
+Small clinics don’t need SAP. They need a ledger that doesn’t lie.
 
-I shipped a free open-source alpha CLI for this: **clinic-admin-lite**
+**clinic-admin-lite** — patients · appts · charges in one local model.
 
 ```
 npx @bhaskarauthor/clinic-admin-lite
-npx @bhaskarauthor/clinic-admin-lite --json
 ```
 
-What it is:
-- Clinic admin lite: appointments, patient ledger, Rx print, WhatsApp follow-ups for small practices
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Demo: two patients, three appts, +₹500 consult → open balances visible.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Honest limit: offline ledger core — not a full hospital system.
 
-[video attached]
+Video attached.
 
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/clinic-admin-lite

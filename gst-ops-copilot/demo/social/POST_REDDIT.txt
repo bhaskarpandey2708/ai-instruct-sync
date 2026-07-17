@@ -1,26 +1,22 @@
 === PRIMARY ===
 TITLE:
-GST filing prep copilot: invoice hygiene, GSTR mismatch alerts, CA handoff packs — free OSS alpha CLI (P16)
+Filing week: bad GSTIN, tax mismatch, missing tax lines — catch them before the portal does.
 
 BODY:
-SMEs struggle with invoice data quality and GSTR mismatches before CA filing.
+GST hygiene fails quietly until filing.
 
-I shipped a free open-source alpha CLI for this: **gst-ops-copilot**
+**gst-ops-copilot** scans invoices offline:
+
+- bad_gstin  
+- missing_tax  
+- tax_mismatch (CGST/SGST vs taxable × 9%)  
 
 ```
 npx @bhaskarauthor/gst-ops-copilot
-npx @bhaskarauthor/gst-ops-copilot --json
 ```
 
-What it is:
-- GST filing prep copilot: invoice hygiene, GSTR mismatch alerts, CA handoff packs
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline hygiene — not full GSTR filing product.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/gst-ops-copilot

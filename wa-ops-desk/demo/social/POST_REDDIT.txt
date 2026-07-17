@@ -1,26 +1,24 @@
 === PRIMARY ===
 TITLE:
-WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite — free OSS alpha CLI (P15)
+Three WhatsApp chats: refund, book 3pm, password reset. The founder is still the router.
 
 BODY:
-Indian SMBs live on WhatsApp; Excel + personal phones do not scale multi-staff.
+Every Indian SME WhatsApp is a second office.
 
-I shipped a free open-source alpha CLI for this: **wa-ops-desk**
+Orders, bookings, FAQs — same blue ticks. More headcount is one answer. **Label + least-load routing** is cheaper first.
+
+**wa-ops-desk** (free local OSS alpha):
+
+- classify: orders · booking · faq · general  
+- assign least-load staff by label  
+- auto-FAQ when safe  
 
 ```
 npx @bhaskarauthor/wa-ops-desk
-npx @bhaskarauthor/wa-ops-desk --json
 ```
 
-What it is:
-- WhatsApp-first ops desk for Indian SMBs: orders, FAQs, staff routing, CRM lite
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline routing core — not WhatsApp Cloud API / BSP.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video: documentary cut.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/wa-ops-desk

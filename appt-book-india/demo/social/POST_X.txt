@@ -1,7 +1,9 @@
-Lightweight appointment booking with WhatsApp reminders for salons, tutors, clinics lite
+“Book 3pm” on WhatsApp.
+Three busy blocks on the day.
 
-Shipped **appt-book-india** as a free local OSS alpha:
+appt-book-india — free local OSS alpha
+slots · book
 
 npx @bhaskarauthor/appt-book-india
 
-Zero deps · --json · MIT
+#OpenSource #HealthTech #IndiaStartups

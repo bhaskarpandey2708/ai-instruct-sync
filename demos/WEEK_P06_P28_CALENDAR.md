@@ -45,16 +45,16 @@ Space 2–3h · Reddit → X Premium long → LinkedIn. Deep terminal proof in e
 
 P21 data-quality-guard → next batch.
 
-## Day 4 — Thu — India ops
+## Day 4 — Thu — India ops (**documentary ready**)
 
-| ID | Product | Video | Pack |
-|----|---------|-------|------|
-| P15 | wa-ops-desk | `wa-ops-desk/demo/social/wa-ops-desk-social-1080p.mp4` | `wa-ops-desk/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P16 | gst-ops-copilot | `gst-ops-copilot/demo/social/gst-ops-copilot-social-1080p.mp4` | `gst-ops-copilot/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P17 | appt-book-india | `appt-book-india/demo/social/appt-book-india-social-1080p.mp4` | `appt-book-india/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P18 | clinic-admin-lite | `clinic-admin-lite/demo/social/clinic-admin-lite-social-1080p.mp4` | `clinic-admin-lite/docs/launch/SOCIAL-PUBLISH-PACK.md` |
+| ID | Product | Video (~50s doc) | Pack + Premium X |
+|----|---------|------------------|------------------|
+| P15 | wa-ops-desk | `wa-ops-desk/demo/social/wa-ops-desk-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P16 | gst-ops-copilot | `gst-ops-copilot/demo/social/gst-ops-copilot-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P17 | appt-book-india | `appt-book-india/demo/social/appt-book-india-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P18 | clinic-admin-lite | `clinic-admin-lite/demo/social/clinic-admin-lite-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
 
-**Copy-paste posts:** each product’s `demo/social/POST_*.txt`
+**Re-render:** `python3 scripts/render_documentary_product.py --only wa-ops-desk,gst-ops-copilot,appt-book-india,clinic-admin-lite`
 
 ## Day 5 — Fri — Life / learning
 
