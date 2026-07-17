@@ -1,26 +1,66 @@
-=== PRIMARY ===
+=== r/ClaudeAI (PRIMARY) ===
+Submit: https://www.reddit.com/r/ClaudeAI/submit
+Type: Image & Video → upload skill-sync-social-1080p.mp4
+
 TITLE:
-Package, version, and sync agent skills/tools/prompts like packages across teams — free OSS alpha CLI (P06)
+I kept pasting the same agent skill into 3 tools. One of them was always stale.
 
 BODY:
-Custom agent skills and prompt packs are copy-pasted Slackware with no versions.
+You know the move:
 
-I shipped a free open-source alpha CLI for this: **skill-sync**
+- Claude gets the good SKILL.md
+- Cursor gets last week’s version
+- Someone’s fork still has the “temporary” prompt from March
+
+No semver. No “what changed.” Just Slack screenshots and hope.
+
+I got tired of treating agent skills like random markdown files, so I shipped **skill-sync** — a free, local OSS alpha that treats skills like packages:
 
 ```
 npx @bhaskarauthor/skill-sync
+npx @bhaskarauthor/llm-spend   # sibling FinOps tool if you care about spend too
+```
+
+What it does today:
+- Validate a skill package (name, version, skills[])
+- Diff local vs remote → what would be **added** / **updated**
+- `--json` for scripts / CI
+- Zero runtime deps · MIT · nothing leaves your machine
+
+Honest limit: alpha core (schema + plan/install math), not a full private registry SaaS yet. The point is stop the copy-paste drift *before* you build the whole platform.
+
+Video ~40s attached.
+
+npm: https://www.npmjs.com/package/@bhaskarauthor/skill-sync
+
+If your “source of truth” for skills is a Notion page + vibes, I’d love feedback on the package shape.
+
+
+=== r/cursor (same day or +1) ===
+TITLE:
+Cursor rules / skills drift every time you “just paste the latest version”
+
+BODY:
+Same skill, three folders, three slightly different copies. Classic.
+
+**skill-sync** (free OSS alpha) validates a skill package and plans adds/updates like a tiny package manager for agent skills:
+
+```
+npx @bhaskarauthor/skill-sync
+```
+
+Zero deps, local, MIT. Video in post. Feedback welcome.
+
+
+=== r/LocalLLaMA (optional) ===
+TITLE:
+Tiny free CLI to version/sync agent skill packs (validate + install plan)
+
+BODY:
+If you maintain shared skills/prompts across tools, paste-sync breaks.
+
+```
 npx @bhaskarauthor/skill-sync --json
 ```
 
-What it is:
-- Package, version, and sync agent skills/tools/prompts like packages across teams
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
-
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
-
-[video attached]
-
-Feedback welcome.
+Alpha · offline · MIT. Video attached.

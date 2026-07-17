@@ -1,128 +1,155 @@
-# Publish pack — Reddit · X · LinkedIn
+# Publish pack — skill-sync (P06)
 
-**Product:** P06 skill-sync (`@bhaskarauthor/skill-sync@0.1.0-alpha.1`)  
-**Category:** AI Tooling  
-**Framing:** **Free open-source alpha CLI** — local offline core. No seats, SaaS, or paid tiers in post copy.
+**Product:** `@bhaskarauthor/skill-sync@0.1.0-alpha.1`  
+**Framing:** Free OSS alpha · local · zero deps · no paid pitch  
+**Video:** `skill-sync/demo/social/skill-sync-social-1080p.mp4` (also `demo/skill-sync-demo-1080p.mp4`)
 
-**Video (attach everywhere):**  
-`/Users/bhaskar_pandey/Documents/development/skill-sync/demo/social/skill-sync-social-1080p.mp4`
+**Order:** Reddit → X → LinkedIn. Engage ~1h after Reddit.
 
-Also: `skill-sync/demo/skill-sync-demo-1080p.mp4` (if present)
-
-**Try after npm publish:**
+**Try:**
 ```bash
-npx @bhaskarauthor/skill-sync
-npx @bhaskarauthor/skill-sync --json fixtures/sample.json
-```
-
-**Until published / offline:**
-```bash
-cd skill-sync && npm test && npm run demo
-node skill-sync/src/cli.js fixtures/sample.json
-```
-
-**Post order:** Reddit → X → LinkedIn. Stay for comments after Reddit (~1h).
-
----
-
-## 1) Reddit
-
-**Title**
-```
-Package, version, and sync agent skills/tools/prompts like packages across teams — free OSS alpha CLI (P06)
-```
-
-**Body**
-```
-Custom agent skills and prompt packs are copy-pasted Slackware with no versions.
-
-I shipped a free open-source alpha CLI for this: **skill-sync**
-
-```
 npx @bhaskarauthor/skill-sync
 npx @bhaskarauthor/skill-sync --json
 ```
 
-What it is:
-- Package, version, and sync agent skills/tools/prompts like packages across teams
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- `--json` for CI / scripts
-- MIT
-
-Honest: this is an alpha domain core (fixtures + litmus), not a full SaaS product.
-
-[video attached]
-
-Feedback welcome on false positives / formats to support.
+**Open video:**
+```bash
+open -R "/Users/bhaskar_pandey/Documents/development/skill-sync/demo/social/skill-sync-social-1080p.mp4"
 ```
 
-### Optional subs (pick 1–2 that fit)
+Copy-paste files (use these — kept in sync with this pack):
+- `demo/social/POST_REDDIT.txt`
+- `demo/social/POST_X.txt`
+- `demo/social/POST_X_THREAD.txt` (optional)
+- `demo/social/POST_LINKEDIN.txt`
 
-| Angle | Where |
-|-------|--------|
-| DevTools / AI | r/ClaudeAI, r/cursor, r/LocalLLaMA |
-| Security | r/netsec, r/cybersecurity |
-| India ops | r/india, r/developersIndia |
-| Startup | r/SaaS, r/startups (soft pitch only) |
+---
+
+## Hook strategy (why these lines)
+
+| Platform | Hook job | Line |
+|----------|----------|------|
+| Reddit title | Specific pain + identity | “I kept pasting the same agent skill into 3 tools…” |
+| X | Mini-story, punch | Fixed in Claude / Cursor still broken / week later |
+| LinkedIn | Stake + reframe | Bug “came back” → packaging, not model |
+
+Never lead with product name. Lead with the wound.
+
+---
+
+## 1) Reddit — r/ClaudeAI (primary)
+
+**Submit:** https://www.reddit.com/r/ClaudeAI/submit · Image & Video · attach MP4
+
+**Title**
+```
+I kept pasting the same agent skill into 3 tools. One of them was always stale.
+```
+
+**Body**
+```
+You know the move:
+
+- Claude gets the good SKILL.md
+- Cursor gets last week’s version
+- Someone’s fork still has the “temporary” prompt from March
+
+No semver. No “what changed.” Just Slack screenshots and hope.
+
+I got tired of treating agent skills like random markdown files, so I shipped **skill-sync** — a free, local OSS alpha that treats skills like packages:
+
+```
+npx @bhaskarauthor/skill-sync
+```
+
+What it does today:
+- Validate a skill package (name, version, skills[])
+- Diff local vs remote → what would be **added** / **updated**
+- `--json` for scripts / CI
+- Zero runtime deps · MIT · nothing leaves your machine
+
+Honest limit: alpha core (schema + plan/install math), not a full private registry SaaS yet. The point is stop the copy-paste drift *before* you build the whole platform.
+
+Video attached.
+
+npm: https://www.npmjs.com/package/@bhaskarauthor/skill-sync
+
+If your “source of truth” for skills is a Notion page + vibes, I’d love feedback on the package shape.
+```
+
+### Also
+
+| Sub | Title |
+|-----|--------|
+| r/cursor | Cursor rules / skills drift every time you “just paste the latest version” |
+| r/LocalLLaMA | Tiny free CLI to version/sync agent skill packs (validate + install plan) |
+
+Bodies: see `demo/social/POST_REDDIT.txt`
 
 ---
 
 ## 2) X / Twitter
 
-**Attach:** same MP4
-
+**Single post (default)**
 ```
-Package, version, and sync agent skills/tools/prompts like packages across teams
+I fixed a skill in Claude.
+Cursor still had the broken one.
+Nobody noticed for a week.
 
-Shipped **skill-sync** as a free local OSS alpha:
+Agent skills deserve versions — not “final_v3_REAL.md”.
+
+skill-sync (free OSS alpha):
+validate packs · plan adds/updates · local · zero deps
 
 npx @bhaskarauthor/skill-sync
 
-Zero deps · --json · MIT
-
-#OpenSource #devtools
+MIT
 ```
+
+**Optional 3-post thread:** `demo/social/POST_X_THREAD.txt`
 
 ---
 
 ## 3) LinkedIn
 
 ```
-Custom agent skills and prompt packs are copy-pasted Slackware with no versions.
+I fixed an agent skill in one tool.
+Two days later, a teammate’s Cursor still ran the old version — and the bug “came back.”
 
-I built **skill-sync** — a free, local, open-source alpha CLI:
+That wasn’t a model problem.
+It was a packaging problem.
 
-→ Package, version, and sync agent skills/tools/prompts like packages across teams
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
+We version npm packages.
+We barely version the prompts and skills that steer AI coding agents.
 
-Try:
+So I built skill-sync — a free, local, open-source alpha CLI that treats agent skills like packages:
+
+→ Validate name, version, and skill entries
+→ Diff local vs remote: what would be added or updated
+→ JSON output for scripts and CI
+→ Zero runtime dependencies — nothing leaves your machine
+
+One command:
 
 npx @bhaskarauthor/skill-sync
 
-Honest limit: alpha MVP core, not a full hosted product. Built to ship learnings in public.
+Honest limit: this is the offline core (schema + install plan), not a hosted private registry yet. Ship the discipline first; platform later.
 
-Feedback welcome.
+If your team’s “skill source of truth” is a shared Drive folder and goodwill, this is for you. Feedback welcome.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #DevTools #AIcoding #ClaudeAI #Cursor #AgentSkills
 ```
-
-**Tip:** First line is the hook. Upload video natively.
 
 ---
 
 ## Checklist
 
 - [ ] Preview video with sound
-- [ ] Free OSS framing only (no $ / seats / “buy”)
-- [ ] npm live **or** clear “local alpha / clone” CTA
-- [ ] Reddit: Image & Video type
-- [ ] Reply to comments 1h
+- [ ] Hook first — product name second
+- [ ] Free OSS only (no seats / $)
+- [ ] Reddit Image & Video + flair if available
+- [ ] Stay for comments ~1h
 
-## Open video
+## After post
 
-```bash
-open -R "/Users/bhaskar_pandey/Documents/development/skill-sync/demo/social/skill-sync-social-1080p.mp4"
-```
+Drop Reddit / X / LinkedIn URLs → engagement replies + `demos/WEEK_POSTING_LOG.md`
