@@ -1,0 +1,42 @@
+Day 4 of onboard.
+Laptop: done.
+GitHub: done.
+Repo builds: done.
+
+Secrets: still in chat.
+Agents + MCP: not configured.
+First PR: not yet.
+
+That’s not “ramping.”
+That’s a **checklist with open risk.**
+
+**dev-onboard-os** (free local OSS alpha):
+
+→ default day-one checklist including AI/MCP safety  
+→ DONE / TODO with percent complete  
+→ blockers called out by id  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+progress           3/6  (50%)
+  DONE  laptop
+  DONE  github
+  DONE  repo
+  TODO  secrets     Secrets via vault (not chat)
+  TODO  agents      AI agents + MCP configured safely
+  TODO  first-pr
+blockers           secrets, agents, first-pr
+signal  AI/MCP setup is now part of day-one risk
+```
+
+Honest limit: offline checklist core — not an HRIS / LMS.
+
+npx @bhaskarauthor/dev-onboard-os
+
+Video below (documentary).
+
+What’s still TODO on day four on *your* team?
+
+#OpenSource #DevTools #BuildInPublic #EngineeringManagement #DevEx #AIcoding #onboarding

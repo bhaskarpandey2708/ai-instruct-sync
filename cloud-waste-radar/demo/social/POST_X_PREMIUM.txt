@@ -1,0 +1,42 @@
+The cloud bill grew.
+The product didn’t.
+
+Something in the inventory is idle.
+
+I keep finding the same quiet offenders:
+
+• unattached volumes still billing  
+• EIPs nobody associated  
+• staging databases with zero connections for weeks  
+• “temporary” instances at 2% CPU  
+
+That’s not a pricing mystery.
+That’s **unowned inventory**.
+
+**cloud-waste-radar** — free, local, OSS alpha:
+
+→ scan inventory JSON  
+→ flag idle_ebs · idle_eip · idle_rds · rightsizing_ec2  
+→ monthlySavingsUsd  
+→ zero runtime deps · MIT  
+
+Investigation looks like:
+
+```
+waste findings     4
+monthly savings    $xxx
+  $ 48/mo  idle_ebs          vol-orphan-01
+  $180/mo  idle_rds          rds-staging-old
+  …
+signal  idle bill is a product of unowned resources
+```
+
+Honest limit: offline core — not a full FinOps suite.
+
+npx @bhaskarauthor/cloud-waste-radar
+
+Video below.
+
+What idle resource would show up first in *your* account?
+
+#OpenSource #DevTools #BuildInPublic #FinOps #CloudComputing #AWS #indiehacker

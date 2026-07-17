@@ -32,16 +32,18 @@ Space 2–3h · Reddit → X Premium long → LinkedIn. Deep terminal proof in e
 
 **Copy-paste posts:** each product’s `demo/social/POST_*.txt`
 
-## Day 3 — Wed — Cloud & data
+## Day 3 — Wed — Cloud, onboard, SBOM, GRC (**documentary ready**)
 
-| ID | Product | Video | Pack |
-|----|---------|-------|------|
-| P11 | cloud-waste-radar | `cloud-waste-radar/demo/social/cloud-waste-radar-social-1080p.mp4` | `cloud-waste-radar/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P12 | dev-onboard-os | `dev-onboard-os/demo/social/dev-onboard-os-social-1080p.mp4` | `dev-onboard-os/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P21 | data-quality-guard | `data-quality-guard/demo/social/data-quality-guard-social-1080p.mp4` | `data-quality-guard/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P14 | grc-evidence-autopilot | `grc-evidence-autopilot/demo/social/grc-evidence-autopilot-social-1080p.mp4` | `grc-evidence-autopilot/docs/launch/SOCIAL-PUBLISH-PACK.md` |
+| ID | Product | Video (~50s doc) | Pack + Premium X |
+|----|---------|------------------|------------------|
+| P11 | cloud-waste-radar | `cloud-waste-radar/demo/social/cloud-waste-radar-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P12 | dev-onboard-os | `dev-onboard-os/demo/social/dev-onboard-os-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P13 | sbom-lite | `sbom-lite/demo/social/sbom-lite-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P14 | grc-evidence-autopilot | `grc-evidence-autopilot/demo/social/grc-evidence-autopilot-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
 
-**Copy-paste posts:** each product’s `demo/social/POST_*.txt`
+**Re-render:** `python3 scripts/render_documentary_product.py --only cloud-waste-radar,dev-onboard-os,sbom-lite,grc-evidence-autopilot`
+
+P21 data-quality-guard → next batch.
 
 ## Day 4 — Thu — India ops
 

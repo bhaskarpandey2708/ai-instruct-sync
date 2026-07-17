@@ -1,10 +1,9 @@
 {
   "inventory": [
-    {
-      "id": "vol-x",
-      "type": "ebs",
-      "attached": false,
-      "monthlyUsd": 10
-    }
+    { "id": "vol-orphan-01", "type": "ebs", "attached": false, "monthlyUsd": 48, "az": "ap-south-1a" },
+    { "id": "eip-dangling", "type": "eip", "associated": false, "monthlyUsd": 3.6, "region": "ap-south-1" },
+    { "id": "rds-staging-old", "type": "rds", "connections": 0, "daysIdle": 21, "monthlyUsd": 180, "engine": "postgres" },
+    { "id": "ec2-ml-playground", "type": "ec2", "cpuAvg7d": 2.1, "monthlyUsd": 120, "instance": "m5.xlarge" },
+    { "id": "ec2-api-prod", "type": "ec2", "cpuAvg7d": 42, "monthlyUsd": 90, "instance": "m5.large" }
   ]
 }

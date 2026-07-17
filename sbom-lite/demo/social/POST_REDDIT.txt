@@ -1,26 +1,25 @@
 === PRIMARY ===
 TITLE:
-Zero-friction SBOM generate, diff, and policy gate for npm/PyPI/Go in CI — free OSS alpha CLI (P13)
+Tests are green. GPL-3.0 and a denied package still rode into main.
 
 BODY:
-Executive orders and enterprise buyers demand SBOMs; SMBs find tools heavy.
+SBOM without a gate is a PDF for auditors.
+SBOM with a gate is a merge blocker.
 
-I shipped a free open-source alpha CLI for this: **sbom-lite**
+**sbom-lite** (free OSS alpha):
+
+- components from package-lock style input  
+- denyLicenses / denyNames policy  
+- gate.ok → CI  
 
 ```
 npx @bhaskarauthor/sbom-lite
-npx @bhaskarauthor/sbom-lite --json
 ```
 
-What it is:
-- Zero-friction SBOM generate, diff, and policy gate for npm/PyPI/Go in CI
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Demo fails on GPL-3.0 + denied package name.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Honest limit: offline SBOM core — not full SCA/vuln DB.
 
-[video attached]
+Video attached.
 
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/sbom-lite

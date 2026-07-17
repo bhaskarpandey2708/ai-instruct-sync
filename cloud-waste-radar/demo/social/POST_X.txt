@@ -1,7 +1,9 @@
-Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups
+Bill up. Product flat.
+Orphan volumes. Idle RDS. 2% CPU boxes.
 
-Shipped **cloud-waste-radar** as a free local OSS alpha:
+cloud-waste-radar — free local OSS alpha
+findings · monthlySavingsUsd
 
 npx @bhaskarauthor/cloud-waste-radar
 
-Zero deps · --json · MIT
+#OpenSource #FinOps #DevTools

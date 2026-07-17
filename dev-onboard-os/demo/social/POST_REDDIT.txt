@@ -1,26 +1,23 @@
 === PRIMARY ===
 TITLE:
-Opinionated new-hire engineering onboarding OS: env, access, docs, first PR in days not… — free OSS alpha CLI (P12)
+Day 4 of onboard: laptop works. Secrets still arrived in chat. Agents not configured.
 
 BODY:
-Onboarding still tribal; new engineers lose 2–4 weeks to setup and tribal knowledge.
+New hire opens five wiki pages. Three are stale. One says “ask on Slack.”
 
-I shipped a free open-source alpha CLI for this: **dev-onboard-os**
+MCP and agent setup is “optional chrome” — until someone pastes a key into a DM.
+
+**dev-onboard-os** treats day-one as a checklist OS:
+
+laptop · github · repo · secrets · agents · first-pr  
+progress % · explicit blockers  
 
 ```
 npx @bhaskarauthor/dev-onboard-os
-npx @bhaskarauthor/dev-onboard-os --json
 ```
 
-What it is:
-- Opinionated new-hire engineering onboarding OS: env, access, docs, first PR in days not weeks
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline checklist core — not an HRIS.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/dev-onboard-os

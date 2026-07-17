@@ -1,12 +1,27 @@
 #!/usr/bin/env node
-import { spawnSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { main } from "../src/core.js";
+
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-console.log("=== DEMO P14 grc-evidence-autopilot ===");
-console.log("Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO startups");
-const r = spawnSync(process.execPath, [path.join(root, "src/cli.js"), "--json", path.join(root, "fixtures/sample.json")], {
-  encoding: "utf8",
-});
-console.log(r.stdout || r.stderr);
-process.exit(r.status ?? 0);
+const input = JSON.parse(readFileSync(path.join(root, "fixtures/sample.json"), "utf8"));
+const r = main(input);
+
+console.log("=== grc-evidence-autopilot · investigation ===");
+console.log("controls           " + r.total);
+console.log("covered            " + r.covered);
+console.log("coverage           " + r.coveragePct + "%");
+console.log("");
+console.log("control map");
+for (const c of r.controls) {
+  const n = (c.artifacts || []).length;
+  const mark = n > 0 ? "OK  " : "GAP ";
+  console.log("  " + mark + " " + c.id.padEnd(8) + "  arts=" + n + "  " + (c.title || ""));
+  if (n) console.log("           ← " + c.artifacts.join(", "));
+}
+console.log("");
+const gaps = r.controls.filter((c) => !(c.artifacts || []).length).map((c) => c.id);
+console.log("gaps               " + (gaps.join(", ") || "(none)"));
+if (gaps.length) console.log("signal  auditor will ask for " + gaps.join(", ") + " — empty folder is a finding");
+console.log("discipline  map artifacts to controls continuously — not week-of-audit panic");

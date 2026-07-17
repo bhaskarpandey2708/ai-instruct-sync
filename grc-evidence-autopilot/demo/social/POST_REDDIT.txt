@@ -1,26 +1,20 @@
 === PRIMARY ===
 TITLE:
-Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO star… — free OSS alpha CLI (P14)
+Audit week. Control P1.1 has zero artifacts. Everyone is in a shared drive.
 
 BODY:
-SOC2 prep is spreadsheet hell; evidence collection is continuous toil.
+Controls in a spreadsheet. Evidence in five folders. Week of audit: who has the screenshot?
 
-I shipped a free open-source alpha CLI for this: **grc-evidence-autopilot**
+**grc-evidence-autopilot** maps artifacts → controls and prints coverage % + gaps.
 
 ```
 npx @bhaskarauthor/grc-evidence-autopilot
-npx @bhaskarauthor/grc-evidence-autopilot --json
 ```
 
-What it is:
-- Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO startups
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Demo: several controls OK, privacy control GAP.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Honest limit: offline mapping core — not a full GRC suite.
 
-[video attached]
+Video attached.
 
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/grc-evidence-autopilot

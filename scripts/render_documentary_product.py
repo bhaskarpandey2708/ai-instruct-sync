@@ -281,6 +281,154 @@ STORIES: dict[str, DocStory] = {
         footer="MIT  ·  offline signal core  ·  not a full fraud platform",
         term_highlight=["HIGH", "MEDIUM", "composite", "disposable", "velocity", "score"],
     ),
+    "cloud-waste-radar": DocStory(
+        slug="cloud-waste-radar",
+        npm="@bhaskarauthor/cloud-waste-radar",
+        accent=AMBER,
+        cold_claim="The bill grew. The product didn’t. Something is idle.",
+        cold_cards=[
+            ("ebs", "vol-orphan-01", "unattached · $48/mo", RED),
+            ("rds", "rds-staging-old", "0 conns · 21d idle · $180", RED),
+            ("ec2", "ec2-ml-playground", "cpu 2.1% · rightsizing", AMBER),
+        ],
+        chapter1_title="01  ·  THE QUIET BILL",
+        chapter1_lines=[
+            "Orphan volumes. Dangling EIPs.",
+            "Staging RDS with zero connections for weeks.",
+            "A ‘temporary’ box still on m5.xlarge.",
+            "",
+            "Finance sees a line item.",
+            "Engineering never got a waste ticket.",
+        ],
+        chapter2_title="02  ·  THE COST",
+        chapter2_lines=[
+            "Cloud waste is not a mystery — it’s unowned inventory.",
+            "Every idle resource is a subscription you forgot to cancel.",
+            "Score the estate before the CFO’s spreadsheet does.",
+        ],
+        proof_label="LIVE EVIDENCE  ·  waste findings",
+        discipline_title="Score inventory for waste — monthly.",
+        discipline_bullets=[
+            "idle EBS · EIP · RDS · low-CPU EC2",
+            "monthlySavingsUsd rollup",
+            "Local · zero deps · offline inventory JSON",
+        ],
+        cta_line="Find the idle bill before finance does.",
+        cta_cmd="npx @bhaskarauthor/cloud-waste-radar",
+        footer="MIT  ·  offline waste core  ·  not a full FinOps suite",
+        term_highlight=["idle", "savings", "rightsizing", "findings", "$"],
+    ),
+    "dev-onboard-os": DocStory(
+        slug="dev-onboard-os",
+        npm="@bhaskarauthor/dev-onboard-os",
+        accent=CYAN,
+        cold_claim="Day 4. Laptop works. Secrets still arrived in chat.",
+        cold_cards=[
+            ("hire", "Asha · backend", "day 4 of onboard", CYAN),
+            ("done", "laptop · github · repo", "3/6 complete", GREEN),
+            ("gap", "secrets · agents · PR", "AI/MCP still open risk", RED),
+        ],
+        chapter1_title="01  ·  THE WIKI HUNT",
+        chapter1_lines=[
+            "New hire opens five docs.",
+            "Three are stale. One says “ask on Slack.”",
+            "MCP and agent setup? Optional chrome — until it isn’t.",
+            "",
+            "Onboarding is not a scavenger hunt.",
+            "It’s a checklist with a percent.",
+        ],
+        chapter2_title="02  ·  THE COST",
+        chapter2_lines=[
+            "Slow onboard is lost sprint capacity.",
+            "Unsafe onboard is a secret in a DM.",
+            "Ship day-one as an OS — not a vibe.",
+        ],
+        proof_label="LIVE EVIDENCE  ·  checklist progress",
+        discipline_title="Onboard as a checklist OS.",
+        discipline_bullets=[
+            "laptop · github · repo · secrets · agents · first-pr",
+            "pct complete · explicit blockers",
+            "AI/MCP is day-one risk — not optional chrome",
+        ],
+        cta_line="See what’s still TODO on day four.",
+        cta_cmd="npx @bhaskarauthor/dev-onboard-os",
+        footer="MIT  ·  offline checklist core  ·  not an HRIS",
+        term_highlight=["TODO", "DONE", "blockers", "secrets", "agents", "progress"],
+    ),
+    "sbom-lite": DocStory(
+        slug="sbom-lite",
+        npm="@bhaskarauthor/sbom-lite",
+        accent=GREEN,
+        cold_claim="GPL-3.0 and a denied package just entered main.",
+        cold_cards=[
+            ("lock", "package-lock graph", "components counted", CYAN),
+            ("policy", "deny GPL-3.0", "license gate", AMBER),
+            ("block", "leftpad-evil", "denied-package", RED),
+        ],
+        chapter1_title="01  ·  THE BLIND MERGE",
+        chapter1_lines=[
+            "PR is green on tests.",
+            "Nobody opened the license field.",
+            "A GPL dep and a denied name ride into production.",
+            "",
+            "SBOM without a gate is a PDF for auditors.",
+            "SBOM with a gate is a merge blocker.",
+        ],
+        chapter2_title="02  ·  THE COST",
+        chapter2_lines=[
+            "License debt compounds quietly.",
+            "Denied packages are supply-chain preference as code.",
+            "Fail CI when policy fails — not the quarterly review.",
+        ],
+        proof_label="LIVE EVIDENCE  ·  SBOM + policy gate",
+        discipline_title="Generate. Gate. Block the merge.",
+        discipline_bullets=[
+            "SBOM from package-lock style input",
+            "denyLicenses · denyNames",
+            "gate.ok false → CI red",
+        ],
+        cta_line="Fail the build on policy — not on vibes.",
+        cta_cmd="npx @bhaskarauthor/sbom-lite",
+        footer="MIT  ·  offline SBOM core  ·  not a full SCA platform",
+        term_highlight=["FAIL", "PASS", "BLOCK", "violations", "GPL", "denied"],
+    ),
+    "grc-evidence-autopilot": DocStory(
+        slug="grc-evidence-autopilot",
+        npm="@bhaskarauthor/grc-evidence-autopilot",
+        accent=(167, 139, 250),  # violet
+        cold_claim="Audit week. Control P1.1 has zero artifacts.",
+        cold_cards=[
+            ("ctrl", "CC6.1 access", "okta review mapped", GREEN),
+            ("ctrl", "CC7.2 monitoring", "anomaly export mapped", GREEN),
+            ("gap", "P1.1 privacy", "0 artifacts · finding", RED),
+        ],
+        chapter1_title="01  ·  THE FOLDER PANIC",
+        chapter1_lines=[
+            "Controls live in a spreadsheet.",
+            "Evidence lives in five drives.",
+            "Week of audit: who has the screenshot?",
+            "",
+            "Coverage percent is the only honest dashboard.",
+            "Empty control = auditor question.",
+        ],
+        chapter2_title="02  ·  THE COST",
+        chapter2_lines=[
+            "Evidence collected under panic is incomplete evidence.",
+            "Map artifacts to controls continuously.",
+            "Gaps should hurt before the auditor does.",
+        ],
+        proof_label="LIVE EVIDENCE  ·  control coverage",
+        discipline_title="Map artifacts to controls — always on.",
+        discipline_bullets=[
+            "control id → artifact list",
+            "coveragePct · explicit gaps",
+            "Local · zero deps · offline JSON",
+        ],
+        cta_line="See which control is still empty.",
+        cta_cmd="npx @bhaskarauthor/grc-evidence-autopilot",
+        footer="MIT  ·  offline mapping core  ·  not a full GRC suite",
+        term_highlight=["GAP", "OK", "coverage", "gaps", "arts="],
+    ),
 }
 
 
@@ -597,7 +745,10 @@ def render_one(slug: str) -> Path:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--only", default="shadow-ai,eval-harness,auth-anomaly-radar,fraud-signal-kit")
+    ap.add_argument(
+        "--only",
+        default="cloud-waste-radar,dev-onboard-os,sbom-lite,grc-evidence-autopilot",
+    )
     ap.add_argument("--list", action="store_true")
     args = ap.parse_args()
     if args.list:

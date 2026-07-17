@@ -1,26 +1,25 @@
 === PRIMARY ===
 TITLE:
-Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups — free OSS alpha CLI (P11)
+The cloud bill grew. The product didn’t. Something in the inventory is idle.
 
 BODY:
-Surveys classically cite ~30% cloud waste; startups overprovision without FinOps staff.
+Orphan EBS. Dangling EIP. Staging RDS with zero connections for 21 days. A “temporary” m5.xlarge still at 2% CPU.
 
-I shipped a free open-source alpha CLI for this: **cloud-waste-radar**
+Finance sees a line item.
+Engineering never got a waste ticket.
+
+**cloud-waste-radar** (free local OSS alpha) scores an inventory JSON:
+
+- idle EBS / EIP / RDS / low-CPU EC2  
+- monthlySavingsUsd rollup  
+- zero deps · MIT  
 
 ```
 npx @bhaskarauthor/cloud-waste-radar
-npx @bhaskarauthor/cloud-waste-radar --json
 ```
 
-What it is:
-- Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline waste core — not a full FinOps platform.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video: documentary cut with live findings.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/cloud-waste-radar

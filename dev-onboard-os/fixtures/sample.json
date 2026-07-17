@@ -1,5 +1,15 @@
 {
   "state": {
-    "laptop": true
+    "laptop": true,
+    "github": true,
+    "repo": true,
+    "secrets": false,
+    "agents": false,
+    "first-pr": false
+  },
+  "hire": {
+    "name": "Asha",
+    "day": 4,
+    "role": "backend"
   }
 }

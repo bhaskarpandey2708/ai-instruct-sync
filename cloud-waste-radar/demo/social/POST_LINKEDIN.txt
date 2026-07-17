@@ -1,16 +1,11 @@
-Surveys classically cite ~30% cloud waste; startups overprovision without FinOps staff.
+The cloud bill grew. The product didn’t. Something is idle.
 
-I built **cloud-waste-radar** — a free, local, open-source alpha CLI:
+Cloud waste is usually unowned inventory — not a mysterious tariff.
 
-→ Find idle cloud resources and rightsizing opportunities for AWS/GCP/Azure startups
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built cloud-waste-radar: free, local, OSS alpha that scores inventory for idle EBS/EIP/RDS and low-CPU EC2, with a monthly savings rollup.
 
 npx @bhaskarauthor/cloud-waste-radar
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full FinOps platform.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #FinOps #DevTools #Cloud

@@ -1,16 +1,11 @@
-Onboarding still tribal; new engineers lose 2–4 weeks to setup and tribal knowledge.
+Day 4 of onboard: laptop works. Secrets still arrived in chat. Agents not configured.
 
-I built **dev-onboard-os** — a free, local, open-source alpha CLI:
+Onboarding is not a wiki scavenger hunt. It’s a checklist with a percent — and AI/MCP is day-one risk.
 
-→ Opinionated new-hire engineering onboarding OS: env, access, docs, first PR in days not weeks
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built dev-onboard-os: free, local, OSS alpha for day-one progress (including secrets + agents).
 
 npx @bhaskarauthor/dev-onboard-os
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not an HRIS.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #DevEx #Engineering #DevTools

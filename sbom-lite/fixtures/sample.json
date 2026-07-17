@@ -1,9 +1,14 @@
 {
   "packages": {
-    "": {},
-    "node_modules/foo": {
-      "version": "1.2.3",
-      "license": "MIT"
-    }
+    "": { "name": "acme-api", "version": "2.4.0" },
+    "node_modules/lodash": { "version": "4.17.21", "license": "MIT" },
+    "node_modules/express": { "version": "4.19.2", "license": "MIT" },
+    "node_modules/leftpad-evil": { "version": "0.0.1", "license": "GPL-3.0" },
+    "node_modules/acme-internal-sdk": { "version": "9.9.9", "license": "UNLICENSED" },
+    "node_modules/debug": { "version": "4.3.4", "license": "MIT" }
+  },
+  "policy": {
+    "denyLicenses": ["GPL-3.0", "AGPL-3.0"],
+    "denyNames": ["leftpad-evil"]
   }
 }

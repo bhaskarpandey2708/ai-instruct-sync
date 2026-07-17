@@ -1,7 +1,9 @@
-Zero-friction SBOM generate, diff, and policy gate for npm/PyPI/Go in CI
+Tests green.
+GPL-3.0 still merged.
 
-Shipped **sbom-lite** as a free local OSS alpha:
+sbom-lite — free local OSS alpha
+SBOM · policy gate · CI
 
 npx @bhaskarauthor/sbom-lite
 
-Zero deps · --json · MIT
+#OpenSource #SBOM #AppSec

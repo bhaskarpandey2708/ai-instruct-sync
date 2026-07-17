@@ -1,9 +1,15 @@
 {
   "controls": [
-    {
-      "id": "CC6.1",
-      "title": "Logical access"
-    }
+    { "id": "CC6.1", "title": "Logical access — joiner/mover/leaver" },
+    { "id": "CC7.2", "title": "System monitoring — auth anomalies" },
+    { "id": "A1.2", "title": "Availability — backup restore tested" },
+    { "id": "P1.1", "title": "Privacy — data retention schedule" },
+    { "id": "CC8.1", "title": "Change management — PR + review" }
   ],
-  "artifacts": []
+  "artifacts": [
+    { "id": "okta-access-review-q2.pdf", "controls": ["CC6.1"] },
+    { "id": "auth-anomaly-radar-export.json", "controls": ["CC7.2"] },
+    { "id": "backup-restore-drill-2026-06.md", "controls": ["A1.2"] },
+    { "id": "github-branch-protection.png", "controls": ["CC8.1"] }
+  ]
 }

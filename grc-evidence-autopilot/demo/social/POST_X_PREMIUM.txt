@@ -1,0 +1,36 @@
+Audit week.
+Control P1.1: zero artifacts.
+Everyone is searching a shared drive.
+
+That’s not compliance.
+That’s **folder panic.**
+
+**grc-evidence-autopilot** (free local OSS alpha):
+
+→ map artifacts to control ids  
+→ coveragePct  
+→ explicit GAP list  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+controls           5
+covered            4
+coverage           80%
+  OK   CC6.1   arts=1
+  OK   CC7.2   arts=1
+  GAP  P1.1    arts=0  Privacy — data retention…
+gaps               P1.1
+signal  auditor will ask for P1.1 — empty folder is a finding
+```
+
+Honest limit: offline mapping core — not a full GRC / audit workflow product.
+
+npx @bhaskarauthor/grc-evidence-autopilot
+
+Video below.
+
+Which control would be empty if audit started Monday?
+
+#OpenSource #DevTools #BuildInPublic #GRC #Compliance #InfoSec #SOC2 #indiehacker

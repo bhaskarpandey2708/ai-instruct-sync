@@ -1,16 +1,11 @@
-SOC2 prep is spreadsheet hell; evidence collection is continuous toil.
+Audit week. Control P1.1 has zero artifacts. Everyone is in a shared drive.
 
-I built **grc-evidence-autopilot** — a free, local, open-source alpha CLI:
+Evidence under panic is incomplete evidence. Map artifacts to controls continuously.
 
-→ Auto-collect compliance evidence (access logs, policies, screenshots) for SOC2/ISO startups
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built grc-evidence-autopilot: free, local, OSS alpha for control coverage % and explicit gaps.
 
 npx @bhaskarauthor/grc-evidence-autopilot
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full GRC suite.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #GRC #Compliance #DevTools

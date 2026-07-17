@@ -1,16 +1,11 @@
-Executive orders and enterprise buyers demand SBOMs; SMBs find tools heavy.
+Tests are green. GPL-3.0 and a denied package still rode into main.
 
-I built **sbom-lite** — a free, local, open-source alpha CLI:
+SBOM without a gate is a PDF. SBOM with a gate is a merge blocker.
 
-→ Zero-friction SBOM generate, diff, and policy gate for npm/PyPI/Go in CI
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built sbom-lite: free, local, OSS alpha — components from lockfile input + deny license/name policy for CI.
 
 npx @bhaskarauthor/sbom-lite
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not full SCA.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #AppSec #SBOM #DevTools

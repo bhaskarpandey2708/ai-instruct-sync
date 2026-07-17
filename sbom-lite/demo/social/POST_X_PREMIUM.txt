@@ -1,0 +1,33 @@
+Tests: green.
+License field: unread.
+A GPL-3.0 dep and a denied package name just entered main.
+
+That’s the blind merge.
+
+**sbom-lite** — free, local, OSS alpha:
+
+→ SBOM-ish component list from lockfile JSON  
+→ policy: denyLicenses · denyNames  
+→ gate PASS/FAIL for CI  
+→ zero runtime deps · MIT  
+
+Investigation:
+
+```
+components         N
+policy gate        FAIL
+violations         2
+  BLOCK  leftpad-evil  ·  denied-package
+  BLOCK  …             ·  license=GPL-3.0
+signal  license/package policy should fail CI
+```
+
+Honest limit: offline core — not a full SCA platform with CVE feeds.
+
+npx @bhaskarauthor/sbom-lite
+
+Video below.
+
+What license would you deny by default?
+
+#OpenSource #DevTools #BuildInPublic #AppSec #SupplyChain #SBOM #CI #npm
