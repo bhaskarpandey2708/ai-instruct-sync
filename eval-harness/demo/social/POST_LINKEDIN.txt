@@ -1,16 +1,13 @@
-Prompt changes break behavior silently; full ML platforms are overkill for app teams.
+You changed the system prompt at 5pm. Ship at 6pm.
+How do you know the refuse-secrets case still passes?
 
-I built **eval-harness** — a free, local, open-source alpha CLI:
+Without golden cases, prompt work is a leap of faith.
 
-→ Lightweight eval harness for prompt/agent regression tests in CI for product teams
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
+I built eval-harness — free, local, OSS alpha:
+expectContains / forbidContains · PASS/FAIL · suite GREEN/RED · JSON for CI.
 
-Try:
+Honest limit: offline harness, not a hosted eval platform.
 
 npx @bhaskarauthor/eval-harness
 
-Honest limit: alpha MVP core, not a full hosted product.
-
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #DevTools #AIcoding #LLM #CI

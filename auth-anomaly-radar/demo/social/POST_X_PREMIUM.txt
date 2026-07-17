@@ -1,0 +1,43 @@
+Mumbai → San Francisco in two hours.
+Same user.
+Logs: login success.
+
+That’s the quiet shape of account takeover.
+
+Volume dashboards see traffic.
+Sequences see incidents.
+
+**auth-anomaly-radar** (free local OSS alpha) scores login *sequences*:
+
+→ impossible travel via distance/time  
+→ credential stuffing via failure bursts  
+→ risk band: low · medium · high  
+→ zero deps · MIT · offline  
+
+Investigation output looks like:
+
+```
+timeline
+  dev@corp.io  @Mumbai
+  dev@corp.io  @San Francisco
+  ops@corp.io  @Delhi · failures=42
+
+flags
+  CRITICAL  impossible_travel  dev@corp.io
+            ~~13,000 km  ·  absurd km/h
+  HIGH      credential_stuffing  ops@corp.io
+            failures=42
+risk            HIGH
+```
+
+Honest limit: offline core — not a full SIEM or UEBA suite.
+
+One command:
+
+npx @bhaskarauthor/auth-anomaly-radar
+
+Video below (documentary cut).
+
+What signal do you wish your auth logs scored by default?
+
+#OpenSource #DevTools #BuildInPublic #CyberSecurity #AppSec #FraudPrevention #AIcoding #InfoSec

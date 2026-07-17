@@ -1,8 +1,12 @@
 {
-  "email": "user@example.com",
+  "email": "buyer48291@mailinator.com",
   "events": [
-    {
-      "ts": 1783794020442
-    }
+    { "ts": 1720000000000, "type": "signup" },
+    { "ts": 1720000012000, "type": "add_card" },
+    { "ts": 1720000025000, "type": "checkout" },
+    { "ts": 1720000031000, "type": "checkout" },
+    { "ts": 1720000040000, "type": "checkout" },
+    { "ts": 1720000055000, "type": "checkout" },
+    { "ts": 1720000068000, "type": "payout_change" }
   ]
 }

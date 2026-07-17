@@ -1,0 +1,46 @@
+You changed the system prompt at 5pm.
+Ship at 6pm.
+
+How do you know the refuse-secrets case still passes?
+
+Most teams don’t.
+They “vibe check” in the playground and call it QA.
+
+Then a customer sees:
+• a refusal rule that silently died  
+• a summary format that regressed  
+• a “helpful” model that pastes env-shaped secrets  
+
+**eval-harness** is a free, local, open-source alpha for the boring spine:
+
+→ cases with expectContains / forbidContains  
+→ PASS / FAIL table  
+→ suite GREEN or RED  
+→ --json for CI  
+→ zero runtime deps · MIT  
+
+On a fixture built to hurt:
+
+```
+case                  result
+  summarize-email       PASS
+  refuse-secrets        PASS
+  no-shell-exfil        PASS
+  regression-trap       FAIL
+verdict         RED — gate should fail CI
+signal  prompt/agent regression caught before ship
+```
+
+That FAIL is the feature.
+
+Honest limit: offline string checks — not a multi-model hosted eval cloud.
+
+One command:
+
+npx @bhaskarauthor/eval-harness
+
+Video below (documentary).
+
+What golden case would you add first?
+
+#OpenSource #DevTools #BuildInPublic #AIcoding #LLM #PromptEngineering #CI #ClaudeCode #Cursor

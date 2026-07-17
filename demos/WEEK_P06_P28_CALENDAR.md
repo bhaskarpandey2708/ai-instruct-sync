@@ -9,25 +9,26 @@
 
 ---
 
-## Day 1 — Mon — AI tooling
+## Day 1 — Mon — AI tooling (**documentary ready**)
 
-| ID | Product | Video | Pack |
-|----|---------|-------|------|
-| P06 | skill-sync | `skill-sync/demo/social/skill-sync-social-1080p.mp4` | `skill-sync/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P07 | shadow-AI | `shadow-ai/demo/social/shadow-ai-social-1080p.mp4` | `shadow-ai/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P08 | eval-harness | `eval-harness/demo/social/eval-harness-social-1080p.mp4` | `eval-harness/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P13 | sbom-lite | `sbom-lite/demo/social/sbom-lite-social-1080p.mp4` | `sbom-lite/docs/launch/SOCIAL-PUBLISH-PACK.md` |
+| ID | Product | Video (~50s doc) | Pack + Premium X |
+|----|---------|------------------|------------------|
+| P06 | skill-sync | `skill-sync/demo/social/skill-sync-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
+| P07 | shadow-ai | `shadow-ai/demo/social/shadow-ai-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
+| P08 | eval-harness | `eval-harness/demo/social/eval-harness-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
 
-**Copy-paste posts:** each product’s `demo/social/POST_*.txt`
+Space 2–3h · Reddit → X Premium long → LinkedIn. Deep terminal proof in each video.
 
-## Day 2 — Tue — Security signals
+## Day 2 — Tue — Security signals (**documentary ready**)
 
-| ID | Product | Video | Pack |
-|----|---------|-------|------|
-| P09 | auth-anomaly-radar | `auth-anomaly-radar/demo/social/auth-anomaly-radar-social-1080p.mp4` | `auth-anomaly-radar/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P10 | fraud-signal-kit | `fraud-signal-kit/demo/social/fraud-signal-kit-social-1080p.mp4` | `fraud-signal-kit/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P20 | cyber-smb-shield | `cyber-smb-shield/demo/social/cyber-smb-shield-social-1080p.mp4` | `cyber-smb-shield/docs/launch/SOCIAL-PUBLISH-PACK.md` |
-| P28 | api-contract-sentinel | `api-contract-sentinel/demo/social/api-contract-sentinel-social-1080p.mp4` | `api-contract-sentinel/docs/launch/SOCIAL-PUBLISH-PACK.md` |
+| ID | Product | Video (~50s doc) | Pack + Premium X |
+|----|---------|------------------|------------------|
+| P09 | auth-anomaly-radar | `auth-anomaly-radar/demo/social/auth-anomaly-radar-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
+| P10 | fraud-signal-kit | `fraud-signal-kit/demo/social/fraud-signal-kit-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
+| P20 | cyber-smb-shield | *(baseline pack — doc upgrade later)* | pack |
+| P28 | api-contract-sentinel | *(baseline pack — doc upgrade later)* | pack |
+
+**Re-render P07–P10:** `python3 scripts/render_documentary_product.py --only shadow-ai,eval-harness,auth-anomaly-radar,fraud-signal-kit`
 
 **Copy-paste posts:** each product’s `demo/social/POST_*.txt`
 

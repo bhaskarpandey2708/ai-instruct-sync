@@ -1,0 +1,38 @@
+Disposable email.
+Six actions in sixty seconds.
+Composite: HIGH.
+
+You don’t need a neural net to hold the payout.
+
+Marketplaces and fintech burn money when signals stay siloed:
+email tool over here · velocity rules over there · human in the middle never sees the blend.
+
+**fraud-signal-kit** (free local OSS alpha) composes cheap signals:
+
+→ email risk (disposable / pattern heuristics)  
+→ velocity (actions in a rolling window)  
+→ blend 0.6·email + 0.4·velocity → band  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+email           buyer…@mailinator.com
+email band      HIGH
+velocity band   HIGH
+composite       HIGH  score=…
+signal  step-up auth / hold payout — composite HIGH
+discipline  compose cheap signals before heavy ML
+```
+
+Honest limit: offline heuristic core — not a full fraud graph / device intel suite.
+
+One command:
+
+npx @bhaskarauthor/fraud-signal-kit
+
+Video below (documentary).
+
+Which cheap signal catches the most junk in *your* funnel?
+
+#OpenSource #DevTools #BuildInPublic #FinTech #FraudPrevention #IndiaStartups #AIcoding #Risk

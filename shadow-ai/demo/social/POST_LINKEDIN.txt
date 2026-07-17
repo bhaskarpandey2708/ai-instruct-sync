@@ -1,16 +1,13 @@
-Employees paste company data into consumer ChatGPT/Claude without IT visibility.
+IT’s AI inventory says “approved only.”
+The laptop has ChatGPT Free pasting company Notion.
 
-I built **shadow-ai** — a free, local, open-source alpha CLI:
+That’s not abstract “AI risk.”
+That’s shadow AI — tools with data classes living outside the catalog.
 
-→ Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built shadow-ai: a free, local, open-source alpha CLI that scores an inventory of AI tools — unauthorized list, riskScore, severity band. Zero runtime deps. Nothing leaves your machine.
 
 npx @bhaskarauthor/shadow-ai
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline inventory core, not a full CASB. Discipline first.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #DevTools #CyberSecurity #AIcoding #ShadowIT

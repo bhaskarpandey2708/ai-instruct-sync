@@ -1,16 +1,11 @@
-SMBs enable Auth0/Cognito but lack fraud signals without enterprise SIEM.
+Mumbai → San Francisco in two hours. Same user. Logs: login success.
 
-I built **auth-anomaly-radar** — a free, local, open-source alpha CLI:
+Account takeover rarely looks loud in a single row. It looks normal until you score velocity and geography.
 
-→ Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing signals)
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built auth-anomaly-radar — free, local, OSS alpha for sequence scoring: impossible travel, credential stuffing, risk bands.
 
 npx @bhaskarauthor/auth-anomaly-radar
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full SIEM.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #CyberSecurity #AppSec #DevTools

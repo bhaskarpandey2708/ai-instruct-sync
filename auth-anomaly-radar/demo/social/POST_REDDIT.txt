@@ -1,26 +1,26 @@
 === PRIMARY ===
 TITLE:
-Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing sig… — free OSS alpha CLI (P09)
+Mumbai → San Francisco in two hours, same user. Your logs still say “login success.”
 
 BODY:
-SMBs enable Auth0/Cognito but lack fraud signals without enterprise SIEM.
+Successful login rows look calm.
 
-I shipped a free open-source alpha CLI for this: **auth-anomaly-radar**
+Physics doesn’t.
+
+**auth-anomaly-radar** scores a sequence:
+
+- impossible travel (haversine + time)  
+- credential stuffing (failure bursts)  
+- risk: low / medium / high  
 
 ```
 npx @bhaskarauthor/auth-anomaly-radar
-npx @bhaskarauthor/auth-anomaly-radar --json
 ```
 
-What it is:
-- Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing signals)
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Demo fixture: Mumbai→SFO ~2h + another user with 42 failures.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Honest limit: offline scoring core — not a full SIEM.
 
-[video attached]
+Video attached.
 
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/auth-anomaly-radar

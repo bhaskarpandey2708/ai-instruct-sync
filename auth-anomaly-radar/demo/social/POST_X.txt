@@ -1,7 +1,9 @@
-Lightweight auth anomaly detection for SaaS (impossible travel, credential stuffing signals)
+Mumbai → SFO in 2 hours. Same user.
+Logs: success.
 
-Shipped **auth-anomaly-radar** as a free local OSS alpha:
+auth-anomaly-radar — free local OSS alpha
+impossible travel · stuffing · risk band
 
 npx @bhaskarauthor/auth-anomaly-radar
 
-Zero deps · --json · MIT
+#OpenSource #CyberSecurity #AppSec

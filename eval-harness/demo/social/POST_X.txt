@@ -1,7 +1,9 @@
-Lightweight eval harness for prompt/agent regression tests in CI for product teams
+Prompt tweak at 5pm. Ship at 6pm.
+Did refuse-secrets still pass?
 
-Shipped **eval-harness** as a free local OSS alpha:
+eval-harness — free local OSS alpha
+golden cases · PASS/FAIL · CI-ready
 
 npx @bhaskarauthor/eval-harness
 
-Zero deps · --json · MIT
+#OpenSource #LLM #DevTools #AIcoding

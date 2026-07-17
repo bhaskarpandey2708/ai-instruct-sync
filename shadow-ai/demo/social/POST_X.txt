@@ -1,7 +1,12 @@
-Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise
+IT approved three AI tools.
+The laptop has seven.
 
-Shipped **shadow-ai** as a free local OSS alpha:
+Personal ChatGPT + confidential paste.
+Unpinned MCP. Pastebin prompts.
+
+shadow-ai — free local OSS alpha
+inventory · riskScore · severity
 
 npx @bhaskarauthor/shadow-ai
 
-Zero deps · --json · MIT
+#OpenSource #DevTools #ShadowIT #AIcoding

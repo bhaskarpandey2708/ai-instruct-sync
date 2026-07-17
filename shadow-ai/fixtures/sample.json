@@ -1,9 +1,28 @@
 {
   "tools": [
     {
-      "name": "ChatGPT Free",
+      "name": "ChatGPT Free (personal)",
       "approved": false,
-      "dataClass": "confidential"
+      "dataClass": "confidential",
+      "path": "browser-extension · company Notion paste"
+    },
+    {
+      "name": "Random MCP server (unpinned npx)",
+      "approved": false,
+      "dataClass": "confidential",
+      "path": "local · .cursor/mcp.json"
+    },
+    {
+      "name": "approved-claude-workspace",
+      "approved": true,
+      "dataClass": "internal",
+      "path": "managed · IT catalog"
+    },
+    {
+      "name": "public-pastebin prompt dump",
+      "approved": false,
+      "dataClass": "confidential",
+      "path": "exfil risk · unknown URL"
     }
   ]
 }

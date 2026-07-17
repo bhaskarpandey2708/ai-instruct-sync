@@ -1,13 +1,25 @@
 {
   "events": [
     {
-      "user": "u",
-      "ts": 0,
-      "geo": {
-        "lat": 0,
-        "lon": 0
-      },
-      "failures": 0
+      "user": "dev@corp.io",
+      "ts": 1719800000000,
+      "geo": { "lat": 19.076, "lon": 72.8777, "label": "Mumbai" },
+      "failures": 0,
+      "device": "MacBook-office"
+    },
+    {
+      "user": "dev@corp.io",
+      "ts": 1719807200000,
+      "geo": { "lat": 37.7749, "lon": -122.4194, "label": "San Francisco" },
+      "failures": 0,
+      "device": "unknown-chrome"
+    },
+    {
+      "user": "ops@corp.io",
+      "ts": 1719810000000,
+      "geo": { "lat": 28.6139, "lon": 77.209, "label": "Delhi" },
+      "failures": 42,
+      "device": "botnet-pool"
     }
   ]
 }

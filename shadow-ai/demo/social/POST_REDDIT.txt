@@ -1,26 +1,32 @@
 === PRIMARY ===
 TITLE:
-Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise — free OSS alpha CLI (P07)
+IT’s AI inventory says “approved only.” The laptop has ChatGPT Free pasting company Notion.
 
 BODY:
-Employees paste company data into consumer ChatGPT/Claude without IT visibility.
+Security’s catalog lists three approved tools.
 
-I shipped a free open-source alpha CLI for this: **shadow-ai**
+The engineer’s browser has personal ChatGPT with confidential paste.
+.cursor/mcp.json has an unpinned server nobody ticketed.
+Somewhere a prompt landed on a public paste site.
+
+That’s not “AI risk” in the abstract.
+That’s **shadow AI** — assets with data classes, living outside the approved surface.
+
+I shipped **shadow-ai** — free, local, OSS alpha:
 
 ```
 npx @bhaskarauthor/shadow-ai
-npx @bhaskarauthor/shadow-ai --json
 ```
 
-What it is:
-- Discover unauthorized AI tools, browser extensions, and SaaS usage across the enterprise
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+It scores an inventory of tools:
+- unauthorized list
+- riskScore / 100 (confidential weighted heavier)
+- severity band
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Honest limit: offline inventory core — not a full CASB/DLP platform.
 
-[video attached]
+Video: mini-doc · cold open → shadow surface → cost → live score → CTA.
 
-Feedback welcome.
+If your “AI policy” is a PDF and a prayer, this is the boring inventory layer underneath.
+
+npm: https://www.npmjs.com/package/@bhaskarauthor/shadow-ai

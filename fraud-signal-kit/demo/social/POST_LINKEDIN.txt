@@ -1,16 +1,11 @@
-India digital payments fraud needs local signal stacks cheaper than global suites.
+Disposable email. Six actions in a minute. Composite: HIGH.
 
-I built **fraud-signal-kit** — a free, local, open-source alpha CLI:
+Before heavy ML, fraud is often already loud — if you compose the cheap signals.
 
-→ Composable fraud signal APIs (device, velocity, email risk) for Indian fintech and marketplaces
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built fraud-signal-kit — free, local, OSS alpha: email risk + velocity + blended band for step-up or review.
 
 npx @bhaskarauthor/fraud-signal-kit
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline heuristics, not a full fraud platform.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #FinTech #FraudPrevention #DevTools

@@ -1,26 +1,26 @@
 === PRIMARY ===
 TITLE:
-Lightweight eval harness for prompt/agent regression tests in CI for product teams — free OSS alpha CLI (P08)
+You changed the system prompt at 5pm. Ship at 6pm. How do you know the refuse-secrets case still passes?
 
 BODY:
-Prompt changes break behavior silently; full ML platforms are overkill for app teams.
+Without golden cases, prompt edits are leaps of faith.
 
-I shipped a free open-source alpha CLI for this: **eval-harness**
+I wanted a tiny, local suite:
+
+- expectContains / forbidContains  
+- PASS / FAIL per case  
+- suite GREEN or RED for CI  
+
+**eval-harness** (free OSS alpha):
 
 ```
 npx @bhaskarauthor/eval-harness
-npx @bhaskarauthor/eval-harness --json
 ```
 
-What it is:
-- Lightweight eval harness for prompt/agent regression tests in CI for product teams
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Demo suite deliberately includes a **regression-trap** that fails when the model leaks a demo key phrase — so you see RED before prod does.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Honest limit: offline string harness, not a hosted eval platform with LLM judges.
 
-[video attached]
+Video: cold open → blind ship → cost → live suite → CTA.
 
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/eval-harness

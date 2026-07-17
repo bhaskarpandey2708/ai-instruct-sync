@@ -1,7 +1,9 @@
-Composable fraud signal APIs (device, velocity, email risk) for Indian fintech and marketplaces
+Disposable mail + 6 actions in 60s.
+Composite HIGH — before ML.
 
-Shipped **fraud-signal-kit** as a free local OSS alpha:
+fraud-signal-kit — free local OSS alpha
+email · velocity · blend
 
 npx @bhaskarauthor/fraud-signal-kit
 
-Zero deps · --json · MIT
+#OpenSource #FinTech #FraudPrevention

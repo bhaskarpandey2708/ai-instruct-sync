@@ -1,0 +1,44 @@
+IT’s AI inventory says “approved only.”
+The laptop has ChatGPT Free pasting company Notion.
+
+I keep seeing the same pattern:
+
+• Personal ChatGPT with confidential context  
+• Random MCP servers in .cursor/mcp.json — unpinned, uncatalogued  
+• Prompt dumps on public paste sites  
+• Security still thinks the catalog is the truth  
+
+Shadow AI isn’t a model problem.
+It’s an **asset** problem with data classes attached.
+
+**shadow-ai** (free local OSS alpha) scores a tool inventory:
+
+→ unauthorized names  
+→ riskScore / 100 (confidential weighted)  
+→ severity: low · medium · high  
+→ zero runtime deps · MIT · nothing leaves the machine  
+
+Live investigation style output:
+
+```
+unauthorized (3)
+  HIGH  ChatGPT Free (personal)
+        CONF · browser-extension · company Notion paste
+  HIGH  Random MCP server (unpinned npx)
+...
+severity         HIGH
+riskScore         …
+signal  company context is leaving the approved surface
+```
+
+Honest limit: offline inventory core — not a full CASB.
+
+One command:
+
+npx @bhaskarauthor/shadow-ai
+
+Video below (documentary cut).
+
+What tool would show up first in *your* shadow inventory?
+
+#OpenSource #DevTools #BuildInPublic #AIcoding #CyberSecurity #ShadowIT #ClaudeCode #Cursor #AgentSkills
