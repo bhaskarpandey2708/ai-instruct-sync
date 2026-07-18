@@ -1,0 +1,22 @@
+Calendar: full.
+Slack: green.
+Deep work: two sessions all week.
+
+Activity without a score is storytelling.
+
+**focus-forge** — free, local, OSS alpha:
+
+→ plannedMin · actualMin · distractions  
+→ focus 0–100 · deep ≥ 70  
+→ weekly avgFocus + deepSessions  
+→ zero deps · MIT · offline  
+
+Investigation prints DEEP vs WEAK sessions — the week’s real grade.
+
+Honest limit: offline core — not RescueTime cloud.
+
+npx @bhaskarauthor/focus-forge
+
+Video below.
+
+#OpenSource #DevTools #BuildInPublic #Productivity #DeepWork #indiehacker

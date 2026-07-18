@@ -1,7 +1,9 @@
-Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers
+Busy week.
+Two deep sessions.
 
-Shipped **focus-forge** as a free local OSS alpha:
+focus-forge — free local OSS alpha
+focus score · deep count
 
 npx @bhaskarauthor/focus-forge
 
-Zero deps · --json · MIT
+#OpenSource #DeepWork #Productivity

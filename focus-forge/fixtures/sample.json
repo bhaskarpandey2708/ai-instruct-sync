@@ -1,9 +1,10 @@
 {
   "sessions": [
-    {
-      "plannedMin": 25,
-      "actualMin": 20,
-      "distractions": 1
-    }
+    { "id": "s1", "day": "Mon", "plannedMin": 50, "actualMin": 48, "distractions": 0, "label": "deep work" },
+    { "id": "s2", "day": "Mon", "plannedMin": 25, "actualMin": 12, "distractions": 4, "label": "slack-heavy" },
+    { "id": "s3", "day": "Tue", "plannedMin": 50, "actualMin": 45, "distractions": 1, "label": "coding" },
+    { "id": "s4", "day": "Wed", "plannedMin": 25, "actualMin": 8, "distractions": 6, "label": "meetings bleed" },
+    { "id": "s5", "day": "Thu", "plannedMin": 50, "actualMin": 50, "distractions": 0, "label": "ship block" },
+    { "id": "s6", "day": "Fri", "plannedMin": 25, "actualMin": 20, "distractions": 2, "label": "review" }
   ]
 }

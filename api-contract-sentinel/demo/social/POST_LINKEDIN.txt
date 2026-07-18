@@ -1,16 +1,11 @@
-Microservices break silent consumers; OpenAPI drift is common.
+Backend green. DELETE removed. paymentMethod now required. Mobile will page at 2am.
 
-I built **api-contract-sentinel** — a free, local, open-source alpha CLI:
+Contracts break on removals and new required fields.
 
-→ Detect breaking API contract changes in PRs with consumer impact maps
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built api-contract-sentinel: free, local, OSS alpha to diff OpenAPI-ish contracts and fail CI on breaks.
 
 npx @bhaskarauthor/api-contract-sentinel
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full API gateway.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #API #Backend #DevTools

@@ -1,7 +1,10 @@
-Detect breaking API contract changes in PRs with consumer impact maps
+DELETE removed.
+New required field.
+Mobile still ships.
 
-Shipped **api-contract-sentinel** as a free local OSS alpha:
+api-contract-sentinel — free local OSS alpha
+diff · BREAK · CI
 
 npx @bhaskarauthor/api-contract-sentinel
 
-Zero deps · --json · MIT
+#OpenSource #API #Backend

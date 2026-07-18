@@ -26,7 +26,7 @@ Space 2–3h · Reddit → X Premium long → LinkedIn. Deep terminal proof in e
 | P09 | auth-anomaly-radar | `auth-anomaly-radar/demo/social/auth-anomaly-radar-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
 | P10 | fraud-signal-kit | `fraud-signal-kit/demo/social/fraud-signal-kit-social-1080p.mp4` | pack + `POST_X_PREMIUM.txt` |
 | P20 | cyber-smb-shield | `cyber-smb-shield/demo/social/…` (**doc ready**) | + Premium X |
-| P28 | api-contract-sentinel | *(baseline — doc in later batch)* | pack |
+| P28 | api-contract-sentinel | `api-contract-sentinel/demo/social/…` (**doc ready**) | + Premium X |
 
 **Re-render P07–P10:** `python3 scripts/render_documentary_product.py --only shadow-ai,eval-harness,auth-anomaly-radar,fraud-signal-kit`
 
@@ -80,7 +80,16 @@ P23 personal-crm · P27 focus-forge → next batches.
 
 **Re-render:** `python3 scripts/render_documentary_product.py --only personal-crm,creator-ops,climate-ops-meter,sc-visibility-lite`
 
-P27 focus-forge · P28 api-contract-sentinel → final batch.
+## Final pair — P27–P28 (**documentary ready**)
+
+| ID | Product | Video (~50s doc) | Pack + Premium X |
+|----|---------|------------------|------------------|
+| P27 | focus-forge | `focus-forge/demo/social/focus-forge-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+| P28 | api-contract-sentinel | `api-contract-sentinel/demo/social/api-contract-sentinel-social-1080p.mp4` | + `POST_X_PREMIUM.txt` |
+
+**Re-render:** `python3 scripts/render_documentary_product.py --only focus-forge,api-contract-sentinel`
+
+**Documentary complete for P06–P28.**
 
 ## Day 7 — Sun — buffer / repost best + engagement
 

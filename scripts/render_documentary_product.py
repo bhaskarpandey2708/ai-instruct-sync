@@ -873,6 +873,80 @@ STORIES: dict[str, DocStory] = {
         footer="MIT  ·  offline visibility core  ·  not a full SCM suite",
         term_highlight=["HIGH", "STALE", "risk", "stale", "high risk"],
     ),
+    "focus-forge": DocStory(
+        slug="focus-forge",
+        npm="@bhaskarauthor/focus-forge",
+        accent=CYAN,
+        cold_claim="Six sessions. Two deep. Average focus tells the truth.",
+        cold_cards=[
+            ("deep", "ship block", "50/50 · 0 dist", GREEN),
+            ("weak", "meetings bleed", "8/25 · 6 dist", RED),
+            ("score", "week avg", "focus score /100", AMBER),
+        ],
+        chapter1_title="01  ·  THE BUSY LIE",
+        chapter1_lines=[
+            "Calendar full.",
+            "Slack green.",
+            "Deep work: two sessions all week.",
+            "",
+            "Activity without a score is storytelling.",
+            "Planned vs actual minus distraction tax.",
+        ],
+        chapter2_title="02  ·  THE COST",
+        chapter2_lines=[
+            "Shallow weeks compound into missed ships.",
+            "Score sessions. Count deep (≥70).",
+            "Weekly review beats guilt journaling.",
+        ],
+        proof_label="LIVE EVIDENCE  ·  weekly focus",
+        discipline_title="Score the week. Count deep work.",
+        discipline_bullets=[
+            "plannedMin · actualMin · distractions",
+            "focus 0–100 · deep ≥ 70",
+            "avgFocus + deepSessions",
+        ],
+        cta_line="See if the week was deep — or just loud.",
+        cta_cmd="npx @bhaskarauthor/focus-forge",
+        footer="MIT  ·  offline focus core  ·  not a full productivity suite",
+        term_highlight=["DEEP", "WEAK", "avg", "focus=", "deep sessions"],
+    ),
+    "api-contract-sentinel": DocStory(
+        slug="api-contract-sentinel",
+        npm="@bhaskarauthor/api-contract-sentinel",
+        accent=RED,
+        cold_claim="DELETE removed. paymentMethod now required. Mobile will page.",
+        cold_cards=[
+            ("break", "method_removed", "DELETE /orders/{id}", RED),
+            ("break", "required_field_added", "paymentMethod", RED),
+            ("warn", "path_added", "/v2/orders", AMBER),
+        ],
+        chapter1_title="01  ·  THE QUIET BREAK",
+        chapter1_lines=[
+            "Backend ships Friday.",
+            "Tests green — for the server.",
+            "Mobile still posts the old body.",
+            "",
+            "Contracts break on removals and new required fields.",
+            "Not on good intentions.",
+        ],
+        chapter2_title="02  ·  THE COST",
+        chapter2_lines=[
+            "Consumer outages look like ‘random 400s’.",
+            "Diff prev vs next OpenAPI-ish JSON in CI.",
+            "FAIL the PR when breaks > 0.",
+        ],
+        proof_label="LIVE EVIDENCE  ·  contract diff",
+        discipline_title="Diff contracts. Block breaks.",
+        discipline_bullets=[
+            "path/method removed → BREAK",
+            "required field added → BREAK",
+            "path added → WARN · ok = no breaks",
+        ],
+        cta_line="Catch the break before the app store review.",
+        cta_cmd="npx @bhaskarauthor/api-contract-sentinel",
+        footer="MIT  ·  offline diff core  ·  not a full API gateway",
+        term_highlight=["BREAK", "WARN", "FAIL", "PASS", "required", "removed"],
+    ),
 }
 
 
@@ -1191,7 +1265,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--only",
-        default="personal-crm,creator-ops,climate-ops-meter,sc-visibility-lite",
+        default="focus-forge,api-contract-sentinel",
     )
     ap.add_argument("--list", action="store_true")
     args = ap.parse_args()

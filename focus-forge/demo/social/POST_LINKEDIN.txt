@@ -1,16 +1,11 @@
-Attention fragmentation; existing blockers lack outcome review loops.
+Calendar full. Deep work: two sessions.
 
-I built **focus-forge** — a free, local, open-source alpha CLI:
+Activity without a score is storytelling.
 
-→ Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers
-→ Offline-first core (fixtures + litmus tests)
-→ Zero runtime dependencies
-→ JSON output for scripts / CI
-
-Try:
+I built focus-forge: free, local, OSS alpha for session focus scoring and weekly deep-work counts.
 
 npx @bhaskarauthor/focus-forge
 
-Honest limit: alpha MVP core, not a full hosted product.
+Honest limit: offline core, not a full productivity suite.
 
-#OpenSource #BuildInPublic #DevTools #AI
+#OpenSource #BuildInPublic #Productivity #DevTools

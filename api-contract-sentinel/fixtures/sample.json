@@ -1,17 +1,32 @@
 {
   "prev": {
     "paths": {
-      "/health": {
-        "get": {}
-      }
+      "/v1/orders": {
+        "get": {},
+        "post": {
+          "requestBody": { "requiredProps": ["sku", "qty"] }
+        }
+      },
+      "/v1/orders/{id}": {
+        "get": {},
+        "delete": {}
+      },
+      "/health": { "get": {} }
     }
   },
   "next": {
     "paths": {
-      "/health": {
+      "/v1/orders": {
+        "get": {},
+        "post": {
+          "requestBody": { "requiredProps": ["sku", "qty", "paymentMethod"] }
+        }
+      },
+      "/v1/orders/{id}": {
         "get": {}
       },
-      "/v2": {
+      "/health": { "get": {} },
+      "/v2/orders": {
         "get": {}
       }
     }

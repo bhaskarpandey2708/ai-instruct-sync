@@ -1,26 +1,16 @@
 === PRIMARY ===
 TITLE:
-Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers — free OSS alpha CLI (P27)
+Calendar full. Deep work: two sessions. Activity without a score is storytelling.
 
 BODY:
-Attention fragmentation; existing blockers lack outcome review loops.
-
-I shipped a free open-source alpha CLI for this: **focus-forge**
+**focus-forge** scores sessions: planned vs actual − distraction tax → weekly avg + deep count (≥70).
 
 ```
 npx @bhaskarauthor/focus-forge
-npx @bhaskarauthor/focus-forge --json
 ```
 
-What it is:
-- Deep-work OS: site blocker + session goals + AI weekly review for knowledge workers
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline focus core — not a full productivity suite.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video: documentary cut.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/focus-forge

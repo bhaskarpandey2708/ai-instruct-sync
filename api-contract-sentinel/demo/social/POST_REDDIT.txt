@@ -1,26 +1,21 @@
 === PRIMARY ===
 TITLE:
-Detect breaking API contract changes in PRs with consumer impact maps — free OSS alpha CLI (P28)
+Backend green. DELETE removed. paymentMethod now required. Mobile will page at 2am.
 
 BODY:
-Microservices break silent consumers; OpenAPI drift is common.
+**api-contract-sentinel** diffs prev vs next OpenAPI-ish JSON:
 
-I shipped a free open-source alpha CLI for this: **api-contract-sentinel**
+- path/method removed → BREAK  
+- required field added → BREAK  
+- path added → WARN  
+- ok = no breaks (CI gate)
 
 ```
 npx @bhaskarauthor/api-contract-sentinel
-npx @bhaskarauthor/api-contract-sentinel --json
 ```
 
-What it is:
-- Detect breaking API contract changes in PRs with consumer impact maps
-- Offline / local-first MVP core
-- Zero runtime dependencies
-- --json for CI / scripts
-- MIT
+Honest limit: offline diff core — not a full API gateway.
 
-Honest: alpha domain core (fixtures + litmus), not a full SaaS product.
+Video attached.
 
-[video attached]
-
-Feedback welcome.
+npm: https://www.npmjs.com/package/@bhaskarauthor/api-contract-sentinel

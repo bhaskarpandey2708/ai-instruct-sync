@@ -1,0 +1,32 @@
+Backend: green.
+DELETE /orders/{id}: gone.
+paymentMethod: now required.
+
+Mobile still posts the old body.
+
+That’s the quiet break.
+
+**api-contract-sentinel** — free, local, OSS alpha:
+
+→ diff prev vs next paths/methods  
+→ required_field_added → BREAK  
+→ path_added → WARN  
+→ ok false → fail CI  
+→ zero deps · MIT · offline  
+
+Investigation:
+
+```
+contract gate      FAIL
+BREAK  method_removed         /v1/orders/{id}  delete
+BREAK  required_field_added   …  paymentMethod
+WARN   path_added             /v2/orders
+```
+
+Honest limit: offline core — not full API management.
+
+npx @bhaskarauthor/api-contract-sentinel
+
+Video below.
+
+#OpenSource #DevTools #BuildInPublic #API #OpenAPI #Backend #CI #indiehacker
